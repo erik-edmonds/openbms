@@ -1,0 +1,28 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: foxbms2-master.PcbDoc   5/8/2023  8:21:31 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top to Bottom
+ASCII RoundHoles File : foxbms2-master-RoundHoles.TXT
+ASCII SlotHoles File : foxbms2-master-SlotHoles.TXT
+EIA File   : foxbms2-master.DRL
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.2mm (8mil)                                              Round             195       PTH        219.83mm (8.65inch)
+T2      0.3mm (12mil)                                             Round             2650      PTH        5924.87mm (233.26inch)
+T3      0.4mm (16mil)                                             Slot              2         PTH        45.31mm (1.78inch)
+T4      0.5mm (20mil)                                             Round             26        PTH        303.35mm (11.94inch)
+T5      0.8mm (31mil)                                             Round             12        PTH        34.58mm (1.36inch)
+T6      0.81mm (32mil)          +/-0.05mm (2mil)                  Round             5         PTH        10.16mm (0.40inch)
+T7      1.016mm (40mil)         +/-0.051mm (2mil)                 Round             60        PTH        263.85mm (10.39inch)
+T8      1.7mm (67mil)                                             Round             2         PTH        16.25mm (0.64inch)
+T9      1.45mm (57mil)                                            Round             6         NPTH       206.88mm (8.14inch)
+T10     2.39mm (94mil)          +/-0.05mm (2mil)                  Round             1         NPTH       0.00mm (0.00inch)
+T11     2.997mm (118mil)        +/-0.051mm (2mil)                 Round             15        NPTH       164.35mm (6.47inch)
+T12     3.2mm (126mil)                                            Round             8         NPTH       572.89mm (22.55inch)
+T13     3.25mm (128mil)                                           Round             2         NPTH       12.70mm (0.50inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              2984
+
+Total Processing Time (hh:mm:ss) : 00:00:00

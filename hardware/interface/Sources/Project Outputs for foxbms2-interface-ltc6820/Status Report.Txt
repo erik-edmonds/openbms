@@ -1,0 +1,38 @@
+Output: ODB++ Files
+Type  : ODB
+From  : Variant [[No Variations]] of Project [foxbms2-interface-ltc6820.PrjPcb]
+   Generated File[profile]
+   Generated File[stephdr]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[tools]
+   Generated File[features]
+   Generated File[tools]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[features]
+   Generated File[components]
+   Generated File[features]
+   Generated File[components]
+   Generated File[features]
+   Generated File[tools]
+   Generated File[data]
+   Generated File[netlist]
+   Generated File[matrix]
+   Generated File[foxbms2-interface-ltc6820.REP]
+
+
+Files Generated   : 29
+Documents Printed : 0
+
+Finished Output Generation At 8:51:19 PM On 5/8/2023

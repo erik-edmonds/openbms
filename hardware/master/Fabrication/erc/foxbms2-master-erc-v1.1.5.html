@@ -1,0 +1,2562 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+        td, th {
+            padding: 0.5em;
+            text-align : left;
+        }
+        th {
+            background-color : #EEEEEE;
+        
+        }
+        th.column1, td.column1 {
+            width : 10em;
+        }
+
+        th.column2, td.column2 {
+            width : 30em;
+        }
+
+        table {
+            width : 100%;
+            font-size: 0.9em;
+        }
+
+		.header_holder {
+			Width = 100%;
+			border = 0px solid green;
+			padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+        }
+
+        .front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+        }
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+        .total_column1, .total_column {
+            font-weight : bold;
+        }
+        .total_column1 {
+            text-align : left;
+        }
+        .warning, .error {
+            color : red;
+            font-weight : bold;
+        }
+        tr.onmouseout_odd {
+            background-color : #white;
+        }
+        tr.onmouseout_even { 
+            background-color : #FAFAFA;
+        }
+        tr.onmouseover_odd, tr.onmouseover_even { 
+            background-color : #EEEEEE;
+        } 
+        a:link, a:visited, .q a:link,.q a:active,.q {
+            color: #21489e; 
+        }
+        a:link.callback, a:visited.callback { 
+            color: #21489e;
+        }
+        p.contents_level1 {
+            font-weight : bold;
+            font-size : 110%;
+            margin : 0.5em;
+        }
+        p.contents_level2 {
+            position : relative;
+            left : 20px;
+            margin : 0.5em;
+        }
+    </style><script type="text/javascript">
+        function coordToMils(coord) {
+            var number = coord / 10000;
+            
+            if (number != number.toFixed(3))
+                number = number.toFixed(3);
+            
+            return number + 'mil'
+        }
+
+        function coordToMM(coord) {
+            var number = 0.0254 * coord / 10000;
+            
+            if (number != number.toFixed(4))
+                number = number.toFixed(4);
+            
+            return number + 'mm'
+        }
+    
+        function convertCoord(coordNode, units) {
+            for (var i = 0; i < coordNode.childNodes.length; i++) {
+                coordNode.removeChild(coordNode.childNodes[i]);
+            }
+
+            var coord = coordNode.getAttribute('value');
+            if (coord != null) {
+                if (units == 'mm') {
+                    textNode = document.createTextNode(coordToMM(coord));
+                    coordNode.appendChild(textNode);
+                } else if (units == 'mil') {
+                    textNode = document.createTextNode(coordToMils(coord));
+                    coordNode.appendChild(textNode);
+                }
+            }
+        }
+    
+        function convertUnits(unitNode, units) {
+            for (var i = 0; i < unitNode.childNodes.length; i++) {
+                unitNode.removeChild(unitNode.childNodes[i]);
+            }
+        
+            textNode = document.createTextNode(units); 
+            unitNode.appendChild(textNode);
+        }
+    
+        function changeUnits(radio_input, units) {
+            if (radio_input.checked) {
+            
+                var elements = document.getElementsByName('coordinate');
+                if (elements) {
+                    for (var i = 0; i < elements.length; i++) {
+                        convertCoord(elements[i], units);
+                    }
+                }
+    
+                var elements = document.getElementsByName('units');
+                if (elements) {
+                    for (var i = 0; i < elements.length; i++) {
+                        convertUnits(elements[i], units);
+                    }
+                }
+            }
+        }
+    </script></head>
+<body onload=""><img ALT="Altium" src="
+            file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+        "><h1>Electrical Rule Check Report</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2022-10-25</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">11:29:25</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\schwarz\AppData\Local\TempReleases\Snapshot\2\Fabrication\erc\foxbms2-master-erc-v1.1.5.html" class="file"><acronym title="C:\Users\schwarz\AppData\Local\TempReleases\Snapshot\2\Fabrication\erc\foxbms2-master-erc-v1.1.5.html">C:\Users\schwarz\AppData\Local\TempReleases\Snapshot\2\Fabrication\erc\foxbms2-master-erc-v1.1.5.html</acronym></a></td>
+</tr>
+</table><a name="IDK2NHAF1JISZVJPATZZA0EAVYUEF3Q2VE2PHTKKKCIHVJSPVPDUVP"><table>
+<tr>
+<th class="column1">Class</th>
+<th class="column2">Document</th>
+<th class="column3">Message</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">mcu-com-gpio-tim.SchDoc</td>
+<td class="column3">FLASH_SPI.MISO_1 contains IO Pin and Output Pin objects (Pin U5000-V8, Pin U6200-8, Pin U6201-2, Pin U6202-2).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">mcu-com-gpio-tim.SchDoc</td>
+<td class="column3">INTERLOCK_IO.IL_STATE_1 contains IO Pin and Output Pin objects (Pin U5000-A3, Pin U8002-7).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">LDO1_1 contains Output Pin and Unspecified Port objects (Pin U7200-55, Port LDO1).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">LDO1_2 contains Output Pin and Unspecified Port objects (Pin U7200-55, Port LDO1).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">LDO2_1 contains Output Pin and Unspecified Port objects (Pin U7200-54, Port LDO2).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">LDO2_2 contains Output Pin and Unspecified Port objects (Pin U7200-54, Port LDO2).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">mcu-com-gpio-tim.SchDoc</td>
+<td class="column3">MCU_CAN2.RX_1 contains IO Pin and Output Pin objects (Pin U5000-H1, Pin U1100-6).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">mcu-misc.SchDoc</td>
+<td class="column3">MCU_CLK.25MHz_1 contains IO Pin and Output Pin objects (Pin U5000-B5, Pin Y6101-3).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">mcu-com-gpio-tim.SchDoc</td>
+<td class="column3">MCU_DCC.2_1 contains IO Pin and Output Pin objects (Pin U5000-D6, Pin U6400-6).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">mcu-com-gpio-tim.SchDoc</td>
+<td class="column3">MCU_GIOA.0_1 contains IO Pin and Output Pin objects (Pin U5000-A5, Pin U7200-33).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">mcu-com-gpio-tim.SchDoc</td>
+<td class="column3">MCU_GIOA.1_1 contains IO Pin and Output Pin objects (Pin U5000-C2, Pin U7200-33).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">mcu-com-gpio-tim.SchDoc</td>
+<td class="column3">MCU_SCI4.RX_1 contains IO Pin and Output Pin objects (Pin U5000-A13, Pin U1600-2).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">mcu-com-gpio-tim.SchDoc</td>
+<td class="column3">MCU_SPI2.SOMI_1 contains IO Pin and Output Pin objects (Pin U5000-D2, Pin U4500-9, Pin U7200-25, Pin U7200-25).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">mcu-supply.SchDoc</td>
+<td class="column3">Net ADREFHI has no driving source (Pin C5015-2, Pin FB5002-2, Pin U5000-V15)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">can.SchDoc</td>
+<td class="column3">Net CAN2.RX_iso_3 has no driving source (Pin R1108-1, Pin U1100-11, Pin U1100-11)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net IODEV_IO.SMSW_LHM_1 has no driving source (Pin J9002-70, Pin R4500-2, Pin S4500-1, Pin U4500-18, Pin U4500-18)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_5.74V has no driving source (Pin C7220-2, Pin C7221-2, Pin D7201-1, Pin Q4400-S, Pin R4402-2, Pin U7200-53)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD1IN0 has no driving source (Pin C7245-2, Pin R7244-2, Pin U5000-W14)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD1IN1 has no driving source (Pin C7245-2, Pin R7244-2, Pin U5000-V17)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD1IN2 has no driving source (Pin C8000-2, Pin R8001-1, Pin TP8000-1, Pin U5000-V18)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD1IN3 has no driving source (Pin C8002-2, Pin R8009-1, Pin TP8002-1, Pin U5000-T17)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD1IN4 has no driving source (Pin C8001-2, Pin R8006-1, Pin TP8001-1, Pin U5000-U18)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD1IN5 has no driving source (Pin C8005-2, Pin R8015-1, Pin TP8003-1, Pin U5000-R17)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD1IN6 has no driving source (Pin C7001-2, Pin R7007-2, Pin U5000-T19)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD1IN24 has no driving source (Pin J9002-58, Pin U5000-N18)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD1IN25 has no driving source (Pin J9002-59, Pin U5000-P17)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD1IN26 has no driving source (Pin J9002-60, Pin U5000-P16)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD1IN27 has no driving source (Pin J9002-61, Pin U5000-P15)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD2IN16 has no driving source (Pin J9002-62, Pin U5000-W13)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD2IN17 has no driving source (Pin J9002-63, Pin U5000-W12)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD2IN18 has no driving source (Pin J9002-64, Pin U5000-V12)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_ADC.AD2IN19 has no driving source (Pin J9002-65, Pin U5000-U12)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_JTAG.\TRST_1 has no driving source (Pin R3000-2, Pin R3150-1, Pin U5000-D18)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_JTAG.TCK_1 has no driving source (Pin R3150-4, Pin U5000-B18)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net MCU_RST.\PORRST_1 has no driving source (Pin C7237-2, Pin J9002-81, Pin R7241-1, Pin R7249-2, Pin U5000-W7)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">ethernet-phy.SchDoc</td>
+<td class="column3">Net NetC1220_2 has no driving source (Pin C1220-2, Pin T1200-2)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">ethernet-phy.SchDoc</td>
+<td class="column3">Net NetC1221_2 has no driving source (Pin C1221-2, Pin T1200-7)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">ethernet-phy.SchDoc</td>
+<td class="column3">Net NetC1222_2 has no driving source (Pin C1222-2, Pin T1201-2)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">ethernet-phy.SchDoc</td>
+<td class="column3">Net NetC1223_2 has no driving source (Pin C1223-2, Pin T1201-7)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">window-watchdog.SchDoc</td>
+<td class="column3">Net NetC6603_2 has no driving source (Pin C6603-2, Pin R6604-2, Pin U6600-6)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">buck-boost-converter.SchDoc</td>
+<td class="column3">Net NetC7110_1 has no driving source (Pin C7110-1, Pin R7102-1, Pin U7100-13)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">buck-boost-converter.SchDoc</td>
+<td class="column3">Net NetC7110_2 has no driving source (Pin C7110-2, Pin R7101-1, Pin U7100-14)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">buck-boost-converter.SchDoc</td>
+<td class="column3">Net NetC7112_1 has no driving source (Pin C7112-1, Pin R7109-2, Pin U7100-15)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">buck-boost-converter.SchDoc</td>
+<td class="column3">Net NetC7112_2 has no driving source (Pin C7112-2, Pin R7107-2, Pin U7100-16)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net NetC7201_1 has no driving source (Pin C7201-1, Pin R7210-2, Pin U7200-41)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net NetC7203_1 has no driving source (Pin C7203-1, Pin R7222-2, Pin U7200-41)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">supply-protection.SchDoc</td>
+<td class="column3">Net NetC7300_1_1 has no driving source (Pin C7300-1, Pin D7306-2, Pin R7310-1, Pin R7311-2, Pin U7300-9)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">supply-protection.SchDoc</td>
+<td class="column3">Net NetC7300_2_1 has no driving source (Pin C7300-1, Pin D7306-2, Pin R7310-1, Pin R7311-2, Pin U7300-9)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">interlock.SchDoc</td>
+<td class="column3">Net NetC8004_1 has no driving source (Pin C8004-1, Pin R8017-1, Pin U8001-3)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">interlock.SchDoc</td>
+<td class="column3">Net NetC8004_2 has no driving source (Pin C8004-2, Pin R8014-1, Pin U8001-2)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">interlock.SchDoc</td>
+<td class="column3">Net NetC8010_2 has no driving source (Pin C8010-2, Pin R8019-2, Pin R8021-1, Pin R8022-2, Pin U8002-3)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">interlock.SchDoc</td>
+<td class="column3">Net NetC8011_1 has no driving source (Pin C8011-1, Pin C8013-1, Pin Q8000-S, Pin R8023-1, Pin U8002-2, Pin U8002-6)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">interlock.SchDoc</td>
+<td class="column3">Net NetC8014_2 has no driving source (Pin C8014-2, Pin R8024-2, Pin R8025-2, Pin U8002-5)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">Net NetD7201_1_2 has no driving source (Pin D7201-2, Pin L7202-1, Pin U7200-5)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">Net NetD7201_2_2 has no driving source (Pin D7201-2, Pin L7202-1, Pin U7200-5)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">Net NetL7201_1_2 has no driving source (Pin L7201-2, Pin R7226-1, Pin U7200-42)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">Net NetL7201_2_2 has no driving source (Pin L7201-2, Pin R7226-1, Pin U7200-42)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">buck-boost-converter.SchDoc</td>
+<td class="column3">Net NetQ7102_G has no driving source (Pin Q7102-G, Pin U7100-21)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">buck-boost-converter.SchDoc</td>
+<td class="column3">Net NetQ7103_G has no driving source (Pin Q7103-G, Pin U7100-25)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">supply-protection.SchDoc</td>
+<td class="column3">Net NetQ7301_1_S has no driving source (Pin Q7301-S, Pin R7301-1, Pin U7300-4)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">supply-protection.SchDoc</td>
+<td class="column3">Net NetQ7301_2_S has no driving source (Pin Q7301-S, Pin R7301-1, Pin U7300-4)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">can-transceiver.SchDoc</td>
+<td class="column3">Net NetR1105_1_1 has no driving source (Pin R1105-1, Pin R1107-2, Pin U1101-1)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">can-transceiver.SchDoc</td>
+<td class="column3">Net NetR1105_2_1 has no driving source (Pin R1105-1, Pin R1107-2, Pin U1101-1)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">can-transceiver.SchDoc</td>
+<td class="column3">Net NetR1116_1_1 has no driving source (Pin R1116-1, Pin U1101-9)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">can-transceiver.SchDoc</td>
+<td class="column3">Net NetR1116_2_1 has no driving source (Pin R1116-1, Pin U1101-9)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">ethernet-phy.SchDoc</td>
+<td class="column3">Net NetR1216_2 has no driving source (Pin R1216-2, Pin T1201-10)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">ethernet-phy.SchDoc</td>
+<td class="column3">Net NetR1217_2 has no driving source (Pin R1217-2, Pin T1201-15)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">ethernet-phy.SchDoc</td>
+<td class="column3">Net NetR1218_2 has no driving source (Pin R1218-2, Pin T1200-10)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">ethernet-phy.SchDoc</td>
+<td class="column3">Net NetR1219_2 has no driving source (Pin R1219-2, Pin T1200-15)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">rs232-rs485-transceiver.SchDoc</td>
+<td class="column3">Net NetR1601_1 has no driving source (Pin R1601-1, Pin R1605-2, Pin U1600-27)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">rs232-rs485-transceiver.SchDoc</td>
+<td class="column3">Net NetR1602_1 has no driving source (Pin R1602-1, Pin R1606-2, Pin U1600-28)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">rs232-rs485-transceiver.SchDoc</td>
+<td class="column3">Net NetR1603_1 has no driving source (Pin R1603-1, Pin R1607-2, Pin U1600-9)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">rs232-rs485-transceiver.SchDoc</td>
+<td class="column3">Net NetR1604_1 has no driving source (Pin R1604-1, Pin R1608-2, Pin U1600-4)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">smart-switch.SchDoc</td>
+<td class="column3">Net NetR4504_1_1 has no driving source (Pin R4504-1, Pin R4509-2, Pin R4517-2, Pin U4500-22)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">smart-switch.SchDoc</td>
+<td class="column3">Net NetR4504_2_1 has no driving source (Pin R4504-1, Pin R4509-2, Pin R4517-2, Pin U4500-22)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">smart-switch.SchDoc</td>
+<td class="column3">Net NetR4505_1_1 has no driving source (Pin R4505-1, Pin R4510-2, Pin R4516-2, Pin U4500-23)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">smart-switch.SchDoc</td>
+<td class="column3">Net NetR4505_2_1 has no driving source (Pin R4505-1, Pin R4510-2, Pin R4516-2, Pin U4500-23)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">smart-switch.SchDoc</td>
+<td class="column3">Net NetR4506_1_1 has no driving source (Pin R4506-1, Pin R4511-2, Pin R4515-2, Pin U4500-24)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">smart-switch.SchDoc</td>
+<td class="column3">Net NetR4506_2_1 has no driving source (Pin R4506-1, Pin R4511-2, Pin R4515-2, Pin U4500-24)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">smart-switch.SchDoc</td>
+<td class="column3">Net NetR4507_1_1 has no driving source (Pin R4507-1, Pin R4512-2, Pin R4514-2, Pin U4500-25)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">smart-switch.SchDoc</td>
+<td class="column3">Net NetR4507_2_1 has no driving source (Pin R4507-1, Pin R4512-2, Pin R4514-2, Pin U4500-25)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">buck-boost-converter.SchDoc</td>
+<td class="column3">Net NetR7103_1 has no driving source (Pin R7103-1, Pin U7100-3)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">buck-boost-converter.SchDoc</td>
+<td class="column3">Net NetR7110_2 has no driving source (Pin R7110-2, Pin U7100-4)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">Net NetR7207_1_2 has no driving source (Pin R7207-2, Pin R7247-2, Pin U7200-28)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">Net NetR7207_2_2 has no driving source (Pin R7207-2, Pin R7247-2, Pin U7200-28)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net NetR7211_2 has no driving source (Pin R7211-2, Pin U7200-31)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">supply-protection.SchDoc</td>
+<td class="column3">Net NetR7307_1_1 has no driving source (Pin R7307-1, Pin U7300-1)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">supply-protection.SchDoc</td>
+<td class="column3">Net NetR7307_2_1 has no driving source (Pin R7307-1, Pin U7300-1)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">interlock.SchDoc</td>
+<td class="column3">Net NetR8003_1 has no driving source (Pin R8003-1, Pin R8026-2, Pin R8027-2, Pin U8000-1)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">interlock.SchDoc</td>
+<td class="column3">Net NetR8005_1 has no driving source (Pin R8005-1, Pin U8000-3)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">interlock.SchDoc</td>
+<td class="column3">Net NetR8007_1 has no driving source (Pin R8007-1, Pin U8000-5)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">interlock.SchDoc</td>
+<td class="column3">Net NetR8008_1 has no driving source (Pin R8008-1, Pin U8000-9)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net PER_1.2V_0 has no driving source (Pin C7238-2, Pin C7239-2, Pin C7240-2, Pin J9002-90, Pin J9002-92, Pin L7203-2, Pin R7214-2, Pin U7200-39)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net PER_1.2V_1 has no driving source (Pin C7246-2, Pin C7247-2, Pin C7248-2, Pin J9002-89, Pin J9002-91, Pin L7204-2, Pin R7215-2, Pin U7200-32)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net PER_IO.\WW_RESETIN_1 has no driving source (Pin C6604-2, Pin C7236-2, Pin J9002-80, Pin R6605-1, Pin R7240-1, Pin R7248-1, Pin U6600-2)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net RS485.A_1 has no driving source (Pin J2013-2, Pin R1611-1, Pin R1612-2, Pin R1613-2, Pin U1600-22)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net RS485.B_1 has no driving source (Pin J2013-5, Pin U1600-21)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net SBC_MCU_OTP.DBGHV_1 has no driving source (Pin D7203-1, Pin J3000-4, Pin R7235-1, Pin U7200-8)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net SBC_MCU_OTP.SCL_1 has no driving source (Pin J3000-5, Pin R7237-1, Pin U7200-10)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net SBC_PER_OTP.DBGHV_1 has no driving source (Pin D7203-1, Pin J3001-4, Pin R7235-1, Pin U7200-8)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net SBC_PER_OTP.SCL_1 has no driving source (Pin J3001-5, Pin R7237-1, Pin U7200-10)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">can.SchDoc</td>
+<td class="column3">Net SEL_3 has no driving source (Pin R1102-1, Pin R1106-2, Pin U1100-10, Pin U1100-10)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net VCOREMON_1 has no driving source (Pin R7202-1, Pin U7200-17)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net VCOREMON_2 has no driving source (Pin R7214-1, Pin U7200-17)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net VMON1_1 has no driving source (Pin R7203-1, Pin R7208-2, Pin U7200-16)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net VMON1_2 has no driving source (Pin R7216-1, Pin R7221-2, Pin U7200-16)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net VMON2_1 has no driving source (Pin R7204-1, Pin R7209-2, Pin U7200-15)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net VMON2_2 has no driving source (Pin R7215-1, Pin R7220-2, Pin U7200-15)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net VMON3_1 has no driving source (Pin R7200-1, Pin R7205-2, Pin U7200-13)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net VMON3_2 has no driving source (Pin R7212-1, Pin R7217-2, Pin U7200-13)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net VMON4_1 has no driving source (Pin R7201-1, Pin R7206-2, Pin U7200-12)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbcs.SchDoc</td>
+<td class="column3">Net VMON4_2 has no driving source (Pin R7213-1, Pin R7218-2, Pin U7200-12)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Net VREF_5V has no driving source (Pin C4346-2, Pin C4347-2, Pin FB5002-1, Pin U4301-6)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">Net WAKE1_int_1 has no driving source (Pin C7218-2, Pin R7229-1, Pin R7245-1, Pin U7200-49)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">Net WAKE1_int_2 has no driving source (Pin C7218-2, Pin R7229-1, Pin R7245-1, Pin U7200-49)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">Net WAKE2_int_1 has no driving source (Pin C7226-2, Pin R7231-1, Pin R7246-1, Pin U7200-1)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">Net WAKE2_int_2 has no driving source (Pin C7226-2, Pin R7231-1, Pin R7246-1, Pin U7200-1)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">voltage-reference-5.0V.SchDoc</td>
+<td class="column3">NetC4346_2 contains Input Pin and Unspecified Port objects (Pin U4301-6, Port VOUT).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">buck-boost-converter.SchDoc</td>
+<td class="column3">NetC7100_2 contains Input Pin and Unspecified Port objects (Pin U7100-12, Port VOUT).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">ethernet-phy.SchDoc</td>
+<td class="column3">NetR1222_1 contains IO Pin and Output Port objects (Pin U1200-44, Port \INT).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">flash.SchDoc</td>
+<td class="column3">NetR6201_1 contains IO Pin and Output Port objects (Pin U6200-8, Port MISO).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Bus Slice AD1IN[0..31] has multiple names (Net Label AD1IN[0..31] (4), Net Label EXT_CON.AD1IN[0..31] (2), Net Label MCU_ADC.AD1IN[0..31] (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Bus Slice AD2IN[16..24] has multiple names (Net Label AD2IN[16..24] (4), Net Label EXT_CON.AD2IN[16..24] (2), Net Label MCU_ADC.AD2IN[16..24] (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Bus Slice ADDR[0..21] has multiple names (Net Label ADDR[0..21] (2), Net Label EXT_CON.MCU_EMIF.ADDR[0..21] (2), Net Label MCU_EMIF.ADDR[0..21] (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Bus Slice DATA[0..15] has multiple names (Net Label DATA[0..15] (2), Net Label EXT_CON.MCU_EMIF.DATA[0..15] (2), Net Label MCU_EMIF.DATA[0..15] (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Bus Slice SMSW1_IN[1..4] has multiple names (Net Label EXT_CON.SMSW1_IN[1..4] (2), Net Label IODEV_IO.SMSW1_IN[1..4] (4), Net Label SMSW1_IN[1..4] (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Bus Slice SMSW2_IN[1..4] has multiple names (Net Label EXT_CON.SMSW2_IN[1..4] (2), Net Label IODEV_IO.SMSW2_IN[1..4] (4), Net Label SMSW2_IN[1..4] (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[0]: IODEV_IO.SMSW1_IN1 has multiple names (Net Label EXT_CON.SMSW1_IN1 (Inferred) (2), Net Label IODEV_IO.SMSW1_IN1 (Inferred) (4), Net Label SMSW1_IN1 (3), Net Label SMSW1_IN1 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[0]: IODEV_IO.SMSW2_IN1 has multiple names (Net Label EXT_CON.SMSW2_IN1 (Inferred) (2), Net Label IODEV_IO.SMSW2_IN1 (Inferred) (4), Net Label SMSW2_IN1 (3), Net Label SMSW2_IN1 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[0]: MCU_ADC.AD1IN0 has multiple names (Net Label AD1IN0 (2), Net Label AD1IN0 (Inferred) (4), Net Label EXT_CON.AD1IN0 (Inferred) (2), Net Label MCU_ADC.AD1IN0 (Inferred) (3), Net Label SBC_MCU_ADC (4), Net Label SUPPLY_IO.SBC_MCU_ADC (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[0]: MCU_ADC.AD2IN16 has multiple names (Net Label AD2IN16 (3), Net Label AD2IN16 (Inferred) (4), Net Label EXT_CON.AD2IN16 (Inferred) (2), Net Label MCU_ADC.AD2IN16 (Inferred) (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[0]: MCU_EMIF.ADDR0 has multiple names (Net Label ADDR0 (3), Net Label ADDR0 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR0 (Inferred) (2), Net Label MCU_EMIF.ADDR0 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[0]: MCU_EMIF.DATA0 has multiple names (Net Label DATA0 (3), Net Label DATA0 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA0 (Inferred) (2), Net Label MCU_EMIF.DATA0 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[1]: IODEV_IO.SMSW1_IN2 has multiple names (Net Label EXT_CON.SMSW1_IN2 (Inferred) (2), Net Label IODEV_IO.SMSW1_IN2 (Inferred) (4), Net Label SMSW1_IN2 (3), Net Label SMSW1_IN2 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[1]: IODEV_IO.SMSW2_IN2 has multiple names (Net Label EXT_CON.SMSW2_IN2 (Inferred) (2), Net Label IODEV_IO.SMSW2_IN2 (Inferred) (4), Net Label SMSW2_IN2 (3), Net Label SMSW2_IN2 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[1]: MCU_ADC.AD1IN1 has multiple names (Net Label AD1IN1 (2), Net Label AD1IN1 (Inferred) (4), Net Label EXT_CON.AD1IN1 (Inferred) (2), Net Label MCU_ADC.AD1IN1 (Inferred) (3), Net Label SBC_PER_ADC (4), Net Label SUPPLY_IO.SBC_PER_ADC (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[1]: MCU_ADC.AD2IN17 has multiple names (Net Label AD2IN17 (3), Net Label AD2IN17 (Inferred) (4), Net Label EXT_CON.AD2IN17 (Inferred) (2), Net Label MCU_ADC.AD2IN17 (Inferred) (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[1]: MCU_EMIF.ADDR1 has multiple names (Net Label ADDR1 (3), Net Label ADDR1 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR1 (Inferred) (2), Net Label MCU_EMIF.ADDR1 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[1]: MCU_EMIF.DATA1 has multiple names (Net Label DATA1 (3), Net Label DATA1 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA1 (Inferred) (2), Net Label MCU_EMIF.DATA1 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[2]: IODEV_IO.SMSW1_IN3 has multiple names (Net Label EXT_CON.SMSW1_IN3 (Inferred) (2), Net Label IODEV_IO.SMSW1_IN3 (Inferred) (4), Net Label SMSW1_IN3 (3), Net Label SMSW1_IN3 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[2]: IODEV_IO.SMSW2_IN3 has multiple names (Net Label EXT_CON.SMSW2_IN3 (Inferred) (2), Net Label IODEV_IO.SMSW2_IN3 (Inferred) (4), Net Label SMSW2_IN3 (3), Net Label SMSW2_IN3 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[2]: MCU_ADC.AD1IN2 has multiple names (Net Label AD1IN2 (3), Net Label AD1IN2 (Inferred) (4), Net Label EXT_CON.AD1IN2 (Inferred) (2), Net Label IL_HS_VS (4), Net Label INTERLOCK_IO.IL_HS_VS (4), Net Label MCU_ADC.AD1IN2 (Inferred) (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[2]: MCU_ADC.AD2IN18 has multiple names (Net Label AD2IN18 (3), Net Label AD2IN18 (Inferred) (4), Net Label EXT_CON.AD2IN18 (Inferred) (2), Net Label MCU_ADC.AD2IN18 (Inferred) (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[2]: MCU_EMIF.ADDR2 has multiple names (Net Label ADDR2 (3), Net Label ADDR2 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR2 (Inferred) (2), Net Label MCU_EMIF.ADDR2 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[2]: MCU_EMIF.DATA2 has multiple names (Net Label DATA2 (3), Net Label DATA2 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA2 (Inferred) (2), Net Label MCU_EMIF.DATA2 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[3]: IODEV_IO.SMSW1_IN4 has multiple names (Net Label EXT_CON.SMSW1_IN4 (Inferred) (2), Net Label IODEV_IO.SMSW1_IN4 (Inferred) (4), Net Label SMSW1_IN4 (3), Net Label SMSW1_IN4 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[3]: IODEV_IO.SMSW2_IN4 has multiple names (Net Label EXT_CON.SMSW2_IN4 (Inferred) (2), Net Label IODEV_IO.SMSW2_IN4 (Inferred) (4), Net Label SMSW2_IN4 (3), Net Label SMSW2_IN4 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[3]: MCU_ADC.AD1IN3 has multiple names (Net Label AD1IN3 (3), Net Label AD1IN3 (Inferred) (4), Net Label EXT_CON.AD1IN3 (Inferred) (2), Net Label IL_LS_VS (4), Net Label INTERLOCK_IO.IL_LS_VS (4), Net Label MCU_ADC.AD1IN3 (Inferred) (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[3]: MCU_ADC.AD2IN19 has multiple names (Net Label AD2IN19 (3), Net Label AD2IN19 (Inferred) (4), Net Label EXT_CON.AD2IN19 (Inferred) (2), Net Label MCU_ADC.AD2IN19 (Inferred) (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[3]: MCU_EMIF.ADDR3 has multiple names (Net Label ADDR3 (3), Net Label ADDR3 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR3 (Inferred) (2), Net Label MCU_EMIF.ADDR3 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[3]: MCU_EMIF.DATA3 has multiple names (Net Label DATA3 (3), Net Label DATA3 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA3 (Inferred) (2), Net Label MCU_EMIF.DATA3 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[4]: MCU_ADC.AD1IN4 has multiple names (Net Label AD1IN4 (3), Net Label AD1IN4 (Inferred) (4), Net Label EXT_CON.AD1IN4 (Inferred) (2), Net Label IL_HS_CS (4), Net Label INTERLOCK_IO.IL_HS_CS (4), Net Label MCU_ADC.AD1IN4 (Inferred) (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[4]: MCU_EMIF.ADDR4 has multiple names (Net Label ADDR4 (3), Net Label ADDR4 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR4 (Inferred) (2), Net Label MCU_EMIF.ADDR4 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[4]: MCU_EMIF.DATA4 has multiple names (Net Label DATA4 (3), Net Label DATA4 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA4 (Inferred) (2), Net Label MCU_EMIF.DATA4 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[5]: MCU_ADC.AD1IN5 has multiple names (Net Label AD1IN5 (3), Net Label AD1IN5 (Inferred) (4), Net Label EXT_CON.AD1IN5 (Inferred) (2), Net Label IL_LS_CS (4), Net Label INTERLOCK_IO.IL_LS_CS (4), Net Label MCU_ADC.AD1IN5 (Inferred) (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[5]: MCU_EMIF.ADDR5 has multiple names (Net Label ADDR5 (3), Net Label ADDR5 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR5 (Inferred) (2), Net Label MCU_EMIF.ADDR5 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[5]: MCU_EMIF.DATA5 has multiple names (Net Label DATA5 (3), Net Label DATA5 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA5 (Inferred) (2), Net Label MCU_EMIF.DATA5 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[6]: MCU_ADC.AD1IN6 has multiple names (Net Label AD1IN6 (2), Net Label AD1IN6 (Inferred) (4), Net Label EXT_CON.AD1IN6 (Inferred) (2), Net Label MCU_ADC.AD1IN6 (Inferred) (3), Net Label SUPPLY_IO.VSUP_30C_SENSE (4), Net Label VSUP_30C_SENSE (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[6]: MCU_EMIF.ADDR6 has multiple names (Net Label ADDR6 (3), Net Label ADDR6 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR6 (Inferred) (2), Net Label MCU_EMIF.ADDR6 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[6]: MCU_EMIF.DATA6 has multiple names (Net Label DATA6 (3), Net Label DATA6 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA6 (Inferred) (2), Net Label MCU_EMIF.DATA6 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[7]: MCU_EMIF.ADDR7 has multiple names (Net Label ADDR7 (3), Net Label ADDR7 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR7 (Inferred) (2), Net Label MCU_EMIF.ADDR7 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[7]: MCU_EMIF.DATA7 has multiple names (Net Label DATA7 (3), Net Label DATA7 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA7 (Inferred) (2), Net Label MCU_EMIF.DATA7 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[8]: MCU_EMIF.ADDR8 has multiple names (Net Label ADDR8 (3), Net Label ADDR8 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR8 (Inferred) (2), Net Label MCU_EMIF.ADDR8 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[8]: MCU_EMIF.DATA8 has multiple names (Net Label DATA8 (3), Net Label DATA8 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA8 (Inferred) (2), Net Label MCU_EMIF.DATA8 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[9]: MCU_EMIF.ADDR9 has multiple names (Net Label ADDR9 (3), Net Label ADDR9 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR9 (Inferred) (2), Net Label MCU_EMIF.ADDR9 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[9]: MCU_EMIF.DATA9 has multiple names (Net Label DATA9 (3), Net Label DATA9 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA9 (Inferred) (2), Net Label MCU_EMIF.DATA9 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[10]: MCU_EMIF.ADDR10 has multiple names (Net Label ADDR10 (3), Net Label ADDR10 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR10 (Inferred) (2), Net Label MCU_EMIF.ADDR10 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[10]: MCU_EMIF.DATA10 has multiple names (Net Label DATA10 (3), Net Label DATA10 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA10 (Inferred) (2), Net Label MCU_EMIF.DATA10 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[11]: MCU_EMIF.ADDR11 has multiple names (Net Label ADDR11 (3), Net Label ADDR11 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR11 (Inferred) (2), Net Label MCU_EMIF.ADDR11 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[11]: MCU_EMIF.DATA11 has multiple names (Net Label DATA11 (3), Net Label DATA11 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA11 (Inferred) (2), Net Label MCU_EMIF.DATA11 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[12]: MCU_EMIF.ADDR12 has multiple names (Net Label ADDR12 (3), Net Label ADDR12 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR12 (Inferred) (2), Net Label MCU_EMIF.ADDR12 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[12]: MCU_EMIF.DATA12 has multiple names (Net Label DATA12 (3), Net Label DATA12 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA12 (Inferred) (2), Net Label MCU_EMIF.DATA12 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[13]: MCU_EMIF.ADDR13 has multiple names (Net Label ADDR13 (3), Net Label ADDR13 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR13 (Inferred) (2), Net Label MCU_EMIF.ADDR13 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[13]: MCU_EMIF.DATA13 has multiple names (Net Label DATA13 (3), Net Label DATA13 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA13 (Inferred) (2), Net Label MCU_EMIF.DATA13 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[14]: MCU_EMIF.ADDR14 has multiple names (Net Label ADDR14 (3), Net Label ADDR14 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR14 (Inferred) (2), Net Label MCU_EMIF.ADDR14 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[14]: MCU_EMIF.DATA14 has multiple names (Net Label DATA14 (3), Net Label DATA14 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA14 (Inferred) (2), Net Label MCU_EMIF.DATA14 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[15]: MCU_EMIF.ADDR15 has multiple names (Net Label ADDR15 (3), Net Label ADDR15 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR15 (Inferred) (2), Net Label MCU_EMIF.ADDR15 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[15]: MCU_EMIF.DATA15 has multiple names (Net Label DATA15 (3), Net Label DATA15 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.DATA15 (Inferred) (2), Net Label MCU_EMIF.DATA15 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[16]: MCU_EMIF.ADDR16 has multiple names (Net Label ADDR16 (3), Net Label ADDR16 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR16 (Inferred) (2), Net Label MCU_EMIF.ADDR16 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[17]: MCU_EMIF.ADDR17 has multiple names (Net Label ADDR17 (3), Net Label ADDR17 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR17 (Inferred) (2), Net Label MCU_EMIF.ADDR17 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[18]: MCU_EMIF.ADDR18 has multiple names (Net Label ADDR18 (3), Net Label ADDR18 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR18 (Inferred) (2), Net Label MCU_EMIF.ADDR18 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[19]: MCU_EMIF.ADDR19 has multiple names (Net Label ADDR19 (3), Net Label ADDR19 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR19 (Inferred) (2), Net Label MCU_EMIF.ADDR19 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[20]: MCU_EMIF.ADDR20 has multiple names (Net Label ADDR20 (3), Net Label ADDR20 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR20 (Inferred) (2), Net Label MCU_EMIF.ADDR20 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[21]: MCU_EMIF.ADDR21 has multiple names (Net Label ADDR21 (3), Net Label ADDR21 (Inferred) (2), Net Label EXT_CON.MCU_EMIF.ADDR21 (Inferred) (2), Net Label MCU_EMIF.ADDR21 (Inferred) (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[24]: MCU_ADC.AD1IN24 has multiple names (Net Label AD1IN24 (3), Net Label AD1IN24 (Inferred) (4), Net Label EXT_CON.AD1IN24 (Inferred) (2), Net Label MCU_ADC.AD1IN24 (Inferred) (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[25]: MCU_ADC.AD1IN25 has multiple names (Net Label AD1IN25 (3), Net Label AD1IN25 (Inferred) (4), Net Label EXT_CON.AD1IN25 (Inferred) (2), Net Label MCU_ADC.AD1IN25 (Inferred) (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[26]: MCU_ADC.AD1IN26 has multiple names (Net Label AD1IN26 (3), Net Label AD1IN26 (Inferred) (4), Net Label EXT_CON.AD1IN26 (Inferred) (2), Net Label MCU_ADC.AD1IN26 (Inferred) (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Element[27]: MCU_ADC.AD1IN27 has multiple names (Net Label AD1IN27 (3), Net Label AD1IN27 (Inferred) (4), Net Label EXT_CON.AD1IN27 (Inferred) (2), Net Label MCU_ADC.AD1IN27 (Inferred) (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire \DBG_RESET_1 has multiple names (Net Label \DBG_RESET (3), Net Label \RESET, Net Label \WW_RESET (7), Net Label EXT_CON.\WW_RESET (2), Net Label MCU_RST.\RST (3), Net Label PER_IO.\WW_RESET (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.\ETH_INT_1 has multiple names (Net Label \ETH_INT (4), Net Label COM_IO.\ETH_INT (4), Net Label MCU_GIOB.6 (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.CAN_FAULT_1 has multiple names (Net Label CAN_FAULT (4), Net Label COM_IO.CAN_FAULT (4), Net Label FAULT, Net Label MCU_GIOB.5 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO0_0_1 has multiple names (Net Label CAN1-CTRL.EN, Net Label CAN1.EN, Net Label CAN1_EN (2), Net Label COM_IO.COM_IO_PE.IO0_0 (4), Net Label COM_IO_PE.IO0_0 (2), Net Label PE_IO2.IO0_0, Net Label PER_IO.PE_IO2.IO0_0 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO0_1_1 has multiple names (Net Label \CAN1.STB, Net Label \CAN1_STB (2), Net Label CAN1-CTRL.\STB, Net Label COM_IO.COM_IO_PE.IO0_1 (4), Net Label COM_IO_PE.IO0_1 (2), Net Label PE_IO2.IO0_1, Net Label PER_IO.PE_IO2.IO0_1 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO0_2_1 has multiple names (Net Label CAN2-CTRL.EN, Net Label CAN2_EN (2), Net Label COM_IO.COM_IO_PE.IO0_2 (4), Net Label COM_IO_PE.IO0_2 (2), Net Label PE_IO2.IO0_2, Net Label PER_IO.PE_IO2.IO0_2 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO0_3_1 has multiple names (Net Label \CAN2_STB (2), Net Label CAN2-CTRL.\STB, Net Label COM_IO.COM_IO_PE.IO0_3 (4), Net Label COM_IO_PE.IO0_3 (2), Net Label PE_IO2.IO0_3, Net Label PER_IO.PE_IO2.IO0_3 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO0_4_1 has multiple names (Net Label COM_IO.COM_IO_PE.IO0_4 (4), Net Label COM_IO_PE.IO0_4 (2), Net Label PE_IO2.IO0_4, Net Label PER_IO.PE_IO2.IO0_4 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO0_5_1 has multiple names (Net Label COM_IO.COM_IO_PE.IO0_5 (4), Net Label COM_IO_PE.IO0_5 (2), Net Label PE_IO2.IO0_5, Net Label PER_IO.PE_IO2.IO0_5 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO0_6_1 has multiple names (Net Label COM_IO.COM_IO_PE.IO0_6 (4), Net Label COM_IO_PE.IO0_6 (2), Net Label PE_IO2.IO0_6, Net Label PER_IO.PE_IO2.IO0_6 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO0_7_1 has multiple names (Net Label COM_IO.COM_IO_PE.IO0_7 (4), Net Label COM_IO_PE.IO0_7 (2), Net Label PE_IO2.IO0_7, Net Label PER_IO.PE_IO2.IO0_7 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO1_0_1 has multiple names (Net Label COM_IO.COM_IO_PE.IO1_0 (4), Net Label COM_IO_PE.IO1_0 (2), Net Label PE_IO2.IO1_0, Net Label PER_IO.PE_IO2.IO1_0 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO1_1_1 has multiple names (Net Label COM_IO.COM_IO_PE.IO1_1 (4), Net Label COM_IO_PE.IO1_1 (2), Net Label PE_IO2.IO1_1, Net Label PER_IO.PE_IO2.IO1_1 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO1_2_1 has multiple names (Net Label \ETH_RESET (2), Net Label COM_IO.COM_IO_PE.IO1_2 (4), Net Label COM_IO_PE.IO1_2 (2), Net Label PE_IO2.IO1_2, Net Label PER_IO.PE_IO2.IO1_2 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO1_3_1 has multiple names (Net Label COM_IO.COM_IO_PE.IO1_3 (4), Net Label COM_IO_PE.IO1_3 (2), Net Label PE_IO2.IO1_3, Net Label PER_IO.PE_IO2.IO1_3 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO1_4_1 has multiple names (Net Label COM_IO.COM_IO_PE.IO1_4 (4), Net Label COM_IO_PE.IO1_4 (2), Net Label PE_IO2.IO1_4, Net Label PER_IO.PE_IO2.IO1_4 (4), Net Label RS485_LB (2))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO1_5_1 has multiple names (Net Label COM_IO.COM_IO_PE.IO1_5 (4), Net Label COM_IO_PE.IO1_5 (2), Net Label PE_IO2.IO1_5, Net Label PER_IO.PE_IO2.IO1_5 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO1_6_1 has multiple names (Net Label COM_IO.COM_IO_PE.IO1_6 (4), Net Label COM_IO_PE.IO1_6 (2), Net Label PE_IO2.IO1_6, Net Label PER_IO.PE_IO2.IO1_6 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.COM_IO_PE.IO1_7_1 has multiple names (Net Label COM_IO.COM_IO_PE.IO1_7 (4), Net Label COM_IO_PE.IO1_7 (2), Net Label PE_IO2.IO1_7, Net Label PER_IO.PE_IO2.IO1_7 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire COM_IO.INH_1 has multiple names (Net Label COM_IO.INH (4), Net Label IGNITION (3), Net Label INH (4), Net Label SBC_MCU_WAKE1 (3), Net Label SUPPLY_IO.IGNITION (4), Net Label SUPPLY_IO.SBC_MCU_WAKE1 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire ETHERNET.RX1_1_N has multiple names (Net Label ETHERNET.RX1_N (2), Net Label RX1_N)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire ETHERNET.RX1_1_P has multiple names (Net Label ETHERNET.RX1_P (2), Net Label RX1_P)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire ETHERNET.RX2_1_N has multiple names (Net Label ETHERNET.RX2_N (2), Net Label RX2_N)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire ETHERNET.RX2_1_P has multiple names (Net Label ETHERNET.RX2_P (2), Net Label RX2_P)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire ETHERNET.TX1_1_N has multiple names (Net Label ETHERNET.TX1_N (2), Net Label TX1_N)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire ETHERNET.TX1_1_P has multiple names (Net Label ETHERNET.TX1_P (2), Net Label TX1_P)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire ETHERNET.TX2_1_N has multiple names (Net Label ETHERNET.TX2_N (2), Net Label TX2_N)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire ETHERNET.TX2_1_P has multiple names (Net Label ETHERNET.TX2_P (2), Net Label TX2_P)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire FLASH_SPI.\CS_1 has multiple names (Net Label EXT_CON.MCU_SPI3.\CS0 (2), Net Label FLASH_SPI.\CS (3), Net Label MCU_SPI3.\CS0 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire FLASH_SPI.CLK_1 has multiple names (Net Label EXT_CON.MCU_SPI3.CLK (2), Net Label FLASH_SPI.CLK (3), Net Label FRAM_SPI.CLK (3), Net Label MCU_SPI3.CLK (8), Net Label MRAM_SPI.CLK (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire FLASH_SPI.MISO_1 has multiple names (Net Label EXT_CON.MCU_SPI3.SOMI (2), Net Label FLASH_SPI.MISO (3), Net Label FRAM_SPI.MISO (3), Net Label MCU_SPI3.SOMI (8), Net Label MRAM_SPI.MISO (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire FLASH_SPI.MOSI_1 has multiple names (Net Label EXT_CON.MCU_SPI3.SIMO (2), Net Label FLASH_SPI.MOSI (3), Net Label FRAM_SPI.MOSI (3), Net Label MCU_SPI3.SIMO (8), Net Label MRAM_SPI.MOSI (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire FRAM_SPI.\CS_1 has multiple names (Net Label EXT_CON.MCU_SPI3.\CS1 (2), Net Label FRAM_SPI.\CS (3), Net Label MCU_SPI3.\CS1 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire GND_ext has multiple names (Net Label iso_CAN2.GND (2), Power Object GND2 (2), Power Object GND_2 (5), Power Object GND_ext (2))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">contactor-feedback.SchDoc</td>
+<td class="column3">Nets Wire GND_SW_1 has multiple names (Net Label CONT_FB_SW_GND, Power Object GND_SW_1 (2), Power Object GND_SW_2 (2), Power Object GND_SW_3 (2), Power Object GND_SW_4 (2), Power Object GND_SW_5 (2), Power Object GND_SW_6 (2), Power Object GND_SW_7 (2), Power Object GND_SW_8 (2))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire INTERLOCK.HI_1 has multiple names (Net Label HI (2), Net Label INTERLOCK.HI (2))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire INTERLOCK.LO_1 has multiple names (Net Label INTERLOCK.LO (2), Net Label LO (2))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire INTERLOCK_IO.IL_ENABLE_EXT_1 has multiple names (Net Label EXT_CON.IL_ENABLE_EXT (2), Net Label IL_ENABLE_EXT (6), Net Label INTERLOCK_IO.IL_ENABLE_EXT (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire INTERLOCK_IO.IL_HS_ENABLE_1 has multiple names (Net Label IL_HS_ENABLE (4), Net Label INTERLOCK_IO.IL_HS_ENABLE (4), Net Label MCU_GIOX.B11 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire INTERLOCK_IO.IL_STATE_1 has multiple names (Net Label EXT_CON.IL_STATE (2), Net Label IL_STATE (7), Net Label INTERLOCK_IO.IL_STATE (4), Net Label MCU_GIOX.A3 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.\SMSW_FAULT_1 has multiple names (Net Label \FAULT (2), Net Label \SMSW_FAULT (4), Net Label IODEV_IO.\SMSW_FAULT (4), Net Label MCU_GIOB.0 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.\SMSW_RESET_1 has multiple names (Net Label \RESET (2), Net Label \SMSW_RESET (4), Net Label IODEV_IO.\SMSW_RESET (4), Net Label MCU_GIOX.L4 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.CONT_FB_EN_1 has multiple names (Net Label CONT_FB_EN (4), Net Label IODEV_IO.CONT_FB_EN (4), Net Label MCU_GIOX.L16 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.CONT_FB_IO.IO0_0_1 has multiple names (Net Label CONT_FB_IO.IO0_0 (2), Net Label IODEV_IO.CONT_FB_IO.IO0_0 (4), Net Label PE_IO1.IO0_0, Net Label PER_IO.PE_IO1.IO0_0 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.CONT_FB_IO.IO0_1_1 has multiple names (Net Label CONT_FB_IO.IO0_1 (2), Net Label IODEV_IO.CONT_FB_IO.IO0_1 (4), Net Label PE_IO1.IO0_1, Net Label PER_IO.PE_IO1.IO0_1 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.CONT_FB_IO.IO0_2_1 has multiple names (Net Label CONT_FB_IO.IO0_2 (2), Net Label IODEV_IO.CONT_FB_IO.IO0_2 (4), Net Label PE_IO1.IO0_2, Net Label PER_IO.PE_IO1.IO0_2 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.CONT_FB_IO.IO0_3_1 has multiple names (Net Label CONT_FB_IO.IO0_3 (2), Net Label IODEV_IO.CONT_FB_IO.IO0_3 (4), Net Label PE_IO1.IO0_3, Net Label PER_IO.PE_IO1.IO0_3 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.CONT_FB_IO.IO0_4_1 has multiple names (Net Label CONT_FB_IO.IO0_4 (2), Net Label IODEV_IO.CONT_FB_IO.IO0_4 (4), Net Label PE_IO1.IO0_4, Net Label PER_IO.PE_IO1.IO0_4 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.CONT_FB_IO.IO0_5_1 has multiple names (Net Label CONT_FB_IO.IO0_5 (2), Net Label IODEV_IO.CONT_FB_IO.IO0_5 (4), Net Label PE_IO1.IO0_5, Net Label PER_IO.PE_IO1.IO0_5 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.CONT_FB_IO.IO0_6_1 has multiple names (Net Label CONT_FB_IO.IO0_6 (2), Net Label IODEV_IO.CONT_FB_IO.IO0_6 (4), Net Label PE_IO1.IO0_6, Net Label PER_IO.PE_IO1.IO0_6 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.CONT_FB_IO.IO0_7_1 has multiple names (Net Label CONT_FB_IO.IO0_7 (2), Net Label IODEV_IO.CONT_FB_IO.IO0_7 (4), Net Label PE_IO1.IO0_7, Net Label PER_IO.PE_IO1.IO0_7 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.IM_OK_1 has multiple names (Net Label IM_OK (4), Net Label IMD_OK, Net Label IODEV_IO.IM_OK (4), Net Label MCU_GIOX.A9 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.IM_PWM_1 has multiple names (Net Label ECAP1 (2), Net Label IM_PWM (4), Net Label IMD_PWM, Net Label IODEV_IO.IM_PWM (4), Net Label MCU_ECAP.1 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.IM_SUP_EN_1 has multiple names (Net Label IM_SUP_EN (4), Net Label IMD_SUP_EN, Net Label IODEV_IO.IM_SUP_EN (4), Net Label MCU_GIOX.M3 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire IODEV_IO.SMSW_LHM_1 has multiple names (Net Label EXT_CON.SMSW_LHM (2), Net Label IODEV_IO.SMSW_LHM (4), Net Label LHM (3), Net Label SMSW_LHM (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire ISOMON.SUP-_1 has multiple names (Net Label ISOMON.SUP- (2), Net Label SUP-)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_1.1V has multiple names (Net Label MCU_1.1V, Net Label MCU_SUPPLY.VBUCK2_1.1V (10), Net Label VBUCK2_1 (2), Power Object MCU_1.1V (5), Power Object VBUCK2_1, Power Object VDD1P1 (5))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_1.2V has multiple names (Net Label MCU_1.2V, Net Label MCU_SUPPLY.VBUCK1_1.2V (10), Net Label VBUCK1_1 (2), Power Object MCU_1.2V (5), Power Object VBUCK1_1, Power Object VCC_1.2V (2))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_1.2V_LDO has multiple names (Net Label MCU_1.2V_LDO, Net Label MCU_SUPPLY.LDO1_1.2V (10), Power Object LDO1_1, Power Object MCU_1.2V_LDO (5))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_2.5V has multiple names (Net Label MCU_2.5V, Net Label MCU_SUPPLY.VBUCK3_2.5V (10), Net Label VBUCK3_1 (2), Power Object MCU_2.5V (5), Power Object VBUCK3_1, Power Object VDDA2P5 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_3.3V has multiple names (Net Label BUCK1_IN_1 (2), Net Label BUCK2_IN_1 (2), Net Label BUCK3_IN_1 (2), Net Label MCU_3.3V, Net Label MCU_SUPPLY.VPRE_3.3V (10), Net Label SBC_MCU_OTP.VDDI2C (3), Net Label VREF-DEBUG, Net Label VREF-TRACE, Power Object MCU_3.3V (24), Power Object VCC (10), Power Object VCCIO_3.3V (2), Power Object VCCP_3.3V (2), Power Object VDD (17), Power Object VDDIO (8), Power Object VDDIO_1 (6), Power Object VIO (3), Power Object VPRE_1 (2))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_5.0V_LDO has multiple names (Net Label MCU_5.0V_LDO, Net Label MCU_SUPPLY.LDO2_5.0V (10), Power Object LDO2_1, Power Object MCU_5.0V_LDO (8))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_5.74V has multiple names (Net Label MCU_5.74V, Net Label MCU_SUPPLY.VBOOST_5.74V (10), Power Object MCU_5.74V (8), Power Object VBOOST_1)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ADC.AD1EVT_1 has multiple names (Net Label AD1EVT (4), Net Label EXT_CON.AD1EVT (2), Net Label MCU_ADC.AD1EVT (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ADC.AD2EVT_1 has multiple names (Net Label AD2EVT (4), Net Label EXT_CON.AD2EVT (2), Net Label MCU_ADC.AD2EVT (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_CAN1.RX_1 has multiple names (Net Label CAN1.RX, Net Label MCU_CAN1.RX (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_CAN1.TX_1 has multiple names (Net Label CAN1.TX, Net Label MCU_CAN1.TX (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_CAN3.RX_1 has multiple names (Net Label EXT_CON.MCU_CAN3.RX (2), Net Label MCU_CAN3.RX (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_CAN3.TX_1 has multiple names (Net Label EXT_CON.MCU_CAN3.TX (2), Net Label MCU_CAN3.TX (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_CAN4.RX_1 has multiple names (Net Label EXT_CON.MCU_CAN4.RX (2), Net Label MCU_CAN4.RX (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_CAN4.TX_1 has multiple names (Net Label EXT_CON.MCU_CAN4.TX (2), Net Label MCU_CAN4.TX (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_CLK.2.22MHz_1 has multiple names (Net Label MCU_CLK.2.22MHz (5), Net Label SBCs_FIN (4), Net Label SUPPLY_IO.SBCs_FIN (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_CLK.25MHz_1 has multiple names (Net Label CLK_25MHz (4), Net Label MCU_CLK.25MHz (5), Net Label PER_IO.CLK_25MHz (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_DCC.1_1 has multiple names (Net Label DCC1 (4), Net Label EXT_CON.DCC1 (2), Net Label MCU_DCC.1 (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_DCC.2_1 has multiple names (Net Label MCU_DCC.2 (3), Net Label PER_IO.RTC_CLKO (4), Net Label RTC_CLKO (5))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ECAP.4_1 has multiple names (Net Label ECAP4 (6), Net Label EXT_CON.ECAP4 (2), Net Label MCU_ECAP.4 (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ECAP.5_1 has multiple names (Net Label ECAP5 (6), Net Label EXT_CON.ECAP5 (2), Net Label MCU_ECAP.5 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.\CAS_1 has multiple names (Net Label \MCU_EMIF.CAS (2), Net Label EXT_CON.MCU_EMIF.\CAS (2), Net Label MCU_EMIF.\CAS (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.\CS0_1 has multiple names (Net Label \MCU_EMIF.CS0 (2), Net Label EXT_CON.MCU_EMIF.\CS0 (2), Net Label MCU_EMIF.\CS0 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.\CS2_1 has multiple names (Net Label \MCU_EMIF.CS2 (2), Net Label EXT_CON.MCU_EMIF.\CS2 (2), Net Label MCU_EMIF.\CS2 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.\CS3_1 has multiple names (Net Label \MCU_EMIF.CS3 (2), Net Label EXT_CON.MCU_EMIF.\CS3 (2), Net Label MCU_EMIF.\CS3 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.\CS4_1 has multiple names (Net Label \MCU_EMIF.CS4 (2), Net Label EXT_CON.MCU_EMIF.\CS4 (2), Net Label MCU_EMIF.\CS4 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.\DQM0_1 has multiple names (Net Label \MCU_EMIF.DQM0 (2), Net Label EXT_CON.MCU_EMIF.\DQM0 (2), Net Label MCU_EMIF.\DQM0 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.\DQM1_1 has multiple names (Net Label \MCU_EMIF.DQM1 (2), Net Label EXT_CON.MCU_EMIF.\DQM1 (2), Net Label MCU_EMIF.\DQM1 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.\OE_1 has multiple names (Net Label \MCU_EMIF.OE (2), Net Label EXT_CON.MCU_EMIF.\OE (2), Net Label MCU_EMIF.\OE (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.\RAS_1 has multiple names (Net Label \MCU_EMIF.RAS (2), Net Label EXT_CON.MCU_EMIF.\RAS (2), Net Label MCU_EMIF.\RAS (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.\WAIT_1 has multiple names (Net Label \MCU_EMIF.WAIT (2), Net Label EXT_CON.MCU_EMIF.\WAIT (2), Net Label MCU_EMIF.\WAIT (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.\WE_1 has multiple names (Net Label \MCU_EMIF.WE (2), Net Label EXT_CON.MCU_EMIF.\WE (2), Net Label MCU_EMIF.\WE (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.BA0_1 has multiple names (Net Label EXT_CON.MCU_EMIF.BA0 (2), Net Label MCU_EMIF.BA0 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.BA1_1 has multiple names (Net Label EXT_CON.MCU_EMIF.BA1 (2), Net Label MCU_EMIF.BA1 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.CKE_1 has multiple names (Net Label EXT_CON.MCU_EMIF.CKE (2), Net Label MCU_EMIF.CKE (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EMIF.CLK_1 has multiple names (Net Label EXT_CON.MCU_EMIF.CLK (2), Net Label MCU_EMIF.CLK (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EPWM1.A_1 has multiple names (Net Label EPWM1A (4), Net Label EXT_CON.EPWM1A (2), Net Label MCU_EPWM1.A (2))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_EPWM1.B_1 has multiple names (Net Label EPWM1B (4), Net Label EXT_CON.EPWM1B (2), Net Label MCU_EPWM1.B (2))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ETM.CLKOUT_1 has multiple names (Net Label MCU_ETM.CLKOUT (2), Net Label TRACECLK)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ETM.CTL_1 has multiple names (Net Label MCU_ETM.CTL (2), Net Label TRACECTL)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ETM.DATA0_1 has multiple names (Net Label ETMDATA0, Net Label MCU_ETM.DATA0 (2))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ETM.DATA1_1 has multiple names (Net Label ETMDATA1, Net Label MCU_ETM.DATA1 (2))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ETM.DATA2_1 has multiple names (Net Label ETMDATA2, Net Label MCU_ETM.DATA2 (2))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ETM.DATA3_1 has multiple names (Net Label ETMDATA3, Net Label MCU_ETM.DATA3 (2))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ETM.DATA4_1 has multiple names (Net Label ETMDATA4, Net Label MCU_ETM.DATA4 (2))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ETM.DATA5_1 has multiple names (Net Label ETMDATA5, Net Label MCU_ETM.DATA5 (2))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ETM.DATA6_1 has multiple names (Net Label ETMDATA6, Net Label MCU_ETM.DATA6 (2))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_ETM.DATA7_1 has multiple names (Net Label ETMDATA7, Net Label MCU_ETM.DATA7 (2))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_FRAY1.RX_1 has multiple names (Net Label EXT_CON.MCU_FRAY1.RX (2), Net Label MCU_FRAY1.RX (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_FRAY1.TX_1 has multiple names (Net Label EXT_CON.MCU_FRAY1.TX (2), Net Label MCU_FRAY1.TX (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_FRAY1.TXEN_1 has multiple names (Net Label EXT_CON.MCU_FRAY1.TXEN (2), Net Label MCU_FRAY1.TXEN (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_FRAY2.RX_1 has multiple names (Net Label EXT_CON.MCU_FRAY2.RX (2), Net Label MCU_FRAY2.RX (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_FRAY2.TX_1 has multiple names (Net Label EXT_CON.MCU_FRAY2.TX (2), Net Label MCU_FRAY2.TX (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_FRAY2.TXEN_1 has multiple names (Net Label EXT_CON.MCU_FRAY2.TXEN (2), Net Label MCU_FRAY2.TXEN (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOA.0_1 has multiple names (Net Label \SBC_MCU_INT (4), Net Label MCU_GIOA.0 (3), Net Label SUPPLY_IO.\SBC_MCU_INT (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOA.1_1 has multiple names (Net Label \SBC_PER_INT (4), Net Label MCU_GIOA.1 (3), Net Label SUPPLY_IO.\SBC_PER_INT (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOA.2_1 has multiple names (Net Label \IF_INT0 (4), Net Label IF_CON.\IF_INT0 (2), Net Label MCU_GIOA.2 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOA.3_1 has multiple names (Net Label \IF_INT1 (4), Net Label IF_CON.\IF_INT1 (2), Net Label MCU_GIOA.3 (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOA.4_1 has multiple names (Net Label \IF_INT2 (4), Net Label IF_CON.\IF_INT2 (2), Net Label MCU_GIOA.4 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOA.6_1 has multiple names (Net Label \IF_INT3 (4), Net Label IF_CON.\IF_INT3 (2), Net Label MCU_GIOA.6 (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOA.7_1 has multiple names (Net Label EXT_CON.MCU_GIOA7 (2), Net Label MCU_GIOA7 (4), Net Label MCU_GIOA.7 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOB.1_1 has multiple names (Net Label \RTC_INTB (4), Net Label MCU_GIOB.1 (3), Net Label PER_IO.\RTC_INTB (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOB.4_1 has multiple names (Net Label \INT (3), Net Label \PE_INT (4), Net Label MCU_GIOB.4 (3), Net Label PER_IO.\PE_INT (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOB.7_1 has multiple names (Net Label BB_PGOOD (4), Net Label MCU_GIOB.7 (3), Net Label SUPPLY_IO.BB_PGOOD (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.A4_1 has multiple names (Net Label EXT_CON.MCU_A4 (2), Net Label MCU_A4 (4), Net Label MCU_GIOX.A4 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.A11_1 has multiple names (Net Label EXT_CON.MCU_A11 (2), Net Label MCU_A11 (4), Net Label MCU_GIOX.A11 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.A14_1 has multiple names (Net Label EXT_CON.MCU_A14 (2), Net Label MCU_A14 (4), Net Label MCU_GIOX.A14 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.B3_1 has multiple names (Net Label EXT_CON.MCU_B3 (2), Net Label MCU_B3 (4), Net Label MCU_GIOX.B3 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.D11_1 has multiple names (Net Label \RTC_TS3 (4), Net Label MCU_GIOX.D11 (4), Net Label PER_IO.\RTC_TS3 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.D12_1 has multiple names (Net Label \RTC_TS2 (4), Net Label MCU_GIOX.D12 (4), Net Label PER_IO.\RTC_TS2 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.D13_1 has multiple names (Net Label \RTC_TS1 (4), Net Label MCU_GIOX.D13 (4), Net Label PER_IO.\RTC_TS1 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.H4_1 has multiple names (Net Label EXT_CON.MCU_H4 (2), Net Label MCU_GIOX.H4 (4), Net Label MCU_H4 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.J1_1 has multiple names (Net Label EXT_CON.MCU_J1 (2), Net Label MCU_GIOX.J1 (4), Net Label MCU_J1 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.J4_1 has multiple names (Net Label EXT_CON.MCU_J4 (2), Net Label MCU_GIOX.J4 (4), Net Label MCU_J4 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.K4_1 has multiple names (Net Label MCU_GIOX.K4 (4), Net Label PER_IO.WW_WDI (4), Net Label WW_WDI (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.K16_1 has multiple names (Net Label \RTC_TS4 (4), Net Label MCU_GIOX.K16 (4), Net Label PER_IO.\RTC_TS4 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.K19_1 has multiple names (Net Label EXT_CON.MCU_K19 (2), Net Label MCU_GIOX.K19 (4), Net Label MCU_K19 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.M4_1 has multiple names (Net Label \PE_RESET (4), Net Label \RESET (3), Net Label MCU_GIOX.M4 (4), Net Label PER_IO.\PE_RESET (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.M16_1 has multiple names (Net Label EXT_CON.MCU_M16 (2), Net Label MCU_GIOX.M16 (4), Net Label MCU_M16 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.N4_1 has multiple names (Net Label MCU_GIOX.N4 (4), Net Label SBC_PER_WAKE2_LL (4), Net Label SUPPLY_IO.SBC_PER_WAKE2_LL (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.N16_1 has multiple names (Net Label EXT_CON.MCU_N16 (2), Net Label MCU_GIOX.N16 (4), Net Label MCU_N16 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.P1_1 has multiple names (Net Label EXT_CON.MCU_P1 (2), Net Label MCU_GIOX.P1 (4), Net Label MCU_P1 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.P2_1 has multiple names (Net Label EXT_CON.MCU_P2 (2), Net Label MCU_GIOX.P2 (4), Net Label MCU_P2 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.T6_1 has multiple names (Net Label BB_ENABLE (4), Net Label MCU_GIOX.T6 (4), Net Label SUPPLY_IO.BB_ENABLE (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.T7_1 has multiple names (Net Label MCU_GIOX.T7 (4), Net Label SBC_MCU_FCCU2 (4), Net Label SUPPLY_IO.SBC_MCU_FCCU2 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_GIOX.T8_1 has multiple names (Net Label MCU_GIOX.T8 (4), Net Label SBC_PER_FCCU2 (4), Net Label SUPPLY_IO.SBC_PER_FCCU2 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_I2C1.SCL_1 has multiple names (Net Label EXT_CON.MCU_I2C1.SCL (2), Net Label MCU_I2C1.SCL (8), Net Label PE_I2C.SCL (3), Net Label RTC_I2C.SCL (3), Net Label SCL, Net Label SENSOR_I2C.SCL (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_I2C1.SDA_1 has multiple names (Net Label EXT_CON.MCU_I2C1.SDA (2), Net Label MCU_I2C1.SDA (8), Net Label PE_I2C.SDA (3), Net Label RTC_I2C.SDA (3), Net Label SDA, Net Label SENSOR_I2C.SDA (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_JTAG.RTCK_1 has multiple names (Net Label MCU_JTAG.RTCK (2), Net Label RTCK)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_JTAG.TDO_1 has multiple names (Net Label MCU_JTAG.TDO (2), Net Label TDO)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_LIN1.RX_1 has multiple names (Net Label EXT_CON.MCU_LIN1.RX (2), Net Label MCU_LIN1.RX (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_LIN1.TX_1 has multiple names (Net Label EXT_CON.MCU_LIN1.TX (2), Net Label MCU_LIN1.TX (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_LIN2.RX_1 has multiple names (Net Label EXT_CON.MCU_LIN2.RX (2), Net Label MCU_LIN2.RX (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_LIN2.TX_1 has multiple names (Net Label EXT_CON.MCU_LIN2.TX (2), Net Label MCU_LIN2.TX (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_MII.RXER_1 has multiple names (Net Label LED_1/MII_RXER (3), Net Label MCU_MII.RXER (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_RST.\ERROR_1 has multiple names (Net Label MCU_RST.\ERROR (3), Net Label SBCs_FCCU1 (6), Net Label SUPPLY_IO.SBCs_FCCU1 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_RST.\PORRST_1 has multiple names (Net Label \SBC_MCU_PGOOD (7), Net Label EXT_CON.\SBC_MCU_PGOOD (2), Net Label MCU_RST.\PORRST (3), Net Label SUPPLY_IO.\SBC_MCU_PGOOD (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SCI3.RX_1 has multiple names (Net Label EXT_CON.MCU_SCI3.RX (2), Net Label MCU_SCI3.RX (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SCI3.TX_1 has multiple names (Net Label EXT_CON.MCU_SCI3.TX (2), Net Label MCU_SCI3.TX (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.\CS1_1 has multiple names (Net Label \MCU_SPI1.CS1 (2), Net Label IF_CON.MCU_SPI1.\CS1 (2), Net Label MCU_SPI1.\CS1 (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.\CS2_1 has multiple names (Net Label \MCU_SPI1.CS2 (2), Net Label IF_CON.MCU_SPI1.\CS2 (2), Net Label MCU_SPI1.\CS2 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.\CS3_1 has multiple names (Net Label \MCU_SPI1.CS3 (2), Net Label IF_CON.MCU_SPI1.\CS3 (2), Net Label MCU_SPI1.\CS3 (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.\CS4_1 has multiple names (Net Label \MCU_SPI1.CS4 (2), Net Label IF_CON.MCU_SPI1.\CS4 (2), Net Label MCU_SPI1.\CS4 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.\CS5_1 has multiple names (Net Label \MCU_SPI1.CS5 (2), Net Label IF_CON.MCU_SPI1.\CS5 (2), Net Label MCU_SPI1.\CS5 (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.CLK_1 has multiple names (Net Label IF_CON.MCU_SPI1.CLK (2), Net Label MCU_SPI1.CLK (5))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.SIMO0_1 has multiple names (Net Label IF_CON.MCU_SPI1.SIMO0 (2), Net Label MCU_SPI1.SIMO0 (5))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.SIMO1_1 has multiple names (Net Label IF_CON.MCU_SPI1.SIMO1 (2), Net Label MCU_SPI1.SIMO1 (5))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.SOMI0_1 has multiple names (Net Label IF_CON.MCU_SPI1.SOMI0 (2), Net Label MCU_SPI1.SOMI0 (5))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.SOMI1_1 has multiple names (Net Label IF_CON.MCU_SPI1.SOMI1 (2), Net Label MCU_SPI1.SOMI1 (5))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI2.\CS0_1 has multiple names (Net Label MCU_SPI2.\CS0 (2), Net Label SBC_MCU_SPI.\CS (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI2.\CS1_1 has multiple names (Net Label MCU_SPI2.\CS1 (2), Net Label SBC_PER_SPI.\CS (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI2.\sCS2_1 has multiple names (Net Label \SPI2_sCS2 (2), Net Label MCU_SPI2.\sCS2 (2), Net Label SMSW_SPI.\CS (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI2.CLK_1 has multiple names (Net Label MCU_SPI2.CLK (2), Net Label SBC_MCU_SPI.CLK (3), Net Label SBC_PER_SPI.CLK (3), Net Label SMSW_SPI.CLK (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI2.SIMO_1 has multiple names (Net Label MCU_SPI2.SIMO (2), Net Label SBC_MCU_SPI.MOSI (3), Net Label SBC_PER_SPI.MOSI (3), Net Label SMSW_SPI.MOSI (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI2.SOMI_1 has multiple names (Net Label MCU_SPI2.SOMI (2), Net Label SBC_MCU_SPI.MISO (3), Net Label SBC_PER_SPI.MISO (3), Net Label SMSW_SPI.MISO (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.\CS4_1 has multiple names (Net Label \MCU_SPI3.CS4 (2), Net Label EXT_CON.MCU_SPI3.\CS4 (2), Net Label MCU_SPI3.\CS4 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.\CS5_1 has multiple names (Net Label \MCU_SPI3.CS5 (2), Net Label EXT_CON.MCU_SPI3.\CS5 (2), Net Label MCU_SPI3.\CS5 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.\sCS6_1 has multiple names (Net Label \SPI3_sCS6 (2), Net Label EXT_CON.MCU_SPI3.\sCS6 (2), Net Label MCU_SPI3.\sCS6 (6), Net Label MRAM_SPI.\CS (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO0_0_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO0_0 (2), Net Label MCU_SPI3.IO0_0 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO0_1_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO0_1 (2), Net Label MCU_SPI3.IO0_1 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO0_2_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO0_2 (2), Net Label MCU_SPI3.IO0_2 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO0_3_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO0_3 (2), Net Label MCU_SPI3.IO0_3 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO0_4_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO0_4 (2), Net Label MCU_SPI3.IO0_4 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO0_5_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO0_5 (2), Net Label MCU_SPI3.IO0_5 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO0_6_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO0_6 (2), Net Label MCU_SPI3.IO0_6 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO0_7_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO0_7 (2), Net Label MCU_SPI3.IO0_7 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO1_0_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO1_0 (2), Net Label MCU_SPI3.IO1_0 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO1_1_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO1_1 (2), Net Label MCU_SPI3.IO1_1 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO1_2_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO1_2 (2), Net Label MCU_SPI3.IO1_2 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO1_3_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO1_3 (2), Net Label MCU_SPI3.IO1_3 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO1_4_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO1_4 (2), Net Label MCU_SPI3.IO1_4 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO1_5_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO1_5 (2), Net Label MCU_SPI3.IO1_5 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO1_6_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO1_6 (2), Net Label MCU_SPI3.IO1_6 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI3.IO1_7_1 has multiple names (Net Label EXT_CON.MCU_SPI3.IO1_7 (2), Net Label MCU_SPI3.IO1_7 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI4.\CS0_1 has multiple names (Net Label \MCU_SPI4.CS0 (2), Net Label IF_CON.MCU_SPI4.\CS0 (2), Net Label MCU_SPI4.\CS0 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI4.\CS1_1 has multiple names (Net Label \MCU_SPI4.CS1 (2), Net Label IF_CON.MCU_SPI4.\CS1 (2), Net Label MCU_SPI4.\CS1 (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI4.\CS2_1 has multiple names (Net Label \MCU_SPI4.CS2 (2), Net Label IF_CON.MCU_SPI4.\CS2 (2), Net Label MCU_SPI4.\CS2 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI4.\CS3_1 has multiple names (Net Label \MCU_SPI4.CS3 (2), Net Label IF_CON.MCU_SPI4.\CS3 (2), Net Label MCU_SPI4.\CS3 (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI4.\CS4_1 has multiple names (Net Label \MCU_SPI4.CS4 (2), Net Label IF_CON.MCU_SPI4.\CS4 (2), Net Label MCU_SPI4.\CS4 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI4.\CS5_1 has multiple names (Net Label \MCU_SPI4.CS5 (2), Net Label IF_CON.MCU_SPI4.\CS5 (2), Net Label MCU_SPI4.\CS5 (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI4.CLK_1 has multiple names (Net Label IF_CON.MCU_SPI4.CLK (2), Net Label MCU_SPI4.CLK (5))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI4.SIMO_1 has multiple names (Net Label IF_CON.MCU_SPI4.SIMO (2), Net Label MCU_SPI4.SIMO (5))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI4.SOMI_1 has multiple names (Net Label IF_CON.MCU_SPI4.SOMI (2), Net Label MCU_SPI4.SOMI (5))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.\CS0_1 has multiple names (Net Label \MCU_SPI5.CS0 (2), Net Label EXT_CON.MCU_SPI5.\CS0 (2), Net Label MCU_SPI5.\CS0 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.\CS1_1 has multiple names (Net Label \MCU_SPI5.CS1 (2), Net Label EXT_CON.MCU_SPI5.\CS1 (2), Net Label MCU_SPI5.\CS1 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.\CS2_1 has multiple names (Net Label \MCU_SPI5.CS2 (2), Net Label EXT_CON.MCU_SPI5.\CS2 (2), Net Label MCU_SPI5.\CS2 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.\CS3_1 has multiple names (Net Label \MCU_SPI5.CS3 (2), Net Label EXT_CON.MCU_SPI5.\CS3 (2), Net Label MCU_SPI5.\CS3 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.CLK_1 has multiple names (Net Label EXT_CON.MCU_SPI5.CLK (2), Net Label MCU_SPI5.CLK (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO0_0_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO0_0 (2), Net Label MCU_SPI5.IO0_0 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO0_1_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO0_1 (2), Net Label MCU_SPI5.IO0_1 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO0_2_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO0_2 (2), Net Label MCU_SPI5.IO0_2 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO0_3_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO0_3 (2), Net Label MCU_SPI5.IO0_3 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO0_4_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO0_4 (2), Net Label MCU_SPI5.IO0_4 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO0_5_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO0_5 (2), Net Label MCU_SPI5.IO0_5 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO0_6_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO0_6 (2), Net Label MCU_SPI5.IO0_6 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO0_7_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO0_7 (2), Net Label MCU_SPI5.IO0_7 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO1_0_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO1_0 (2), Net Label MCU_SPI5.IO1_0 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO1_1_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO1_1 (2), Net Label MCU_SPI5.IO1_1 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO1_2_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO1_2 (2), Net Label MCU_SPI5.IO1_2 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO1_3_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO1_3 (2), Net Label MCU_SPI5.IO1_3 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO1_4_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO1_4 (2), Net Label MCU_SPI5.IO1_4 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO1_5_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO1_5 (2), Net Label MCU_SPI5.IO1_5 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO1_6_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO1_6 (2), Net Label MCU_SPI5.IO1_6 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.IO1_7_1 has multiple names (Net Label EXT_CON.MCU_SPI5.IO1_7 (2), Net Label MCU_SPI5.IO1_7 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.SIMO0_1 has multiple names (Net Label EXT_CON.MCU_SPI5.SIMO0 (2), Net Label MCU_SPI5.SIMO0 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.SIMO1_1 has multiple names (Net Label EXT_CON.MCU_SPI5.SIMO1 (2), Net Label MCU_SPI5.SIMO1 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.SIMO2_1 has multiple names (Net Label EXT_CON.MCU_SPI5.SIMO2 (2), Net Label MCU_SPI5.SIMO2 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.SIMO3_1 has multiple names (Net Label EXT_CON.MCU_SPI5.SIMO3 (2), Net Label MCU_SPI5.SIMO3 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.SOMI0_1 has multiple names (Net Label EXT_CON.MCU_SPI5.SOMI0 (2), Net Label MCU_SPI5.SOMI0 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.SOMI1_1 has multiple names (Net Label EXT_CON.MCU_SPI5.SOMI1 (2), Net Label MCU_SPI5.SOMI1 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.SOMI2_1 has multiple names (Net Label EXT_CON.MCU_SPI5.SOMI2 (2), Net Label MCU_SPI5.SOMI2 (6))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI5.SOMI3_1 has multiple names (Net Label EXT_CON.MCU_SPI5.SOMI3 (2), Net Label MCU_SPI5.SOMI3 (6))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_1.2V_0 has multiple names (Net Label PER_1.2V_0, Net Label PER_SUPPLY.VBUCK1_1.2V (11), Net Label VBUCK1_2 (2), Power Object PER_1.2V_0 (9), Power Object VBUCK1_2)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_1.2V_1 has multiple names (Net Label PER_1.2V_1, Net Label PER_SUPPLY.VBUCK2_1.2V (11), Net Label VBUCK2_2 (2), Power Object PER_1.2V_1 (9), Power Object VBUCK2_2)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_3.3V has multiple names (Net Label PER_3.3V, Net Label PER_SUPPLY.VBUCK3_3.3V (11), Net Label SBC_PER_OTP.VDDI2C (3), Net Label VBUCK3_2 (2), Power Object PER_3.3V (18), Power Object VBUCK3_2, Power Object VCC1, Power Object VDD (8), Power Object VDD_1 (4), Power Object VDD_2 (4), Power Object VDD_3 (4), Power Object VDDIO_2 (6), Power Object VIO (3), Power Object VIO_1 (5), Power Object VL (2), Power Object VSPI (3), Power Object VSPI_1 (3), Power Object VSPI_2 (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_3.3V_LDO has multiple names (Net Label PER_3.3V_LDO, Net Label PER_SUPPLY.LDO1_3.3V (11), Power Object LDO1_2, Power Object PER_3.3V_LDO (9))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_5.0V has multiple names (Net Label BUCK1_IN_2 (2), Net Label BUCK2_IN_2 (2), Net Label BUCK3_IN_2 (2), Net Label PER_5.0V, Net Label PER_SUPPLY.VPRE_5.0V (11), Power Object PER_5.0V (19), Power Object VCC (2), Power Object VCC_1, Power Object VDD (2), Power Object VDD_1, Power Object VDD_2, Power Object VPRE_2 (2))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_5.0V_LDO has multiple names (Net Label PER_5.0V_LDO, Net Label PER_SUPPLY.LDO2_5.0V (11), Power Object LDO2_2, Power Object PER_5.0V_LDO (9))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_5.74V has multiple names (Net Label PER_5.74V, Net Label PER_SUPPLY.VBOOST_5.74V (11), Power Object PER_5.74V (10), Power Object VBOOST_2)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.\RTC_INTA_HV_1 has multiple names (Net Label \RTC_INTA_HV (3), Net Label PER_IO.\RTC_INTA_HV (4), Net Label SBC_MCU_WAKE2 (3), Net Label SUPPLY_IO.SBC_MCU_WAKE2 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.\SE_RESET_1 has multiple names (Net Label \SE_RESET (4), Net Label PE_IO3.IO0_0 (2), Net Label PER_IO.\SE_RESET (4), Net Label PER_IO.PE_IO3.IO0_0 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.\WW_ENABLE_1 has multiple names (Net Label \WW_ENABLE (6), Net Label EXT_CON.\WW_ENABLE (2), Net Label PER_IO.\WW_ENABLE (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.\WW_RESETIN_1 has multiple names (Net Label \SBC_MCU_RESET (6), Net Label \WW_RESETIN (3), Net Label EXT_CON.\SBC_MCU_RESET (2), Net Label PER_IO.\WW_RESETIN (4), Net Label SUPPLY_IO.\SBC_MCU_RESET (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO0_1_1 has multiple names (Net Label PE_IO3.IO0_1 (2), Net Label PER_IO.PE_IO3.IO0_1 (4), Net Label PER_IO.SE_ALERT (4), Net Label SE_ALERT (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO0_2_1 has multiple names (Net Label PE_IO3.IO0_2 (2), Net Label PER_IO.PE_IO3.IO0_2 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO0_3_1 has multiple names (Net Label PE_IO3.IO0_3 (2), Net Label PER_IO.PE_IO3.IO0_3 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO0_4_1 has multiple names (Net Label PE_IO3.IO0_4 (2), Net Label PER_IO.PE_IO3.IO0_4 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO0_5_1 has multiple names (Net Label PE_IO3.IO0_5 (2), Net Label PER_IO.PE_IO3.IO0_5 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO0_6_1 has multiple names (Net Label PE_IO3.IO0_6 (2), Net Label PER_IO.PE_IO3.IO0_6 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO0_7_1 has multiple names (Net Label PE_IO3.IO0_7 (2), Net Label PER_IO.PE_IO3.IO0_7 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO1_0_1 has multiple names (Net Label IF_CON.IF_GPIO.0 (2), Net Label IF_GPIO.0 (5), Net Label PE_IO3.IO1_0 (2), Net Label PER_IO.PE_IO3.IO1_0 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO1_1_1 has multiple names (Net Label IF_CON.IF_GPIO.1 (2), Net Label IF_GPIO.1 (5), Net Label PE_IO3.IO1_1 (2), Net Label PER_IO.PE_IO3.IO1_1 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO1_2_1 has multiple names (Net Label IF_CON.IF_GPIO.2 (2), Net Label IF_GPIO.2 (5), Net Label PE_IO3.IO1_2 (2), Net Label PER_IO.PE_IO3.IO1_2 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO1_3_1 has multiple names (Net Label IF_CON.IF_GPIO.3 (2), Net Label IF_GPIO.3 (5), Net Label PE_IO3.IO1_3 (2), Net Label PER_IO.PE_IO3.IO1_3 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO1_4_1 has multiple names (Net Label IF_CON.IF_GPIO.4 (2), Net Label IF_GPIO.4 (5), Net Label PE_IO3.IO1_4 (2), Net Label PER_IO.PE_IO3.IO1_4 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO1_5_1 has multiple names (Net Label IF_CON.IF_GPIO.5 (2), Net Label IF_GPIO.5 (5), Net Label PE_IO3.IO1_5 (2), Net Label PER_IO.PE_IO3.IO1_5 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO1_6_1 has multiple names (Net Label IF_CON.IF_GPIO.6 (2), Net Label IF_GPIO.6 (5), Net Label PE_IO3.IO1_6 (2), Net Label PER_IO.PE_IO3.IO1_6 (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire PER_IO.PE_IO3.IO1_7_1 has multiple names (Net Label IF_CON.IF_GPIO.7 (2), Net Label IF_GPIO.7 (5), Net Label PE_IO3.IO1_7 (2), Net Label PER_IO.PE_IO3.IO1_7 (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire SBC_MCU_OTP.DBGHV_1 has multiple names (Net Label DBG_1 (4), Net Label SBC_MCU_OTP.DBGHV (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire SBC_PER_OTP.DBGHV_1 has multiple names (Net Label DBG_2 (4), Net Label SBC_PER_OTP.DBGHV (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire SUPPLY_IO.\SBC_PER_PGOOD_1 has multiple names (Net Label \SBC_PER_PGOOD (6), Net Label EXT_CON.\SBC_PER_PGOOD (2), Net Label SUPPLY_IO.\SBC_PER_PGOOD (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire SUPPLY_IO.\SBC_PER_RESET_1 has multiple names (Net Label \SBC_PER_RESET (6), Net Label EXT_CON.\SBC_PER_RESET (2), Net Label SUPPLY_IO.\SBC_PER_RESET (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire SUPPLY_IO.SBC_MCU_FS0B_1 has multiple names (Net Label EXT_CON.SBC_MCU_FS0B (2), Net Label SBC_MCU_FS0B (6), Net Label SUPPLY_IO.SBC_MCU_FS0B (4))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire SUPPLY_IO.SBC_PER_FS0B_1 has multiple names (Net Label EXT_CON.SBC_PER_FS0B (2), Net Label SBC_PER_FS0B (6), Net Label SUPPLY_IO.SBC_PER_FS0B (4))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire VBB_12V has multiple names (Net Label ISOMON.SUP+ (2), Net Label SUP+ (2), Power Object VBB_12V (16), Power Object VPWR (2), Power Object VPWR_1, Power Object VPWR_2, Power Object VSUP_IL (3))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">can.SchDoc</td>
+<td class="column3">Nets Wire VISO_ext has multiple names (Power Object VCC_2, Power Object VIO_2 (5), Power Object VISO (2), Power Object VISO_ext, Power Object VSUP_2 (2))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire VSUP_30 has multiple names (Power Object VBAT (2), Power Object VSUP (14), Power Object VSUP_1 (2), Power Object VSUP_30 (9))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">supply.SchDoc</td>
+<td class="column3">Nets Wire VSUP_30C has multiple names (Power Object VIN, Power Object VSUP_30C (3))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire VSUP_ext_1 has multiple names (Net Label SUPPLY_ext.30C_SUPPLY+ (2), Power Object VSUP_ext_1)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">Nets Wire VSUP_ext_2 has multiple names (Net Label SUPPLY_ext.30_SUPPLY+ (2), Power Object VSUP_ext_2)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">can-transceiver.SchDoc</td>
+<td class="column3">NetU1101_1_7 contains Output Pin and Unspecified Port objects (Pin U1101-7, Port INH).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">flash.SchDoc</td>
+<td class="column3">NetU6200_15 contains IO Pin and Input Port objects (Pin U6200-15, Port MOSI).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">port-expander.SchDoc</td>
+<td class="column3">PER_IO.PE_IO3.IO0_1_1 contains IO Pin and Output Pin objects (Pin U6300-5, Pin U6500-3).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">VBOOST_1 contains Input Pin and Unspecified Port objects (Pin U7200-53, Port VBOOST).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">VBOOST_2 contains Input Pin and Unspecified Port objects (Pin U7200-53, Port VBOOST).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">VBUCK1_1 contains Input Pin and Unspecified Port objects (Pin U7200-39, Port VBUCK1).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">VBUCK1_2 contains Input Pin and Unspecified Port objects (Pin U7200-39, Port VBUCK1).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">VBUCK2_1 contains Input Pin and Unspecified Port objects (Pin U7200-32, Port VBUCK2).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">VBUCK2_2 contains Input Pin and Unspecified Port objects (Pin U7200-32, Port VBUCK2).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">VBUCK3_1 contains Input Pin and Unspecified Port objects (Pin U7200-9, Port VBUCK3).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">VBUCK3_2 contains Input Pin and Unspecified Port objects (Pin U7200-9, Port VBUCK3).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">port-expanders.SchDoc</td>
+<td class="column3">VDD contains Input Sheet Entry and Unspecified Sheet Entry objects (Sheet Entry port-expander2-A0(Input), Sheet Entry port-expander3-A1(Input), Sheet Entry port-expander1-VDD(Passive), Sheet Entry port-expander2-VDD(Passive), Sheet Entry port-expander3-VDD(Passive)).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">port-expanders.SchDoc</td>
+<td class="column3">VDD contains Unspecified Port and Input Sheet Entry objects (Port VDD, Sheet Entry port-expander2-A0(Input), Sheet Entry port-expander3-A1(Input)).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">VPRE_1 contains Input Pin and Unspecified Port objects (Pin U7200-48, Port VPRE).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">sbc-base.SchDoc</td>
+<td class="column3">VPRE_2 contains Input Pin and Unspecified Port objects (Pin U7200-48, Port VPRE).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">peripherals.SchDoc</td>
+<td class="column3">VREF_5V contains Output Port and Unspecified Sheet Entry objects (Port VREF_5V, Sheet Entry vref-5.0V-VOUT(Passive)).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-master.SchDoc</td>
+<td class="column3">VREF_5V contains Output Sheet Entry and Unspecified Sheet Entry objects (Sheet Entry peripherals-VREF_5V(Output), Sheet Entry connectors-extension-VREF_5V(Passive), Sheet Entry mcu-ADREFHI(Passive)).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">window-watchdog.SchDoc</td>
+<td class="column3">VSUP contains Input Pin and Unspecified Port objects (Pin U6601-5, Port VSUP).</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

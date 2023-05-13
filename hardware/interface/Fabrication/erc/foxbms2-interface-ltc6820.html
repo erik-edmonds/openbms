@@ -1,0 +1,557 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+        td, th {
+            padding: 0.5em;
+            text-align : left;
+        }
+        th {
+            background-color : #EEEEEE;
+        
+        }
+        th.column1, td.column1 {
+            width : 10em;
+        }
+
+        th.column2, td.column2 {
+            width : 30em;
+        }
+
+        table {
+            width : 100%;
+            font-size: 0.9em;
+        }
+
+		.header_holder {
+			Width = 100%;
+			border = 0px solid green;
+			padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+        }
+
+        .front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+        }
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+        .total_column1, .total_column {
+            font-weight : bold;
+        }
+        .total_column1 {
+            text-align : left;
+        }
+        .warning, .error {
+            color : red;
+            font-weight : bold;
+        }
+        tr.onmouseout_odd {
+            background-color : #white;
+        }
+        tr.onmouseout_even { 
+            background-color : #FAFAFA;
+        }
+        tr.onmouseover_odd, tr.onmouseover_even { 
+            background-color : #EEEEEE;
+        } 
+        a:link, a:visited, .q a:link,.q a:active,.q {
+            color: #21489e; 
+        }
+        a:link.callback, a:visited.callback { 
+            color: #21489e;
+        }
+        p.contents_level1 {
+            font-weight : bold;
+            font-size : 110%;
+            margin : 0.5em;
+        }
+        p.contents_level2 {
+            position : relative;
+            left : 20px;
+            margin : 0.5em;
+        }
+    </style><script type="text/javascript">
+        function coordToMils(coord) {
+            var number = coord / 10000;
+            
+            if (number != number.toFixed(3))
+                number = number.toFixed(3);
+            
+            return number + 'mil'
+        }
+
+        function coordToMM(coord) {
+            var number = 0.0254 * coord / 10000;
+            
+            if (number != number.toFixed(4))
+                number = number.toFixed(4);
+            
+            return number + 'mm'
+        }
+    
+        function convertCoord(coordNode, units) {
+            for (var i = 0; i < coordNode.childNodes.length; i++) {
+                coordNode.removeChild(coordNode.childNodes[i]);
+            }
+
+            var coord = coordNode.getAttribute('value');
+            if (coord != null) {
+                if (units == 'mm') {
+                    textNode = document.createTextNode(coordToMM(coord));
+                    coordNode.appendChild(textNode);
+                } else if (units == 'mil') {
+                    textNode = document.createTextNode(coordToMils(coord));
+                    coordNode.appendChild(textNode);
+                }
+            }
+        }
+    
+        function convertUnits(unitNode, units) {
+            for (var i = 0; i < unitNode.childNodes.length; i++) {
+                unitNode.removeChild(unitNode.childNodes[i]);
+            }
+        
+            textNode = document.createTextNode(units); 
+            unitNode.appendChild(textNode);
+        }
+    
+        function changeUnits(radio_input, units) {
+            if (radio_input.checked) {
+            
+                var elements = document.getElementsByName('coordinate');
+                if (elements) {
+                    for (var i = 0; i < elements.length; i++) {
+                        convertCoord(elements[i], units);
+                    }
+                }
+    
+                var elements = document.getElementsByName('units');
+                if (elements) {
+                    for (var i = 0; i < elements.length; i++) {
+                        convertUnits(elements[i], units);
+                    }
+                }
+            }
+        }
+    </script></head>
+<body onload=""><img ALT="Altium" src="
+            file://C:\Users\Public\Documents\Altium\AD20\Templates\AD_logo.png
+        "><h1>Electrical Rule Check Report</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">11.11.2021</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">15:26:28</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\wacker\AppData\Local\TempReleases\Snapshot\1\Fabrication\erc\foxbms2-interface-ltc6820.html" class="file"><acronym title="C:\Users\wacker\AppData\Local\TempReleases\Snapshot\1\Fabrication\erc\foxbms2-interface-ltc6820.html">C:\Users\wacker\AppData\Local\TempReleases\Snapshot\1\Fabrication\erc\foxbms2-interface-ltc6820.html</acronym></a></td>
+</tr>
+</table><a name="IDPG201UXO3CFPBRRQQGKH2UC2MN5H4BW50PRG4VDVF5KMKF00KCSD"><table>
+<tr>
+<th class="column1">Class</th>
+<th class="column2">Document</th>
+<th class="column3">Message</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">\CS_1 contains IO Pin and Input Port objects (Pin U200-5, Port \CS).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">\CS_2 contains IO Pin and Input Port objects (Pin U200-5, Port \CS).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">\CS_3 contains IO Pin and Input Port objects (Pin U200-5, Port \CS).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">\CS_4 contains IO Pin and Input Port objects (Pin U200-5, Port \CS).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">GND_1 contains Input Pin and Unspecified Port objects (Pin U200-13, Port GND).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">GND_2 contains Input Pin and Unspecified Port objects (Pin U200-13, Port GND).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">GND_3 contains Input Pin and Unspecified Port objects (Pin U200-13, Port GND).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">GND_4 contains Input Pin and Unspecified Port objects (Pin U200-13, Port GND).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">MISO_1 contains IO Pin and Output Port objects (Pin U200-3, Port MISO).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">MISO_2 contains IO Pin and Output Port objects (Pin U200-3, Port MISO).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">MISO_3 contains IO Pin and Output Port objects (Pin U200-3, Port MISO).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">MISO_4 contains IO Pin and Output Port objects (Pin U200-3, Port MISO).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">MOSI_1 contains IO Pin and Input Port objects (Pin U200-2, Port MOSI).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">MOSI_2 contains IO Pin and Input Port objects (Pin U200-2, Port MOSI).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">MOSI_3 contains IO Pin and Input Port objects (Pin U200-2, Port MOSI).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">MOSI_4 contains IO Pin and Input Port objects (Pin U200-2, Port MOSI).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Net EN_1 has no driving source (Pin J100-24, Pin R200-1, Pin TP_EN1-1, Pin U200-1)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Net EN_2 has no driving source (Pin J100-26, Pin R200-1, Pin TP_EN2-1, Pin U200-1)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Net EN_3 has no driving source (Pin J100-28, Pin R200-1, Pin TP_EN3-1, Pin U200-1)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Net EN_4 has no driving source (Pin J100-30, Pin R200-1, Pin TP_EN4-1, Pin U200-1)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Net IF_GPIO.1 has no driving source (Pin J100-25, Pin TP_MSTR1-1, Pin U200-12)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Net IF_GPIO.3 has no driving source (Pin J100-27, Pin TP_MSTR2-1, Pin U200-12)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Net IF_GPIO.5 has no driving source (Pin J100-29, Pin TP_MSTR3-1, Pin U200-12)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Net IF_GPIO.7 has no driving source (Pin J100-31, Pin TP_MSTR4-1, Pin U200-12)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">Net NetR204_1_1 has no driving source (Pin R204-1, Pin R206-2, Pin U200-8)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">Net NetR204_2_1 has no driving source (Pin R204-1, Pin R206-2, Pin U200-8)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">Net NetR204_3_1 has no driving source (Pin R204-1, Pin R206-2, Pin U200-8)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">Net NetR204_4_1 has no driving source (Pin R204-1, Pin R206-2, Pin U200-8)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">Net NetR205_1_1 has no driving source (Pin R205-1, Pin R207-2, Pin U200-7)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">Net NetR205_2_1 has no driving source (Pin R205-1, Pin R207-2, Pin U200-7)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">Net NetR205_3_1 has no driving source (Pin R205-1, Pin R207-2, Pin U200-7)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">Net NetR205_4_1 has no driving source (Pin R205-1, Pin R207-2, Pin U200-7)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire \MCU_SPI1.CS1 has multiple names (Net Label \MCU_SPI1.CS1, Net Label \MCU_SPI1.CS1, Port \CS_1, Sheet Entry isoSPI-transceiver-1-\CS(Input))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire \MCU_SPI1.CS2 has multiple names (Net Label \MCU_SPI1.CS2, Net Label \MCU_SPI1.CS2, Port \CS_2, Sheet Entry isoSPI-transceiver-2-\CS(Input))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire \MCU_SPI4.CS0 has multiple names (Net Label \MCU_SPI4.CS0, Net Label \MCU_SPI4.CS0, Port \CS_3, Sheet Entry isoSPI-transceiver-3-\CS(Input))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire \MCU_SPI4.CS1 has multiple names (Net Label \MCU_SPI4.CS1, Net Label \MCU_SPI4.CS1, Port \CS_4, Sheet Entry isoSPI-transceiver-4-\CS(Input))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire EN_1 has multiple names (Net Label EN_1, Net Label EN_1, Net Label IF_GPIO.0, Net Label IF_GPIO.0, Port EN_1, Sheet Entry isoSPI-transceiver-1-EN(Input))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire EN_2 has multiple names (Net Label EN_2, Net Label EN_2, Net Label IF_GPIO.2, Net Label IF_GPIO.2, Port EN_2, Sheet Entry isoSPI-transceiver-2-EN(Input))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire EN_3 has multiple names (Net Label EN_3, Net Label EN_3, Net Label IF_GPIO.4, Net Label IF_GPIO.4, Port EN_3, Sheet Entry isoSPI-transceiver-3-EN(Input))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire EN_4 has multiple names (Net Label EN_4, Net Label EN_4, Net Label IF_GPIO.6, Net Label IF_GPIO.6, Port EN_4, Sheet Entry isoSPI-transceiver-4-EN(Input))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire IF_GPIO.1 has multiple names (Net Label IF_GPIO.1, Net Label IF_GPIO.1, Net Label MSTR_1, Net Label MSTR_1, Port MSTR_1, Sheet Entry isoSPI-transceiver-1-MSTR(Input))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire IF_GPIO.3 has multiple names (Net Label IF_GPIO.3, Net Label IF_GPIO.3, Net Label MSTR_2, Net Label MSTR_2, Port MSTR_2, Sheet Entry isoSPI-transceiver-2-MSTR(Input))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire IF_GPIO.5 has multiple names (Net Label IF_GPIO.5, Net Label IF_GPIO.5, Net Label MSTR_3, Net Label MSTR_3, Port MSTR_3, Sheet Entry isoSPI-transceiver-3-MSTR(Input))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire IF_GPIO.7 has multiple names (Net Label IF_GPIO.7, Net Label IF_GPIO.7, Net Label MSTR_4, Net Label MSTR_4, Port MSTR_4, Sheet Entry isoSPI-transceiver-4-MSTR(Input))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_1._N has multiple names (Net Label isoSPI_1._N, Net Label isoSPI_1_N, Net Label isoSPI_EXT_1_N, Port isoSPI_EXT._N_1, Sheet Entry isoSPI-transformer-1-isoSPI_EXT._N(Passive))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_1._P has multiple names (Net Label isoSPI_1._P, Net Label isoSPI_1_P, Net Label isoSPI_EXT_1_P, Port isoSPI_EXT._P_1, Sheet Entry isoSPI-transformer-1-isoSPI_EXT._P(Passive))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_2._N has multiple names (Net Label isoSPI_2._N, Net Label isoSPI_2_N, Net Label isoSPI_EXT_2_N, Port isoSPI_EXT._N_2, Sheet Entry isoSPI-transformer-2-isoSPI_EXT._N(Passive))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_2._P has multiple names (Net Label isoSPI_2._P, Net Label isoSPI_2_P, Net Label isoSPI_EXT_2_P, Port isoSPI_EXT._P_2, Sheet Entry isoSPI-transformer-2-isoSPI_EXT._P(Passive))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_3._N has multiple names (Net Label isoSPI_3._N, Net Label isoSPI_3_N, Net Label isoSPI_EXT_3_N, Port isoSPI_EXT._N_3, Sheet Entry isoSPI-transformer-3-isoSPI_EXT._N(Passive))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_3._P has multiple names (Net Label isoSPI_3._P, Net Label isoSPI_3_P, Net Label isoSPI_EXT_3_P, Port isoSPI_EXT._P_3, Sheet Entry isoSPI-transformer-3-isoSPI_EXT._P(Passive))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_4._N has multiple names (Net Label isoSPI_4._N, Net Label isoSPI_4_N, Net Label isoSPI_EXT_4_N, Port isoSPI_EXT._N_4, Sheet Entry isoSPI-transformer-4-isoSPI_EXT._N(Passive))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_4._P has multiple names (Net Label isoSPI_4._P, Net Label isoSPI_4_P, Net Label isoSPI_EXT_4_P, Port isoSPI_EXT._P_4, Sheet Entry isoSPI-transformer-4-isoSPI_EXT._P(Passive))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_INT_1_N has multiple names (Net Label isoSPI_1_N, Net Label isoSPI_INT_1_N, Port isoSPI._N_1, Port isoSPI_INT._N_1, Sheet Entry isoSPI-transceiver-1-isoSPI._N(Passive), Sheet Entry isoSPI-transformer-1-isoSPI_INT._N(Passive))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_INT_1_P has multiple names (Net Label isoSPI_1_P, Net Label isoSPI_INT_1_P, Port isoSPI._P_1, Port isoSPI_INT._P_1, Sheet Entry isoSPI-transceiver-1-isoSPI._P(Passive), Sheet Entry isoSPI-transformer-1-isoSPI_INT._P(Passive))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_INT_2_N has multiple names (Net Label isoSPI_2_N, Net Label isoSPI_INT_2_N, Port isoSPI._N_2, Port isoSPI_INT._N_2, Sheet Entry isoSPI-transceiver-2-isoSPI._N(Passive), Sheet Entry isoSPI-transformer-2-isoSPI_INT._N(Passive))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_INT_2_P has multiple names (Net Label isoSPI_2_P, Net Label isoSPI_INT_2_P, Port isoSPI._P_2, Port isoSPI_INT._P_2, Sheet Entry isoSPI-transceiver-2-isoSPI._P(Passive), Sheet Entry isoSPI-transformer-2-isoSPI_INT._P(Passive))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_INT_3_N has multiple names (Net Label isoSPI_3_N, Net Label isoSPI_INT_3_N, Port isoSPI._N_3, Port isoSPI_INT._N_3, Sheet Entry isoSPI-transceiver-3-isoSPI._N(Passive), Sheet Entry isoSPI-transformer-3-isoSPI_INT._N(Passive))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_INT_3_P has multiple names (Net Label isoSPI_3_P, Net Label isoSPI_INT_3_P, Port isoSPI._P_3, Port isoSPI_INT._P_3, Sheet Entry isoSPI-transceiver-3-isoSPI._P(Passive), Sheet Entry isoSPI-transformer-3-isoSPI_INT._P(Passive))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_INT_4_N has multiple names (Net Label isoSPI_4_N, Net Label isoSPI_INT_4_N, Port isoSPI._N_4, Port isoSPI_INT._N_4, Sheet Entry isoSPI-transceiver-4-isoSPI._N(Passive), Sheet Entry isoSPI-transformer-4-isoSPI_INT._N(Passive))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire isoSPI_INT_4_P has multiple names (Net Label isoSPI_4_P, Net Label isoSPI_INT_4_P, Port isoSPI._P_4, Port isoSPI_INT._P_4, Sheet Entry isoSPI-transceiver-4-isoSPI._P(Passive), Sheet Entry isoSPI-transformer-4-isoSPI_INT._P(Passive))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.CLK has multiple names (Net Label MCU_SPI1.CLK, Net Label MCU_SPI1.CLK, Net Label MCU_SPI1.CLK, Port SCK_1, Port SCK_2, Sheet Entry isoSPI-transceiver-1-SCK(Input), Sheet Entry isoSPI-transceiver-2-SCK(Input))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.SIMO0 has multiple names (Net Label MCU_SPI1.SIMO0, Net Label MCU_SPI1.SIMO0, Net Label MCU_SPI1.SIMO0, Port MOSI_1, Port MOSI_2, Sheet Entry isoSPI-transceiver-1-MOSI(Input), Sheet Entry isoSPI-transceiver-2-MOSI(Input))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI1.SOMI0 has multiple names (Net Label MCU_SPI1.SOMI0, Net Label MCU_SPI1.SOMI0, Net Label MCU_SPI1.SOMI0, Port MISO_1, Port MISO_2, Sheet Entry isoSPI-transceiver-1-MISO(Output), Sheet Entry isoSPI-transceiver-2-MISO(Output))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI4.CLK has multiple names (Net Label MCU_SPI4.CLK, Net Label MCU_SPI4.CLK, Net Label MCU_SPI4.CLK, Port SCK_3, Port SCK_4, Sheet Entry isoSPI-transceiver-3-SCK(Input), Sheet Entry isoSPI-transceiver-4-SCK(Input))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI4.SIMO has multiple names (Net Label MCU_SPI4.SIMO, Net Label MCU_SPI4.SIMO, Net Label MCU_SPI4.SIMO, Port MOSI_3, Port MOSI_4, Sheet Entry isoSPI-transceiver-3-MOSI(Input), Sheet Entry isoSPI-transceiver-4-MOSI(Input))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire MCU_SPI4.SOMI has multiple names (Net Label MCU_SPI4.SOMI, Net Label MCU_SPI4.SOMI, Net Label MCU_SPI4.SOMI, Port MISO_3, Port MISO_4, Sheet Entry isoSPI-transceiver-3-MISO(Output), Sheet Entry isoSPI-transceiver-4-MISO(Output))</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">foxbms2-interface-ltc6820.SchDoc</td>
+<td class="column3">Nets Wire PER_3.3V has multiple names (Port VDD_1, Port VDD_2, Port VDD_3, Port VDD_4, Port VDDIO_1, Port VDDIO_2, Port VDDIO_3, Port VDDIO_4, Power Object PER_3.3V, Power Object PER_3.3V, Power Object PER_3.3V, Power Object PER_3.3V, Power Object PER_3.3V, Power Object PER_3.3V, Power Object PER_3.3V, Power Object VDD_1, Power Object VDD_1, Power Object VDD_2, Power Object VDD_2, Power Object VDD_3, Power Object VDD_3, Power Object VDD_4, Power Object VDD_4, Power Object VDDIO_1, Power Object VDDIO_1, Power Object VDDIO_1, Power Object VDDIO_2, Power Object VDDIO_2, Power Object VDDIO_2, Power Object VDDIO_3, Power Object VDDIO_3, Power Object VDDIO_3, Power Object VDDIO_4, Power Object VDDIO_4, Power Object VDDIO_4, Sheet Entry isoSPI-transceiver-1-VDD(Passive), Sheet Entry isoSPI-transceiver-1-VDDIO(Passive), Sheet Entry isoSPI-transceiver-2-VDD(Passive), Sheet Entry isoSPI-transceiver-2-VDDIO(Passive), Sheet Entry isoSPI-transceiver-3-VDD(Passive), Sheet Entry isoSPI-transceiver-3-VDDIO(Passive), Sheet Entry isoSPI-transceiver-4-VDD(Passive), Sheet Entry isoSPI-transceiver-4-VDDIO(Passive))</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">SCK_1 contains IO Pin and Input Port objects (Pin U200-4, Port SCK).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">SCK_2 contains IO Pin and Input Port objects (Pin U200-4, Port SCK).</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">SCK_3 contains IO Pin and Input Port objects (Pin U200-4, Port SCK).</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Warning</td>
+<td class="column2">isoSPI-transceiver.SchDoc</td>
+<td class="column3">SCK_4 contains IO Pin and Input Port objects (Pin U200-4, Port SCK).</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

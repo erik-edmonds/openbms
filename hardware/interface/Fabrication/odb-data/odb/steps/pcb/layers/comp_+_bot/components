@@ -1,0 +1,1431 @@
+#
+#Component attribute names
+#
+@0 .comp_mount_type
+@1 .comp_height
+
+# CMP 0
+CMP 7 0.1968502 0.5905512 0 N MP105 WE_9774140360R ;0=2,1=0.5512
+PRP Automotive_Qualified 'False'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.we-online.com/catalog/datasheet/9774140360R.pdf'
+PRP ECCN 'EAR99'
+PRP Manufacturer 'Würth Elektronik'
+PRP Operating_Temperature '-55°C - +150°C'
+PRP Part_Name 'WE_9774140360R'
+PRP Part_Number 'WE_9774140360R'
+PRP Supplier_1 'Digikey'
+PRP Supplier_2 'Mouser'
+PRP Supplier_Part_Number_1 '732-5281-1-ND'
+PRP Supplier_Part_Number_2 '710-9774140360R'
+TOP 0 0.1968502 0.5905512 180 N 0 26 MP105-1
+#
+# CMP 1
+CMP 7 0.1968502 4.5275591 0 N MP104 WE_9774140360R ;0=2,1=0.5512
+PRP Automotive_Qualified 'False'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.we-online.com/catalog/datasheet/9774140360R.pdf'
+PRP ECCN 'EAR99'
+PRP Manufacturer 'Würth Elektronik'
+PRP Operating_Temperature '-55°C - +150°C'
+PRP Part_Name 'WE_9774140360R'
+PRP Part_Number 'WE_9774140360R'
+PRP Supplier_1 'Digikey'
+PRP Supplier_2 'Mouser'
+PRP Supplier_Part_Number_1 '732-5281-1-ND'
+PRP Supplier_Part_Number_2 '710-9774140360R'
+TOP 0 0.1968502 4.5275591 180 N 0 27 MP104-1
+#
+# CMP 2
+CMP 7 2.5590551 4.5275591 0 N MP103 WE_9774140360R ;0=2,1=0.5512
+PRP Automotive_Qualified 'False'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.we-online.com/catalog/datasheet/9774140360R.pdf'
+PRP ECCN 'EAR99'
+PRP Manufacturer 'Würth Elektronik'
+PRP Operating_Temperature '-55°C - +150°C'
+PRP Part_Name 'WE_9774140360R'
+PRP Part_Number 'WE_9774140360R'
+PRP Supplier_1 'Digikey'
+PRP Supplier_2 'Mouser'
+PRP Supplier_Part_Number_1 '732-5281-1-ND'
+PRP Supplier_Part_Number_2 '710-9774140360R'
+TOP 0 2.5590551 4.5275591 180 N 0 25 MP103-1
+#
+# CMP 3
+CMP 7 2.5590551 0.1968504 0 N MP102 WE_9774140360R ;0=2,1=0.5512
+PRP Automotive_Qualified 'False'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.we-online.com/catalog/datasheet/9774140360R.pdf'
+PRP ECCN 'EAR99'
+PRP Manufacturer 'Würth Elektronik'
+PRP Operating_Temperature '-55°C - +150°C'
+PRP Part_Name 'WE_9774140360R'
+PRP Part_Number 'WE_9774140360R'
+PRP Supplier_1 'Digikey'
+PRP Supplier_2 'Mouser'
+PRP Supplier_Part_Number_1 '732-5281-1-ND'
+PRP Supplier_Part_Number_2 '710-9774140360R'
+TOP 0 2.5590551 0.1968504 180 N 0 24 MP102-1
+#
+# CMP 4
+CMP 1 1.05 1.3 270 N T1300_2 HM2102NLT ;0=1,1=0.1970
+PRP AEC-Q_Norm 'AEC-Q200'
+PRP Automotive_Qualified 'True'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.mouser.de/datasheet/2/336/HM2102NL-1218600.pdf'
+PRP ECCN 'EAR99'
+PRP Manufacturer 'Pulse'
+PRP Operating_Temperature '-40°C - +125°C'
+PRP Part_Number 'HM2102NLT'
+PRP Supplier_1 'Mouser'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '673-HM2102NLT'
+PRP Supplier_Part_Number_2 '1840-1034-1-ND'
+TOP 0 1.2468504 1.0283465 270 N 61 0 T1300_2-1
+TOP 1 1.1678504 1.0283465 270 N 0 15 T1300_2-2
+TOP 2 1.0888504 1.0283465 270 N 60 0 T1300_2-3
+TOP 3 1.0098504 1.0283465 270 N 7 0 T1300_2-4
+TOP 4 0.9308504 1.0283465 270 N 8 0 T1300_2-5
+TOP 5 0.8518504 1.0283465 270 N 9 0 T1300_2-6
+TOP 6 0.8518504 1.5708465 270 N 0 18 T1300_2-7
+TOP 7 0.9308504 1.5708465 270 N 0 17 T1300_2-8
+TOP 8 1.0098504 1.5708465 270 N 0 16 T1300_2-9
+TOP 9 1.0888504 1.5708465 270 N 52 2 T1300_2-10
+TOP 10 1.1678504 1.5708465 270 N 34 1 T1300_2-11
+TOP 11 1.2468504 1.5708465 270 N 53 2 T1300_2-12
+#
+# CMP 5
+CMP 1 2.35625 1.3 270 N T1300_4 HM2102NLT ;0=1,1=0.1970
+PRP AEC-Q_Norm 'AEC-Q200'
+PRP Automotive_Qualified 'True'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.mouser.de/datasheet/2/336/HM2102NL-1218600.pdf'
+PRP ECCN 'EAR99'
+PRP Manufacturer 'Pulse'
+PRP Operating_Temperature '-40°C - +125°C'
+PRP Part_Number 'HM2102NLT'
+PRP Supplier_1 'Mouser'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '673-HM2102NLT'
+PRP Supplier_Part_Number_2 '1840-1034-1-ND'
+TOP 0 2.5531004 1.0283465 270 N 57 0 T1300_4-1
+TOP 1 2.4741004 1.0283465 270 N 0 7 T1300_4-2
+TOP 2 2.3951004 1.0283465 270 N 56 0 T1300_4-3
+TOP 3 2.3161004 1.0283465 270 N 1 0 T1300_4-4
+TOP 4 2.2371004 1.0283465 270 N 2 0 T1300_4-5
+TOP 5 2.1581004 1.0283465 270 N 3 0 T1300_4-6
+TOP 6 2.1581004 1.5708465 270 N 0 4 T1300_4-7
+TOP 7 2.2371004 1.5708465 270 N 0 5 T1300_4-8
+TOP 8 2.3161004 1.5708465 270 N 0 6 T1300_4-9
+TOP 9 2.3951004 1.5708465 270 N 48 2 T1300_4-10
+TOP 10 2.4741004 1.5708465 270 N 32 1 T1300_4-11
+TOP 11 2.5531004 1.5708465 270 N 49 2 T1300_4-12
+#
+# CMP 6
+CMP 1 1.70625 1.3 270 N T1300_3 HM2102NLT ;0=1,1=0.1970
+PRP AEC-Q_Norm 'AEC-Q200'
+PRP Automotive_Qualified 'True'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.mouser.de/datasheet/2/336/HM2102NL-1218600.pdf'
+PRP ECCN 'EAR99'
+PRP Manufacturer 'Pulse'
+PRP Operating_Temperature '-40°C - +125°C'
+PRP Part_Number 'HM2102NLT'
+PRP Supplier_1 'Mouser'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '673-HM2102NLT'
+PRP Supplier_Part_Number_2 '1840-1034-1-ND'
+TOP 0 1.9031004 1.0283465 270 N 59 0 T1300_3-1
+TOP 1 1.8241004 1.0283465 270 N 0 3 T1300_3-2
+TOP 2 1.7451004 1.0283465 270 N 58 0 T1300_3-3
+TOP 3 1.6661004 1.0283465 270 N 4 0 T1300_3-4
+TOP 4 1.5871004 1.0283465 270 N 5 0 T1300_3-5
+TOP 5 1.5081004 1.0283465 270 N 6 0 T1300_3-6
+TOP 6 1.5081004 1.5708465 270 N 0 0 T1300_3-7
+TOP 7 1.5871004 1.5708465 270 N 0 1 T1300_3-8
+TOP 8 1.6661004 1.5708465 270 N 0 2 T1300_3-9
+TOP 9 1.7451004 1.5708465 270 N 50 2 T1300_3-10
+TOP 10 1.8241004 1.5708465 270 N 33 1 T1300_3-11
+TOP 11 1.9031004 1.5708465 270 N 51 2 T1300_3-12
+#
+# CMP 7
+CMP 1 0.4 1.3 270 N T1300_1 HM2102NLT ;0=1,1=0.1970
+PRP AEC-Q_Norm 'AEC-Q200'
+PRP Automotive_Qualified 'True'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.mouser.de/datasheet/2/336/HM2102NL-1218600.pdf'
+PRP ECCN 'EAR99'
+PRP Manufacturer 'Pulse'
+PRP Operating_Temperature '-40°C - +125°C'
+PRP Part_Number 'HM2102NLT'
+PRP Supplier_1 'Mouser'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '673-HM2102NLT'
+PRP Supplier_Part_Number_2 '1840-1034-1-ND'
+TOP 0 0.5968504 1.0283465 270 N 63 0 T1300_1-1
+TOP 1 0.5178504 1.0283465 270 N 0 11 T1300_1-2
+TOP 2 0.4388504 1.0283465 270 N 62 0 T1300_1-3
+TOP 3 0.3598504 1.0283465 270 N 10 0 T1300_1-4
+TOP 4 0.2808504 1.0283465 270 N 11 0 T1300_1-5
+TOP 5 0.2018504 1.0283465 270 N 12 0 T1300_1-6
+TOP 6 0.2018504 1.5708465 270 N 0 8 T1300_1-7
+TOP 7 0.2808504 1.5708465 270 N 0 9 T1300_1-8
+TOP 8 0.3598504 1.5708465 270 N 0 10 T1300_1-9
+TOP 9 0.4388504 1.5708465 270 N 54 2 T1300_1-10
+TOP 10 0.5178504 1.5708465 270 N 35 1 T1300_1-11
+TOP 11 0.5968504 1.5708465 270 N 55 2 T1300_1-12
+#
+# CMP 8
+CMP 2 1.19375 2.225 90 N U200_2 LTC6820HMS ;0=1,1=0.0433
+PRP Automotive_Qualified 'True'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6820.pdf'
+PRP Manufacturer 'Analog Devices'
+PRP Operating_Temperature '-40°C - +125°C'
+PRP Part_Name 'LTC6820HMS'
+PRP Part_Number 'LTC6820HMS'
+PRP PnP_Package 'MSOP-16'
+PRP Supplier_1 'Mouser'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '584-LTC6820HMS#PBF'
+PRP Supplier_Part_Number_2 'LTC6820HMS#TRPBFCT-ND'
+TOP 0 1.1248524 2.3125984 180 N 71 0 U200_2-1
+TOP 1 1.1445374 2.3125984 180 N 46 1 U200_2-2
+TOP 2 1.1642225 2.3125984 180 N 44 2 U200_2-3
+TOP 3 1.1839075 2.3125984 180 N 47 1 U200_2-4
+TOP 4 1.2035926 2.3125984 180 N 82 0 U200_2-5
+TOP 5 1.2232776 2.3125984 180 N 88 18 U200_2-6
+TOP 6 1.2429626 2.3125984 180 N 18 1 U200_2-7
+TOP 7 1.2626477 2.3125984 180 N 22 1 U200_2-8
+TOP 8 1.2626477 2.1374015 180 N 88 19 U200_2-9
+TOP 9 1.2429626 2.1374015 180 N 53 1 U200_2-10
+TOP 10 1.2232776 2.1374015 180 N 52 1 U200_2-11
+TOP 11 1.2035926 2.1374015 180 N 66 0 U200_2-12
+TOP 12 1.1839075 2.1374015 180 N 68 34 U200_2-13
+TOP 13 1.1642225 2.1374015 180 N 68 33 U200_2-14
+TOP 14 1.1445374 2.1374015 180 N 29 2 U200_2-15
+TOP 15 1.1248524 2.1374015 180 N 28 1 U200_2-16
+#
+# CMP 9
+CMP 2 0.54375 2.225 90 N U200_1 LTC6820HMS ;0=1,1=0.0433
+PRP Automotive_Qualified 'True'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6820.pdf'
+PRP Manufacturer 'Analog Devices'
+PRP Operating_Temperature '-40°C - +125°C'
+PRP Part_Name 'LTC6820HMS'
+PRP Part_Number 'LTC6820HMS'
+PRP PnP_Package 'MSOP-16'
+PRP Supplier_1 'Mouser'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '584-LTC6820HMS#PBF'
+PRP Supplier_Part_Number_2 'LTC6820HMS#TRPBFCT-ND'
+TOP 0 0.4748524 2.3125984 180 N 72 0 U200_1-1
+TOP 1 0.4945374 2.3125984 180 N 46 0 U200_1-2
+TOP 2 0.5142225 2.3125984 180 N 44 0 U200_1-3
+TOP 3 0.5339075 2.3125984 180 N 47 0 U200_1-4
+TOP 4 0.5535926 2.3125984 180 N 83 0 U200_1-5
+TOP 5 0.5732776 2.3125984 180 N 88 3 U200_1-6
+TOP 6 0.5929626 2.3125984 180 N 19 1 U200_1-7
+TOP 7 0.6126477 2.3125984 180 N 23 1 U200_1-8
+TOP 8 0.6126477 2.1374015 180 N 88 4 U200_1-9
+TOP 9 0.5929626 2.1374015 180 N 55 0 U200_1-10
+TOP 10 0.5732776 2.1374015 180 N 54 0 U200_1-11
+TOP 11 0.5535926 2.1374015 180 N 67 0 U200_1-12
+TOP 12 0.5339075 2.1374015 180 N 68 13 U200_1-13
+TOP 13 0.5142225 2.1374015 180 N 68 12 U200_1-14
+TOP 14 0.4945374 2.1374015 180 N 31 2 U200_1-15
+TOP 15 0.4748524 2.1374015 180 N 30 1 U200_1-16
+#
+# CMP 10
+CMP 4 1.11875 1.975 0 N R203_2 1k2 ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_1k2_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '1k2'
+PRP Power '0.1W'
+PRP Resistance '1k2'
+PRP Series 'E24'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073370'
+PRP Tolerance '1%'
+TOP 0 1.1463091 1.975 270 N 68 32 R203_2-1
+TOP 1 1.091191 1.975 270 N 29 1 R203_2-2
+#
+# CMP 11
+CMP 4 0.46875 1.975 0 N R203_1 1k2 ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_1k2_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '1k2'
+PRP Power '0.1W'
+PRP Resistance '1k2'
+PRP Series 'E24'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073370'
+PRP Tolerance '1%'
+TOP 0 0.4963091 1.975 270 N 68 11 R203_1-1
+TOP 1 0.441191 1.975 270 N 31 1 R203_1-2
+#
+# CMP 12
+CMP 4 1.11875 2.0375 0 N R202_2 806R ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_806R_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '806R'
+PRP Power '0.1W'
+PRP Resistance '806R'
+PRP Series 'E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2059324'
+PRP Tolerance '1%'
+TOP 0 1.1463091 2.0375 270 N 29 0 R202_2-1
+TOP 1 1.091191 2.0375 270 N 28 0 R202_2-2
+#
+# CMP 13
+CMP 4 0.46875 2.0375 0 N R202_1 806R ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_806R_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '806R'
+PRP Power '0.1W'
+PRP Resistance '806R'
+PRP Series 'E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2059324'
+PRP Tolerance '1%'
+TOP 0 0.4963091 2.0375 270 N 31 0 R202_1-1
+TOP 1 0.441191 2.0375 270 N 30 0 R202_1-2
+#
+# CMP 14
+CMP 4 1.1125 2.39375 0 N R201_2 2k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_2k_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '2k'
+PRP Power '0.1W'
+PRP Resistance '2k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2059343'
+PRP Tolerance '1%'
+TOP 0 1.1400591 2.39375 270 N 44 1 R201_2-1
+TOP 1 1.084941 2.39375 270 N 88 17 R201_2-2
+#
+# CMP 15
+CMP 4 0.4625 2.39375 0 N R201_1 2k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_2k_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '2k'
+PRP Power '0.1W'
+PRP Resistance '2k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2059343'
+PRP Tolerance '1%'
+TOP 0 0.4900591 2.39375 270 N 44 3 R201_1-1
+TOP 1 0.434941 2.39375 270 N 88 32 R201_1-2
+#
+# CMP 16
+CMP 4 1.08125 2.49375 270 N R200_2 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 1.08125 2.4661909 0 N 71 1 R200_2-1
+TOP 1 1.08125 2.521309 0 N 88 21 R200_2-2
+#
+# CMP 17
+CMP 4 0.43125 2.49375 270 N R200_1 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 0.43125 2.4661909 0 N 72 1 R200_1-1
+TOP 1 0.43125 2.521309 0 N 88 20 R200_1-2
+#
+# CMP 18
+CMP 0 1.23125 2.0375 180 N C200_2 100n/50V ;0=1,1=0.0315
+PRP AEC-Q_Norm 'AEC-Q200'
+PRP Automotive_Qualified 'True'
+PRP Capacitance '100n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'X7R'
+PRP ECCN 'EAR99'
+PRP Part_Number 'gen_C_ceramic_100n_50V_X7R_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603C'
+PRP PnP_Value '100nF/50V/X7R'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '2525267'
+PRP Supplier_Part_Number_2 '490-6049-1-ND'
+TOP 0 1.2027067 2.0375 90 N 68 31 C200_2-1
+TOP 1 1.2597933 2.0375 90 N 88 16 C200_2-2
+#
+# CMP 19
+CMP 0 0.58125 2.0375 180 N C200_1 100n/50V ;0=1,1=0.0315
+PRP AEC-Q_Norm 'AEC-Q200'
+PRP Automotive_Qualified 'True'
+PRP Capacitance '100n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'X7R'
+PRP ECCN 'EAR99'
+PRP Part_Number 'gen_C_ceramic_100n_50V_X7R_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603C'
+PRP PnP_Value '100nF/50V/X7R'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '2525267'
+PRP Supplier_Part_Number_2 '490-6049-1-ND'
+TOP 0 0.5527067 2.0375 90 N 68 10 C200_1-1
+TOP 1 0.6097933 2.0375 90 N 88 2 C200_1-2
+#
+# CMP 20
+CMP 2 2.5 2.225 90 N U200_4 LTC6820HMS ;0=1,1=0.0433
+PRP Automotive_Qualified 'True'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6820.pdf'
+PRP Manufacturer 'Analog Devices'
+PRP Operating_Temperature '-40°C - +125°C'
+PRP Part_Name 'LTC6820HMS'
+PRP Part_Number 'LTC6820HMS'
+PRP PnP_Package 'MSOP-16'
+PRP Supplier_1 'Mouser'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '584-LTC6820HMS#PBF'
+PRP Supplier_Part_Number_2 'LTC6820HMS#TRPBFCT-ND'
+TOP 0 2.4311024 2.3125984 180 N 69 0 U200_4-1
+TOP 1 2.4507874 2.3125984 180 N 41 1 U200_4-2
+TOP 2 2.4704725 2.3125984 180 N 40 2 U200_4-3
+TOP 3 2.4901575 2.3125984 180 N 42 1 U200_4-4
+TOP 4 2.5098426 2.3125984 180 N 77 0 U200_4-5
+TOP 5 2.5295276 2.3125984 180 N 88 11 U200_4-6
+TOP 6 2.5492126 2.3125984 180 N 16 0 U200_4-7
+TOP 7 2.5688977 2.3125984 180 N 20 0 U200_4-8
+TOP 8 2.5688977 2.1374015 180 N 88 10 U200_4-9
+TOP 9 2.5492126 2.1374015 180 N 49 1 U200_4-10
+TOP 10 2.5295276 2.1374015 180 N 48 1 U200_4-11
+TOP 11 2.5098426 2.1374015 180 N 64 0 U200_4-12
+TOP 12 2.4901575 2.1374015 180 N 68 21 U200_4-13
+TOP 13 2.4704725 2.1374015 180 N 68 22 U200_4-14
+TOP 14 2.4507874 2.1374015 180 N 25 0 U200_4-15
+TOP 15 2.4311024 2.1374015 180 N 24 0 U200_4-16
+#
+# CMP 21
+CMP 2 1.85 2.225 90 N U200_3 LTC6820HMS ;0=1,1=0.0433
+PRP Automotive_Qualified 'True'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6820.pdf'
+PRP Manufacturer 'Analog Devices'
+PRP Operating_Temperature '-40°C - +125°C'
+PRP Part_Name 'LTC6820HMS'
+PRP Part_Number 'LTC6820HMS'
+PRP PnP_Package 'MSOP-16'
+PRP Supplier_1 'Mouser'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '584-LTC6820HMS#PBF'
+PRP Supplier_Part_Number_2 'LTC6820HMS#TRPBFCT-ND'
+TOP 0 1.7811024 2.3125984 180 N 70 0 U200_3-1
+TOP 1 1.8007874 2.3125984 180 N 41 0 U200_3-2
+TOP 2 1.8204725 2.3125984 180 N 40 0 U200_3-3
+TOP 3 1.8401575 2.3125984 180 N 42 0 U200_3-4
+TOP 4 1.8598426 2.3125984 180 N 78 0 U200_3-5
+TOP 5 1.8795276 2.3125984 180 N 88 6 U200_3-6
+TOP 6 1.8992126 2.3125984 180 N 17 0 U200_3-7
+TOP 7 1.9188977 2.3125984 180 N 21 0 U200_3-8
+TOP 8 1.9188977 2.1374015 180 N 88 5 U200_3-9
+TOP 9 1.8992126 2.1374015 180 N 51 1 U200_3-10
+TOP 10 1.8795276 2.1374015 180 N 50 1 U200_3-11
+TOP 11 1.8598426 2.1374015 180 N 65 0 U200_3-12
+TOP 12 1.8401575 2.1374015 180 N 68 14 U200_3-13
+TOP 13 1.8204725 2.1374015 180 N 68 15 U200_3-14
+TOP 14 1.8007874 2.1374015 180 N 27 0 U200_3-15
+TOP 15 1.7811024 2.1374015 180 N 26 0 U200_3-16
+#
+# CMP 22
+CMP 4 2.55625 1.6875 270 N R302_4 49R9 ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_49R9_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '49R9'
+PRP Power '0.1W'
+PRP Resistance '49R9'
+PRP Series 'E96'
+PRP Supplier_1 'Digikey'
+PRP Supplier_Part_Number_1 'P49.9HCT-ND'
+PRP Tolerance '1%'
+TOP 0 2.55625 1.6599409 0 N 49 0 R302_4-1
+TOP 1 2.55625 1.715059 0 N 36 0 R302_4-2
+#
+# CMP 23
+CMP 4 1.90625 1.6875 270 N R302_3 49R9 ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_49R9_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '49R9'
+PRP Power '0.1W'
+PRP Resistance '49R9'
+PRP Series 'E96'
+PRP Supplier_1 'Digikey'
+PRP Supplier_Part_Number_1 'P49.9HCT-ND'
+PRP Tolerance '1%'
+TOP 0 1.90625 1.6599409 0 N 51 0 R302_3-1
+TOP 1 1.90625 1.715059 0 N 37 0 R302_3-2
+#
+# CMP 24
+CMP 4 1.25 1.6875 270 N R302_2 49R9 ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_49R9_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '49R9'
+PRP Power '0.1W'
+PRP Resistance '49R9'
+PRP Series 'E96'
+PRP Supplier_1 'Digikey'
+PRP Supplier_Part_Number_1 'P49.9HCT-ND'
+PRP Tolerance '1%'
+TOP 0 1.25 1.6599409 0 N 53 0 R302_2-1
+TOP 1 1.25 1.715059 0 N 38 0 R302_2-2
+#
+# CMP 25
+CMP 4 0.6 1.6875 270 N R302_1 49R9 ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_49R9_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '49R9'
+PRP Power '0.1W'
+PRP Resistance '49R9'
+PRP Series 'E96'
+PRP Supplier_1 'Digikey'
+PRP Supplier_Part_Number_1 'P49.9HCT-ND'
+PRP Tolerance '1%'
+TOP 0 0.6 1.6599409 0 N 55 1 R302_1-1
+TOP 1 0.6 1.715059 0 N 39 2 R302_1-2
+#
+# CMP 26
+CMP 4 2.39375 1.6875 90 N R300_4 49R9 ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_49R9_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '49R9'
+PRP Power '0.1W'
+PRP Resistance '49R9'
+PRP Series 'E96'
+PRP Supplier_1 'Digikey'
+PRP Supplier_Part_Number_1 'P49.9HCT-ND'
+PRP Tolerance '1%'
+TOP 0 2.39375 1.7150591 180 N 36 1 R300_4-1
+TOP 1 2.39375 1.659941 180 N 48 0 R300_4-2
+#
+# CMP 27
+CMP 4 1.74375 1.6875 90 N R300_3 49R9 ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_49R9_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '49R9'
+PRP Power '0.1W'
+PRP Resistance '49R9'
+PRP Series 'E96'
+PRP Supplier_1 'Digikey'
+PRP Supplier_Part_Number_1 'P49.9HCT-ND'
+PRP Tolerance '1%'
+TOP 0 1.74375 1.7150591 180 N 37 1 R300_3-1
+TOP 1 1.74375 1.659941 180 N 50 0 R300_3-2
+#
+# CMP 28
+CMP 4 1.0875 1.6875 90 N R300_2 49R9 ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_49R9_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '49R9'
+PRP Power '0.1W'
+PRP Resistance '49R9'
+PRP Series 'E96'
+PRP Supplier_1 'Digikey'
+PRP Supplier_Part_Number_1 'P49.9HCT-ND'
+PRP Tolerance '1%'
+TOP 0 1.0875 1.7150591 180 N 38 1 R300_2-1
+TOP 1 1.0875 1.659941 180 N 52 0 R300_2-2
+#
+# CMP 29
+CMP 4 0.4375 1.6875 90 N R300_1 49R9 ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_49R9_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '49R9'
+PRP Power '0.1W'
+PRP Resistance '49R9'
+PRP Series 'E96'
+PRP Supplier_1 'Digikey'
+PRP Supplier_Part_Number_1 'P49.9HCT-ND'
+PRP Tolerance '1%'
+TOP 0 0.4375 1.7150591 180 N 39 1 R300_1-1
+TOP 1 0.4375 1.659941 180 N 54 1 R300_1-2
+#
+# CMP 30
+CMP 4 2.53125 2.525 90 N R207_4 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 2.53125 2.5525591 180 N 68 23 R207_4-1
+TOP 1 2.53125 2.497441 180 N 16 1 R207_4-2
+#
+# CMP 31
+CMP 4 1.88125 2.525 90 N R207_3 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 1.88125 2.5525591 180 N 68 16 R207_3-1
+TOP 1 1.88125 2.497441 180 N 17 1 R207_3-2
+#
+# CMP 32
+CMP 4 1.225 2.525 90 N R207_2 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 1.225 2.5525591 180 N 68 30 R207_2-1
+TOP 1 1.225 2.497441 180 N 18 0 R207_2-2
+#
+# CMP 33
+CMP 4 0.575 2.525 90 N R207_1 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 0.575 2.5525591 180 N 68 9 R207_1-1
+TOP 1 0.575 2.497441 180 N 19 0 R207_1-2
+#
+# CMP 34
+CMP 4 2.59375 2.525 90 N R206_4 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 2.59375 2.5525591 180 N 68 24 R206_4-1
+TOP 1 2.59375 2.497441 180 N 20 1 R206_4-2
+#
+# CMP 35
+CMP 4 1.94375 2.525 90 N R206_3 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 1.94375 2.5525591 180 N 68 17 R206_3-1
+TOP 1 1.94375 2.497441 180 N 21 1 R206_3-2
+#
+# CMP 36
+CMP 4 1.2875 2.525 90 N R206_2 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 1.2875 2.5525591 180 N 68 29 R206_2-1
+TOP 1 1.2875 2.497441 180 N 22 0 R206_2-2
+#
+# CMP 37
+CMP 4 0.6375 2.525 90 N R206_1 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 0.6375 2.5525591 180 N 68 8 R206_1-1
+TOP 1 0.6375 2.497441 180 N 23 0 R206_1-2
+#
+# CMP 38
+CMP 4 2.53125 2.41875 90 N R205_4 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 2.53125 2.4463091 180 N 16 2 R205_4-1
+TOP 1 2.53125 2.391191 180 N 88 25 R205_4-2
+#
+# CMP 39
+CMP 4 1.88125 2.41875 90 N R205_3 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 1.88125 2.4463091 180 N 17 2 R205_3-1
+TOP 1 1.88125 2.391191 180 N 88 27 R205_3-2
+#
+# CMP 40
+CMP 4 1.225 2.41875 90 N R205_2 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 1.225 2.4463091 180 N 18 2 R205_2-1
+TOP 1 1.225 2.391191 180 N 88 29 R205_2-2
+#
+# CMP 41
+CMP 4 0.575 2.41875 90 N R205_1 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 0.575 2.4463091 180 N 19 2 R205_1-1
+TOP 1 0.575 2.391191 180 N 88 31 R205_1-2
+#
+# CMP 42
+CMP 4 2.59375 2.41875 90 N R204_4 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 2.59375 2.4463091 180 N 20 2 R204_4-1
+TOP 1 2.59375 2.391191 180 N 88 24 R204_4-2
+#
+# CMP 43
+CMP 4 1.94375 2.41875 90 N R204_3 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 1.94375 2.4463091 180 N 21 2 R204_3-1
+TOP 1 1.94375 2.391191 180 N 88 26 R204_3-2
+#
+# CMP 44
+CMP 4 1.2875 2.41875 90 N R204_2 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 1.2875 2.4463091 180 N 22 2 R204_2-1
+TOP 1 1.2875 2.391191 180 N 88 28 R204_2-2
+#
+# CMP 45
+CMP 4 0.6375 2.41875 90 N R204_1 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 0.6375 2.4463091 180 N 23 2 R204_1-1
+TOP 1 0.6375 2.391191 180 N 88 30 R204_1-2
+#
+# CMP 46
+CMP 4 2.425 1.975 0 N R203_4 1k2 ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_1k2_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '1k2'
+PRP Power '0.1W'
+PRP Resistance '1k2'
+PRP Series 'E24'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073370'
+PRP Tolerance '1%'
+TOP 0 2.4525591 1.975 270 N 68 25 R203_4-1
+TOP 1 2.397441 1.975 270 N 25 1 R203_4-2
+#
+# CMP 47
+CMP 4 1.775 1.975 0 N R203_3 1k2 ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_1k2_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '1k2'
+PRP Power '0.1W'
+PRP Resistance '1k2'
+PRP Series 'E24'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073370'
+PRP Tolerance '1%'
+TOP 0 1.8025591 1.975 270 N 68 18 R203_3-1
+TOP 1 1.747441 1.975 270 N 27 1 R203_3-2
+#
+# CMP 48
+CMP 4 2.425 2.0375 0 N R202_4 806R ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_806R_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '806R'
+PRP Power '0.1W'
+PRP Resistance '806R'
+PRP Series 'E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2059324'
+PRP Tolerance '1%'
+TOP 0 2.4525591 2.0375 270 N 25 2 R202_4-1
+TOP 1 2.397441 2.0375 270 N 24 1 R202_4-2
+#
+# CMP 49
+CMP 4 1.775 2.0375 0 N R202_3 806R ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_806R_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '806R'
+PRP Power '0.1W'
+PRP Resistance '806R'
+PRP Series 'E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2059324'
+PRP Tolerance '1%'
+TOP 0 1.8025591 2.0375 270 N 27 2 R202_3-1
+TOP 1 1.747441 2.0375 270 N 26 1 R202_3-2
+#
+# CMP 50
+CMP 4 2.41875 2.39375 0 N R201_4 2k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_2k_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '2k'
+PRP Power '0.1W'
+PRP Resistance '2k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2059343'
+PRP Tolerance '1%'
+TOP 0 2.4463091 2.39375 270 N 40 3 R201_4-1
+TOP 1 2.391191 2.39375 270 N 88 12 R201_4-2
+#
+# CMP 51
+CMP 4 1.76875 2.39375 0 N R201_3 2k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_2k_0603'
+PRP PnP_Package '0603R'
+PRP PnP_Value '2k'
+PRP Power '0.1W'
+PRP Resistance '2k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2059343'
+PRP Tolerance '1%'
+TOP 0 1.7963091 2.39375 270 N 40 1 R201_3-1
+TOP 1 1.741191 2.39375 270 N 88 7 R201_3-2
+#
+# CMP 52
+CMP 4 2.3875 2.49375 270 N R200_4 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 2.3875 2.4661909 0 N 69 1 R200_4-1
+TOP 1 2.3875 2.521309 0 N 88 23 R200_4-2
+#
+# CMP 53
+CMP 4 1.7375 2.49375 270 N R200_3 10k ;0=1,1=0.0177
+PRP Automotive_Qualified 'True'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Maximum_Working_Voltage '75V'
+PRP Operating_Temperature '-55°C - +155°C'
+PRP Part_Number 'gen_R_10k_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603R'
+PRP PnP_Value '10k'
+PRP Power '0.1W'
+PRP Resistance '10k'
+PRP Series 'E24, E96'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2073349'
+PRP Tolerance '1%'
+TOP 0 1.7375 2.4661909 0 N 70 1 R200_3-1
+TOP 1 1.7375 2.521309 0 N 88 22 R200_3-2
+#
+# CMP 54
+CMP 5 0.7874014 4.5275591 0 N J100 ERF8-020-05.0-L-DV-K ;0=1,1=0.2098
+PRP Automotive_Qualified 'False'
+PRP Circuits '40'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://suddendocs.samtec.com/catalog_english/erf8-s.pdf'
+PRP ECCN 'EAR99'
+PRP Manufacturer 'Samtec'
+PRP Operating_Temperature '-55°C - +125°C'
+PRP Part_Name 'ERF8-020-05.0-L-DV-K'
+PRP Part_Number 'SAMTEC_ERF8-020-05.0-L-DV-K'
+PRP Supplier_1 'Farnell'
+PRP Supplier_2 'Digikey'
+PRP Supplier_3 'Mouser'
+PRP Supplier_Part_Number_1 '3771957'
+PRP Supplier_Part_Number_2 'SAM13550CT-ND'
+PRP Supplier_Part_Number_3 '200-ERF802005.0LDVLK'
+PRP System 'Connector'
+TOP 0 0.4881888 4.6161418 270 N 44 4 J100-1
+TOP 1 0.4881888 4.4389764 270 N 43 0 J100-2
+TOP 2 0.5196849 4.6161418 270 N 46 2 J100-3
+TOP 3 0.5196849 4.4389764 270 N 45 0 J100-4
+TOP 4 0.551181 4.6161418 270 N 47 2 J100-5
+TOP 5 0.551181 4.4389764 270 N 83 1 J100-6
+TOP 6 0.582677 4.6161418 270 N 82 1 J100-7
+TOP 7 0.582677 4.4389764 270 N 81 0 J100-8
+TOP 8 0.6141731 4.6161418 270 N 80 0 J100-9
+TOP 9 0.6141731 4.4389764 270 N 79 0 J100-10
+TOP 10 0.6456691 4.6161418 270 N 40 4 J100-11
+TOP 11 0.6456691 4.4389764 270 N 41 2 J100-12
+TOP 12 0.6771652 4.6161418 270 N 42 2 J100-13
+TOP 13 0.6771652 4.4389764 270 N 78 1 J100-14
+TOP 14 0.7086613 4.6161418 270 N 77 1 J100-15
+TOP 15 0.7086613 4.4389764 270 N 76 0 J100-16
+TOP 16 0.7401573 4.6161418 270 N 75 0 J100-17
+TOP 17 0.7401573 4.4389764 270 N 74 0 J100-18
+TOP 18 0.7716534 4.6161418 270 N 73 0 J100-19
+TOP 19 0.7716534 4.4389764 270 N 87 0 J100-20
+TOP 20 0.8031495 4.6161418 270 N 86 0 J100-21
+TOP 21 0.8031495 4.4389764 270 N 85 0 J100-22
+TOP 22 0.8346455 4.6161418 270 N 84 0 J100-23
+TOP 23 0.8346455 4.4389764 270 N 72 2 J100-24
+TOP 24 0.8661416 4.6161418 270 N 67 1 J100-25
+TOP 25 0.8661416 4.4389764 270 N 71 2 J100-26
+TOP 26 0.8976376 4.6161418 270 N 66 1 J100-27
+TOP 27 0.8976376 4.4389764 270 N 70 2 J100-28
+TOP 28 0.9291337 4.6161418 270 N 65 1 J100-29
+TOP 29 0.9291337 4.4389764 270 N 69 2 J100-30
+TOP 30 0.9606298 4.6161418 270 N 64 1 J100-31
+TOP 31 0.9606298 4.4389764 270 N 68 38 J100-32
+TOP 32 0.9921258 4.6161418 270 N 68 37 J100-33
+TOP 33 0.9921258 4.4389764 270 N 88 34 J100-34
+TOP 34 1.0236219 4.6161418 270 N 88 33 J100-35
+TOP 35 1.0236219 4.4389764 270 N 15 1 J100-36
+TOP 36 1.055118 4.6161418 270 N 15 0 J100-37
+TOP 37 1.055118 4.4389764 270 N 14 0 J100-38
+TOP 38 1.086614 4.6161418 270 N 13 1 J100-39
+TOP 39 1.086614 4.4389764 270 N 13 0 J100-40
+TOP 40 1.1574801 4.468504 180 N 0 29 J100-empty-1
+TOP 41 0.4173227 4.468504 180 N 0 28 J100-empty-2
+#
+# CMP 55
+CMP 0 2.475 1.6875 90 N C301_4 10n/50V ;0=1,1=0.0315
+PRP Automotive_Qualified 'True'
+PRP Capacitance '10n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'C0G'
+PRP Part_Number 'gen_C_ceramic_10n_50V_C0G_0603'
+PRP PnP_Package '0603C'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2210846'
+TOP 0 2.475 1.7160433 180 N 68 5 C301_4-1
+TOP 1 2.475 1.6589567 180 N 32 0 C301_4-2
+#
+# CMP 56
+CMP 0 1.825 1.6875 90 N C301_3 10n/50V ;0=1,1=0.0315
+PRP Automotive_Qualified 'True'
+PRP Capacitance '10n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'C0G'
+PRP Part_Number 'gen_C_ceramic_10n_50V_C0G_0603'
+PRP PnP_Package '0603C'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2210846'
+TOP 0 1.825 1.7160433 180 N 68 3 C301_3-1
+TOP 1 1.825 1.6589567 180 N 33 0 C301_3-2
+#
+# CMP 57
+CMP 0 1.16875 1.6875 90 N C301_2 10n/50V ;0=1,1=0.0315
+PRP Automotive_Qualified 'True'
+PRP Capacitance '10n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'C0G'
+PRP Part_Number 'gen_C_ceramic_10n_50V_C0G_0603'
+PRP PnP_Package '0603C'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2210846'
+TOP 0 1.16875 1.7160433 180 N 68 1 C301_2-1
+TOP 1 1.16875 1.6589567 180 N 34 0 C301_2-2
+#
+# CMP 58
+CMP 0 0.51875 1.6875 90 N C301_1 10n/50V ;0=1,1=0.0315
+PRP Automotive_Qualified 'True'
+PRP Capacitance '10n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'C0G'
+PRP Part_Number 'gen_C_ceramic_10n_50V_C0G_0603'
+PRP PnP_Package '0603C'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2210846'
+TOP 0 0.51875 1.7160433 180 N 68 36 C301_1-1
+TOP 1 0.51875 1.6589567 180 N 35 0 C301_1-2
+#
+# CMP 59
+CMP 0 2.475 1.81875 90 N C300_4 10n/50V ;0=1,1=0.0315
+PRP Automotive_Qualified 'True'
+PRP Capacitance '10n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'C0G'
+PRP Part_Number 'gen_C_ceramic_10n_50V_C0G_0603'
+PRP PnP_Package '0603C'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2210846'
+TOP 0 2.475 1.8472933 180 N 36 2 C300_4-1
+TOP 1 2.475 1.7902067 180 N 68 6 C300_4-2
+#
+# CMP 60
+CMP 0 1.825 1.81875 90 N C300_3 10n/50V ;0=1,1=0.0315
+PRP Automotive_Qualified 'True'
+PRP Capacitance '10n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'C0G'
+PRP Part_Number 'gen_C_ceramic_10n_50V_C0G_0603'
+PRP PnP_Package '0603C'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2210846'
+TOP 0 1.825 1.8472933 180 N 37 2 C300_3-1
+TOP 1 1.825 1.7902067 180 N 68 4 C300_3-2
+#
+# CMP 61
+CMP 0 1.16875 1.81875 90 N C300_2 10n/50V ;0=1,1=0.0315
+PRP Automotive_Qualified 'True'
+PRP Capacitance '10n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'C0G'
+PRP Part_Number 'gen_C_ceramic_10n_50V_C0G_0603'
+PRP PnP_Package '0603C'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2210846'
+TOP 0 1.16875 1.8472933 180 N 38 2 C300_2-1
+TOP 1 1.16875 1.7902067 180 N 68 2 C300_2-2
+#
+# CMP 62
+CMP 0 0.51875 1.81875 90 N C300_1 10n/50V ;0=1,1=0.0315
+PRP Automotive_Qualified 'True'
+PRP Capacitance '10n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'C0G'
+PRP Part_Number 'gen_C_ceramic_10n_50V_C0G_0603'
+PRP PnP_Package '0603C'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_Part_Number_1 '2210846'
+TOP 0 0.51875 1.8472933 180 N 39 0 C300_1-1
+TOP 1 0.51875 1.7902067 180 N 68 35 C300_1-2
+#
+# CMP 63
+CMP 0 2.63125 2.225 270 N C201_4 100n/50V ;0=1,1=0.0315
+PRP AEC-Q_Norm 'AEC-Q200'
+PRP Automotive_Qualified 'True'
+PRP Capacitance '100n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'X7R'
+PRP ECCN 'EAR99'
+PRP Part_Number 'gen_C_ceramic_100n_50V_X7R_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603C'
+PRP PnP_Value '100nF/50V/X7R'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '2525267'
+PRP Supplier_Part_Number_2 '490-6049-1-ND'
+TOP 0 2.63125 2.1964567 0 N 68 26 C201_4-1
+TOP 1 2.63125 2.2535433 0 N 88 13 C201_4-2
+#
+# CMP 64
+CMP 0 1.98125 2.225 270 N C201_3 100n/50V ;0=1,1=0.0315
+PRP AEC-Q_Norm 'AEC-Q200'
+PRP Automotive_Qualified 'True'
+PRP Capacitance '100n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'X7R'
+PRP ECCN 'EAR99'
+PRP Part_Number 'gen_C_ceramic_100n_50V_X7R_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603C'
+PRP PnP_Value '100nF/50V/X7R'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '2525267'
+PRP Supplier_Part_Number_2 '490-6049-1-ND'
+TOP 0 1.98125 2.1964567 0 N 68 19 C201_3-1
+TOP 1 1.98125 2.2535433 0 N 88 8 C201_3-2
+#
+# CMP 65
+CMP 0 1.325 2.225 270 N C201_2 100n/50V ;0=1,1=0.0315
+PRP AEC-Q_Norm 'AEC-Q200'
+PRP Automotive_Qualified 'True'
+PRP Capacitance '100n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'X7R'
+PRP ECCN 'EAR99'
+PRP Part_Number 'gen_C_ceramic_100n_50V_X7R_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603C'
+PRP PnP_Value '100nF/50V/X7R'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '2525267'
+PRP Supplier_Part_Number_2 '490-6049-1-ND'
+TOP 0 1.325 2.1964567 0 N 68 28 C201_2-1
+TOP 1 1.325 2.2535433 0 N 88 15 C201_2-2
+#
+# CMP 66
+CMP 0 0.675 2.225 270 N C201_1 100n/50V ;0=1,1=0.0315
+PRP AEC-Q_Norm 'AEC-Q200'
+PRP Automotive_Qualified 'True'
+PRP Capacitance '100n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'X7R'
+PRP ECCN 'EAR99'
+PRP Part_Number 'gen_C_ceramic_100n_50V_X7R_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603C'
+PRP PnP_Value '100nF/50V/X7R'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '2525267'
+PRP Supplier_Part_Number_2 '490-6049-1-ND'
+TOP 0 0.675 2.1964567 0 N 68 7 C201_1-1
+TOP 1 0.675 2.2535433 0 N 88 1 C201_1-2
+#
+# CMP 67
+CMP 0 2.5375 2.0375 180 N C200_4 100n/50V ;0=1,1=0.0315
+PRP AEC-Q_Norm 'AEC-Q200'
+PRP Automotive_Qualified 'True'
+PRP Capacitance '100n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'X7R'
+PRP ECCN 'EAR99'
+PRP Part_Number 'gen_C_ceramic_100n_50V_X7R_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603C'
+PRP PnP_Value '100nF/50V/X7R'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '2525267'
+PRP Supplier_Part_Number_2 '490-6049-1-ND'
+TOP 0 2.5089567 2.0375 90 N 68 27 C200_4-1
+TOP 1 2.5660433 2.0375 90 N 88 14 C200_4-2
+#
+# CMP 68
+CMP 0 1.8875 2.0375 180 N C200_3 100n/50V ;0=1,1=0.0315
+PRP AEC-Q_Norm 'AEC-Q200'
+PRP Automotive_Qualified 'True'
+PRP Capacitance '100n'
+PRP Case_EIA '0603'
+PRP Case_Metric '1608'
+PRP Dielectric 'X7R'
+PRP ECCN 'EAR99'
+PRP Part_Number 'gen_C_ceramic_100n_50V_X7R_0603'
+PRP PnP_equipped 'x'
+PRP PnP_Package '0603C'
+PRP PnP_Value '100nF/50V/X7R'
+PRP Rated_Voltage '50V'
+PRP Supplier_1 'Farnell'
+PRP Supplier_2 'Digikey'
+PRP Supplier_Part_Number_1 '2525267'
+PRP Supplier_Part_Number_2 '490-6049-1-ND'
+TOP 0 1.8589567 2.0375 90 N 68 20 C200_3-1
+TOP 1 1.9160433 2.0375 90 N 88 9 C200_3-2
+#

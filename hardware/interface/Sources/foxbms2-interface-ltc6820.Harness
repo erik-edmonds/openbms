@@ -1,0 +1,3 @@
+isoSPI=_P,_N
+SPI=MISO,MOSI,CLK,\CS
+TR_unused=1,2,3

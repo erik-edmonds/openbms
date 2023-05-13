@@ -1,0 +1,1597 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "LTC-SchDoc"
+Date "08 05 2023"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 8620 11143 0    60   ~ 0
+Fraunhofer IISB
+Text Notes 8620 11233 0    60   ~ 0
+Schottkystr. 10
+Text Notes 9510 11483 0    60   ~ 0
+www.iisb.fraunhofer.de
+Text Notes 10750 11293 0    48   ~ 0
+Author
+Text Notes 11850 11293 0    48   ~ 0
+License
+Text Notes 14400 11293 0    48   ~ 0
+Release Date
+Wire Notes Line
+	15300 10893 7350 10893
+Wire Notes Line
+	10700 11493 10700 10893
+Wire Notes Line
+	15300 11193 10700 11193
+Text Notes 14950 11293 0    48   ~ 0
+Sheet
+Wire Notes Line
+	11800 11493 11800 11193
+Wire Notes Line
+	14350 11493 14350 11193
+Wire Notes Line
+	14900 11493 14900 11193
+Text Notes 11850 11443 0    60   ~ 0
+=GlobalLicense
+Text Notes 10750 11443 0    60   ~ 0
+foxBMS Team
+Text Notes 14400 11443 0    60   ~ 0
+=GlobalDate
+Text Notes 15050 11443 0    60   ~ 0
+2
+Text Notes 13750 11143 0    60   ~ 0
+*
+Text Notes 10750 11143 0    60   ~ 0
+=GlobalProject
+Text Notes 10750 10993 0    48   ~ 0
+Project
+Text Notes 13750 10993 0    48   ~ 0
+File
+Wire Notes Line
+	13700 11193 13700 10893
+Wire Notes Line
+	7350 11493 7350 10893
+Text Notes 15100 11443 0    60   ~ 0
+/
+Text Notes 15150 11443 0    60   ~ 0
+15
+Wire Notes Line
+	11800 11193 11800 10893
+Text Notes 8620 11013 0    60   ~ 0
+developed by:
+Text Notes 11850 10993 0    48   ~ 0
+Description
+Text Notes 11850 11143 0    60   ~ 0
+Primary LTC6813
+Wire Notes Line
+	13700 11493 13700 11193
+Text Notes 13750 11293 0    48   ~ 0
+Version
+Text Notes 13750 11443 0    60   ~ 0
+=GlobalVersion
+Text Notes 8620 11333 0    60   ~ 0
+91058 Erlangen
+Text Notes 8620 11423 0    60   ~ 0
+Germany
+Text Notes 7610 11473 0    60   ~ 0
+www.foxbms.org
+Text Notes 10100 4393 0    96   ~ 12
+GPIO Pins
+Text Notes 1700 7043 0    96   ~ 12
+Cell balancing control
+Text Notes 1800 5043 0    96   ~ 12
+Cell voltage sense inputs
+Text Notes 4500 1393 0    96   ~ 12
+Power Supply
+Text Notes 4300 8293 0    60   ~ 12
+differential signal voltage amplitude adjustment
+Text Notes 3400 8093 0    60   ~ 12
+communication mode (ISOMD connected to VREG = isoSPI)
+Text Notes 10700 2193 0    60   ~ 12
+Discharge timer configuration: \nPull-up: on\nPull-down: off
+Text Notes 10700 1893 0    60   ~ 12
+Watchdog timer pull-up
+Text Notes 14050 10393 0    60   ~ 12
+next LTC6804/LTC6811 \nin daisy-chain
+Text Notes 8450 10393 0    60   ~ 12
+previous LTC6804/LTC6811 \nin daisy-chain
+Text Notes 10750 9793 0    60   ~ 12
+isolation transformer
+Text Notes 9800 1093 0    96   ~ 12
+Setting Pins
+Text Notes 11550 8593 0    96   ~ 12
+Communication Circuit
+Text Notes 14600 5793 0    60   ~ 12
+I2C Pullups
+Text Notes 12200 3393 0    60   ~ 12
+R209: GPIO1 connected to pin header \nR210: GPIO1 connected to temperature MUX
+Text Notes 12200 4193 0    60   ~ 12
+R211: GPIO2 connected to pin header \nR212: GPIO2 connected to user MUX
+Text Notes 12200 4993 0    60   ~ 12
+R213: GPIO3 connected to pin header \nR214: GPIO3 connected to balancing feedback
+Text Notes 12200 5793 0    60   ~ 12
+R215: GPIO4 connected to pin header \nR216: GPIO4 connected to I2C SDA
+Text Notes 12200 6593 0    60   ~ 12
+R217: GPIO5 connected to pin header \nR218: GPIO5 connected to I2C SCL
+Text Notes 7800 3393 0    60   ~ 12
+LED on: LTC in STANDBY, REFUP or MEASURE \nLED off: LTC in SLEEP mode
+$Comp
+L power:+3V #PWR?64596415
+U 1 1 64596415
+P 4800 2293
+F 0 "+3.0V_VREF2_2" H 4800 2293 20  0000 C CNN
+F 1 "3V" H 4800 2223 30  0000 C CNN
+F 2 "" H 4800 2293 70  0000 C CNN
+F 3 "" H 4800 2293 70  0000 C CNN
+	1    4800 2293
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:FUSED_VBAT- #PWR?64596414
+U 1 1 64596414
+P 2200 3993
+F 0 "FUSED_VBAT-_66" H 2200 3993 20  0000 C CNN
+F 1 "FUSED_VBAT-" H 2200 3923 30  0000 C CNN
+F 2 "" H 2200 3993 70  0000 C CNN
+F 3 "" H 2200 3993 70  0000 C CNN
+	1    2200 3993
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:FUSED_VBAT+ #PWR?64596413
+U 1 1 64596413
+P 1400 1293
+F 0 "FUSED_VBAT+_5" H 1400 1293 20  0000 C CNN
+F 1 "FUSED_VBAT+" H 1400 1223 30  0000 C CNN
+F 2 "" H 1400 1293 70  0000 C CNN
+F 3 "" H 1400 1293 70  0000 C CNN
+	1    1400 1293
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?64596412
+U 1 1 64596412
+P 4800 3093
+F 0 "+5.0V_VREG_19" H 4800 3093 20  0000 C CNN
+F 1 "5V" H 4800 3023 30  0000 C CNN
+F 2 "" H 4800 3093 70  0000 C CNN
+F 3 "" H 4800 3093 70  0000 C CNN
+	1    4800 3093
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:FUSED_VBAT- #PWR?64596411
+U 1 1 64596411
+P 6300 3993
+F 0 "FUSED_VBAT-_67" H 6300 3993 20  0000 C CNN
+F 1 "FUSED_VBAT-" H 6300 3923 30  0000 C CNN
+F 2 "" H 6300 3993 70  0000 C CNN
+F 3 "" H 6300 3993 70  0000 C CNN
+	1    6300 3993
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?64596410
+U 1 1 64596410
+P 10400 1793
+F 0 "+5.0V_VREG_20" H 10400 1793 20  0000 C CNN
+F 1 "5V" H 10400 1723 30  0000 C CNN
+F 2 "" H 10400 1793 70  0000 C CNN
+F 3 "" H 10400 1793 70  0000 C CNN
+	1    10400 1793
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:FUSED_VBAT- #PWR?6459640F
+U 1 1 6459640F
+P 2600 8493
+F 0 "FUSED_VBAT-_68" H 2600 8493 20  0000 C CNN
+F 1 "FUSED_VBAT-" H 2600 8423 30  0000 C CNN
+F 2 "" H 2600 8493 70  0000 C CNN
+F 3 "" H 2600 8493 70  0000 C CNN
+	1    2600 8493
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:FUSED_VBAT- #PWR?6459640E
+U 1 1 6459640E
+P 9800 2893
+F 0 "FUSED_VBAT-_69" H 9800 2893 20  0000 C CNN
+F 1 "FUSED_VBAT-" H 9800 2823 30  0000 C CNN
+F 2 "" H 9800 2893 70  0000 C CNN
+F 3 "" H 9800 2893 70  0000 C CNN
+	1    9800 2893
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:FUSED_VBAT- #PWR?6459640D
+U 1 1 6459640D
+P 12650 8893
+F 0 "FUSED_VBAT-_70" H 12650 8893 20  0000 C CNN
+F 1 "FUSED_VBAT-" H 12650 8823 30  0000 C CNN
+F 2 "" H 12650 8893 70  0000 C CNN
+F 3 "" H 12650 8893 70  0000 C CNN
+	1    12650 8893
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:FUSED_VBAT- #PWR?6459640C
+U 1 1 6459640C
+P 10460 8893
+F 0 "FUSED_VBAT-_71" H 10460 8893 20  0000 C CNN
+F 1 "FUSED_VBAT-" H 10460 8823 30  0000 C CNN
+F 2 "" H 10460 8893 70  0000 C CNN
+F 3 "" H 10460 8893 70  0000 C CNN
+	1    10460 8893
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?6459640B
+U 1 1 6459640B
+P 14400 5193
+F 0 "+5.0V_VREG_21" H 14400 5193 20  0000 C CNN
+F 1 "5V" H 14400 5123 30  0000 C CNN
+F 2 "" H 14400 5193 70  0000 C CNN
+F 3 "" H 14400 5193 70  0000 C CNN
+	1    14400 5193
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?6459640A
+U 1 1 6459640A
+P 7300 2993
+F 0 "+5.0V_VREG_22" H 7300 2993 20  0000 C CNN
+F 1 "5V" H 7300 2923 30  0000 C CNN
+F 2 "" H 7300 2993 70  0000 C CNN
+F 3 "" H 7300 2993 70  0000 C CNN
+	1    7300 2993
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:FUSED_VBAT- #PWR?64596409
+U 1 1 64596409
+P 7300 3993
+F 0 "FUSED_VBAT-_72" H 7300 3993 20  0000 C CNN
+F 1 "FUSED_VBAT-" H 7300 3923 30  0000 C CNN
+F 2 "" H 7300 3993 70  0000 C CNN
+F 3 "" H 7300 3993 70  0000 C CNN
+	1    7300 3993
+	1    0    0    -1  
+$EndComp
+Text GLabel 9050 10293 2 60 Input ~
+isoSPI_IN-
+Text GLabel 9050 10593 2 60 Input ~
+isoSPI_IN+
+Text GLabel 13650 10593 2 60 Output ~
+isoSPI_OUT-
+Text GLabel 13650 10293 2 60 Output ~
+isoSPI_OUT+
+Text GLabel 12200 6393 2 60 BiDi ~
+GPIO5-OPT
+Text GLabel 12200 5593 2 60 BiDi ~
+GPIO4-OPT
+Text GLabel 12200 4393 2 60 BiDi ~
+MUX-DATA_USER
+Text GLabel 14300 3193 2 60 BiDi ~
+GPIO1-OPT
+Text GLabel 14500 6793 2 60 BiDi ~
+SCL
+Text GLabel 14400 3993 2 60 BiDi ~
+GPIO2-OPT
+Text GLabel 12200 3593 2 60 BiDi ~
+MUX-DATA_TEMP
+Text GLabel 14300 4793 2 60 BiDi ~
+GPIO3-OPT
+Text GLabel 12200 5193 2 60 Input ~
+GLOBAL-BALANCING-FEEDBACK
+Text GLabel 14500 5993 2 60 BiDi ~
+SDA
+Text GLabel 400 1993 2 60 BiDi ~
+EXT_DC_ISO+
+Text Label 9150 8693 0 60 ~
+IN_P1
+Text Label 9150 9093 0 60 ~
+IN_N1
+Text Label 400 9793 0 60 ~
+Layout:    - The transformer should be placed as close to the isoSPI    cable connector as possible. The distance should be    kept less than 2cm.  - The LTC6813 should be placed at least 1cm to 2cm away    from the transformer.  - On the top component layer, no ground plane should be    placed under the transformer, the isoSPI connector, or     in between the transformer and the connector.  - The isoSPI signal traces should be isolated from     surrounding circuits and traces by ground metal or     space. No traces should cross the isoSPI signal lines,    unless separated by a ground plane on an inner layer.
+Text Label 13400 8693 0 60 ~
+OUT_N1
+Text Label 13400 9093 0 60 ~
+OUT_P1
+Text Label 9200 2293 0 60 ~
+DTEN
+Text Label 9800 4593 0 60 ~
+GPIO1
+Text Label 9800 4793 0 60 ~
+GPIO2
+Text Label 9800 4993 0 60 ~
+GPIO3
+Text Label 9800 5193 0 60 ~
+GPIO4
+Text Label 9800 5393 0 60 ~
+GPIO5
+Text Label 7900 10193 0 60 ~
+C0
+Text Label 7900 9893 0 60 ~
+C1
+Text Label 7900 9593 0 60 ~
+C2
+Text Label 7900 9293 0 60 ~
+C3
+Text Label 7900 8993 0 60 ~
+C4
+Text Label 7900 8693 0 60 ~
+C5
+Text Label 7900 8393 0 60 ~
+C6
+Text Label 7900 8093 0 60 ~
+C7
+Text Label 7900 7793 0 60 ~
+C8
+Text Label 7900 7493 0 60 ~
+C9
+Text Label 7900 7193 0 60 ~
+C10
+Text Label 7900 6893 0 60 ~
+C11
+Text Label 7900 6593 0 60 ~
+C12
+Text Label 7900 9993 0 60 ~
+S1
+Text Label 7900 9693 0 60 ~
+S2
+Text Label 7900 9393 0 60 ~
+S3
+Text Label 7900 9093 0 60 ~
+S4
+Text Label 7900 8793 0 60 ~
+S5
+Text Label 7900 8493 0 60 ~
+S6
+Text Label 7900 8193 0 60 ~
+S7
+Text Label 7900 7893 0 60 ~
+S8
+Text Label 7900 7593 0 60 ~
+S9
+Text Label 7900 7293 0 60 ~
+S10
+Text Label 7900 6993 0 60 ~
+S11
+Text Label 7900 6693 0 60 ~
+S12
+Text Label 5200 6493 0 60 ~
+GPIO1
+Text Label 5200 6593 0 60 ~
+GPIO2
+Text Label 5200 6893 0 60 ~
+GPIO5
+Text Label 5200 6693 0 60 ~
+GPIO3
+Text Label 5200 6793 0 60 ~
+GPIO4
+Text Label 4300 1993 0 60 ~
+LTC-V+
+Text Label 4300 3193 0 60 ~
+LTC-V-
+Text Label 5400 1993 0 60 ~
++3.0V_VREF1
+Text Label 2500 1993 0 60 ~
+EXT_DC_ISO+
+Text Label 5200 4793 0 60 ~
+LTC-V+
+Text Label 5200 9993 0 60 ~
+LTC-V-
+Text Label 5200 8993 0 60 ~
++3.0V_VREF1
+$Comp
+L power:+3V #PWR?64596408
+U 1 1 64596408
+P 4800 9093
+F 0 "+3.0V_VREF2_3" H 4800 9093 20  0000 C CNN
+F 1 "3V" H 4800 9023 30  0000 C CNN
+F 2 "" H 4800 9093 70  0000 C CNN
+F 3 "" H 4800 9093 70  0000 C CNN
+	1    4800 9093
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?64596407
+U 1 1 64596407
+P 4750 7993
+F 0 "+5.0V_VREG_23" H 4750 7993 20  0000 C CNN
+F 1 "5V" H 4750 7923 30  0000 C CNN
+F 2 "" H 4750 7993 70  0000 C CNN
+F 3 "" H 4750 7993 70  0000 C CNN
+	1    4750 7993
+	1    0    0    -1  
+$EndComp
+Text Label 5200 7593 0 60 ~
+WDT
+Text Label 5200 8793 0 60 ~
+DTEN
+Text Label 5200 5493 0 60 ~
+IN_P1
+Text Label 5200 5793 0 60 ~
+IN_N1
+NoConn ~ 6000 5593
+NoConn ~ 6000 5693
+Text Notes 5200 5593 0    60   ~ 0
+SPI not used
+Text Label 3200 8393 0 60 ~
+ICMP
+Text Label 5200 6093 0 60 ~
+OUT_P1
+Text Label 5200 6193 0 60 ~
+OUT_N1
+Text Label 12350 10293 0 60 ~
+OUT+
+Text Label 12350 10593 0 60 ~
+OUT-
+Text Label 10350 10293 0 60 ~
+IN-
+Text Label 10350 10593 0 60 ~
+IN+
+NoConn ~ 11450 10293
+NoConn ~ 11750 10293
+Text Label 8550 1893 0 60 ~
+WDT
+Text Label 1900 5293 0 60 ~
+C[0..18]
+Text GLabel 1900 5293 2 60 Input ~
+C[0..18]
+Text Label 1900 7393 0 60 ~
+S[1..18]
+Text GLabel 1900 7393 2 60 Output ~
+S[1..18]
+Text GLabel 9200 1743 2 60 BiDi ~
+WDT
+Text Label 9800 5593 0 60 ~
+GPIO6
+Text Label 9800 5793 0 60 ~
+GPIO7
+Text Label 9800 5993 0 60 ~
+GPIO8
+Text Label 9800 6193 0 60 ~
+GPIO9
+Text GLabel 14100 7693 2 60 BiDi ~
+GPIO6
+Text GLabel 14100 7893 2 60 BiDi ~
+GPIO7
+Text GLabel 14100 8093 2 60 BiDi ~
+GPIO8
+Text GLabel 14100 8293 2 60 BiDi ~
+GPIO9
+Text Label 5200 6993 0 60 ~
+GPIO6
+Text Label 5200 7093 0 60 ~
+GPIO7
+Text Label 5200 7193 0 60 ~
+GPIO8
+Text Label 5200 7293 0 60 ~
+GPIO9
+Text Label 7900 6393 0 60 ~
+S13
+Text Label 7900 6293 0 60 ~
+C13
+Text Label 7900 6093 0 60 ~
+S14
+Text Label 7900 5993 0 60 ~
+C14
+Text Label 7900 5793 0 60 ~
+S15
+Text Label 7900 5693 0 60 ~
+C15
+Text Label 7900 5493 0 60 ~
+S16
+Text Label 7900 5393 0 60 ~
+C16
+Text Label 7900 5193 0 60 ~
+S17
+Text Label 7900 5093 0 60 ~
+C17
+Text Label 7900 4893 0 60 ~
+S18
+Text Label 7900 4793 0 60 ~
+C18
+Text GLabel 400 3193 2 60 BiDi ~
+FUSED_VBAT-
+Text GLabel 400 1693 2 60 BiDi ~
+FUSED_VBAT+
+Text GLabel 4000 3493 2 60 BiDi ~
++5.0V_VREG
+Text GLabel 3900 2393 2 60 BiDi ~
++3.0V_VREF2
+Text GLabel 3100 7793 2 60 Output ~
+LTC-DRIVE
+Text Label 5200 7793 0 60 ~
+LTC-DRIVE
+$Comp
+L power:+5V #PWR?64596406
+U 1 1 64596406
+P 13200 7393
+F 0 "+5.0V_VREG_24" H 13200 7393 20  0000 C CNN
+F 1 "5V" H 13200 7323 30  0000 C CNN
+F 2 "" H 13200 7393 70  0000 C CNN
+F 3 "" H 13200 7393 70  0000 C CNN
+	1    13200 7393
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?64596405
+U 1 1 64596405
+P 14200 4393
+F 0 "+5.0V_VREG_25" H 14200 4393 20  0000 C CNN
+F 1 "5V" H 14200 4323 30  0000 C CNN
+F 2 "" H 14200 4393 70  0000 C CNN
+F 3 "" H 14200 4393 70  0000 C CNN
+	1    14200 4393
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?64596404
+U 1 1 64596404
+P 14200 3593
+F 0 "+5.0V_VREG_26" H 14200 3593 20  0000 C CNN
+F 1 "5V" H 14200 3523 30  0000 C CNN
+F 2 "" H 14200 3593 70  0000 C CNN
+F 3 "" H 14200 3593 70  0000 C CNN
+	1    14200 3593
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?64596403
+U 1 1 64596403
+P 14200 2793
+F 0 "+5.0V_VREG_27" H 14200 2793 20  0000 C CNN
+F 1 "5V" H 14200 2723 30  0000 C CNN
+F 2 "" H 14200 2793 70  0000 C CNN
+F 3 "" H 14200 2793 70  0000 C CNN
+	1    14200 2793
+	1    0    0    -1  
+$EndComp
+Text Notes 10800 2893 0    60   ~ 0
+Do not place Pullups on GPIO1-3 for normal applications. (Used as analog input)
+Wire Wire Line
+	9800 2293 9800 2393
+Wire Wire Line
+	9900 2293 9800 2293
+Wire Wire Line
+	9800 2293 9200 2293
+Wire Wire Line
+	10400 1893 9700 1893
+Wire Wire Line
+	10400 1793 10400 1893
+Wire Wire Line
+	14400 5393 14400 5493
+Wire Wire Line
+	14400 5193 14400 5393
+Wire Wire Line
+	7300 2993 7300 3093
+Wire Wire Line
+	12200 6393 12000 6393
+Wire Wire Line
+	12200 5593 12000 5593
+Wire Wire Line
+	12200 4393 12000 4393
+Wire Wire Line
+	14200 3193 12000 3193
+Wire Wire Line
+	14300 3193 14200 3193
+Wire Wire Line
+	14100 6793 12000 6793
+Wire Wire Line
+	14400 6793 14100 6793
+Wire Wire Line
+	14500 6793 14400 6793
+Wire Wire Line
+	14400 5893 14400 6793
+Wire Wire Line
+	14200 3993 12000 3993
+Wire Wire Line
+	14400 3993 14200 3993
+Wire Wire Line
+	12200 3593 12000 3593
+Wire Wire Line
+	14200 4793 12000 4793
+Wire Wire Line
+	14300 4793 14200 4793
+Wire Wire Line
+	12200 5193 12000 5193
+Wire Wire Line
+	5900 3193 5900 3893
+Wire Wire Line
+	6300 3893 5900 3893
+Wire Wire Line
+	6300 2593 6300 3893
+Wire Wire Line
+	6300 3893 6300 3993
+Wire Wire Line
+	5900 3893 5500 3893
+Wire Wire Line
+	5500 3793 5500 3893
+Wire Wire Line
+	4300 3193 3700 3193
+Wire Wire Line
+	2200 2843 2200 3193
+Wire Wire Line
+	2200 3193 2200 3993
+Wire Wire Line
+	3700 2793 3700 3193
+Wire Wire Line
+	7300 3893 7300 3993
+Wire Wire Line
+	9800 2793 9800 2893
+Wire Wire Line
+	14000 5993 12000 5993
+Wire Wire Line
+	14500 5993 14000 5993
+Wire Wire Line
+	3700 1993 3600 1993
+Wire Wire Line
+	4300 1993 3700 1993
+Wire Wire Line
+	3700 1993 3700 2393
+Wire Wire Line
+	2200 2343 2200 1993
+Wire Wire Line
+	2200 1993 1200 1993
+Wire Wire Line
+	2200 1693 2000 1693
+Wire Wire Line
+	2200 1993 2200 1693
+Wire Wire Line
+	5500 3893 5100 3893
+Wire Wire Line
+	11000 5393 9800 5393
+Wire Wire Line
+	11000 6593 11000 5393
+Wire Wire Line
+	11400 6593 11000 6593
+Wire Wire Line
+	11200 5193 9800 5193
+Wire Wire Line
+	11200 5793 11200 5193
+Wire Wire Line
+	11400 5793 11200 5793
+Wire Wire Line
+	11000 4593 9800 4593
+Wire Wire Line
+	11000 3393 11000 4593
+Wire Wire Line
+	11400 3393 11000 3393
+Wire Wire Line
+	11400 6793 11400 6593
+Wire Wire Line
+	11600 6793 11400 6793
+Wire Wire Line
+	11400 6393 11400 6593
+Wire Wire Line
+	11600 6393 11400 6393
+Wire Wire Line
+	11400 5993 11400 5793
+Wire Wire Line
+	11600 5993 11400 5993
+Wire Wire Line
+	11400 5593 11400 5793
+Wire Wire Line
+	11600 5593 11400 5593
+Wire Wire Line
+	11400 4393 11400 4193
+Wire Wire Line
+	11600 4393 11400 4393
+Wire Wire Line
+	11400 3993 11400 4193
+Wire Wire Line
+	11600 3993 11400 3993
+Wire Wire Line
+	11400 3593 11400 3393
+Wire Wire Line
+	11600 3593 11400 3593
+Wire Wire Line
+	11400 3193 11400 3393
+Wire Wire Line
+	11600 3193 11400 3193
+Wire Wire Line
+	14000 5393 14000 5493
+Wire Wire Line
+	14400 5393 14000 5393
+Wire Wire Line
+	7200 6593 7900 6593
+Wire Wire Line
+	7200 6893 7900 6893
+Wire Wire Line
+	7200 7193 7900 7193
+Wire Wire Line
+	7200 7493 7900 7493
+Wire Wire Line
+	7200 7793 7900 7793
+Wire Wire Line
+	7200 8093 7900 8093
+Wire Wire Line
+	7200 8393 7900 8393
+Wire Wire Line
+	7200 8693 7900 8693
+Wire Wire Line
+	7200 8993 7900 8993
+Wire Wire Line
+	7200 9293 7900 9293
+Wire Wire Line
+	7200 9593 7900 9593
+Wire Wire Line
+	7200 9893 7900 9893
+Wire Wire Line
+	7200 10193 7900 10193
+Wire Wire Line
+	7900 6693 7200 6693
+Wire Wire Line
+	7200 6993 7900 6993
+Wire Wire Line
+	7200 7293 7900 7293
+Wire Wire Line
+	7200 7593 7900 7593
+Wire Wire Line
+	7200 7893 7900 7893
+Wire Wire Line
+	7200 8193 7900 8193
+Wire Wire Line
+	7200 8493 7900 8493
+Wire Wire Line
+	7200 8793 7900 8793
+Wire Wire Line
+	7200 9093 7900 9093
+Wire Wire Line
+	7200 9393 7900 9393
+Wire Wire Line
+	7200 9693 7900 9693
+Wire Wire Line
+	7200 9993 7900 9993
+Wire Wire Line
+	6000 6493 5200 6493
+Wire Wire Line
+	5200 6593 6000 6593
+Wire Wire Line
+	6000 6693 5200 6693
+Wire Wire Line
+	5200 6793 6000 6793
+Wire Wire Line
+	6000 6893 5200 6893
+Wire Wire Line
+	6000 4793 5200 4793
+Wire Wire Line
+	5900 10193 6000 10193
+Wire Wire Line
+	5900 9993 5900 10193
+Wire Wire Line
+	6000 8993 5200 8993
+Wire Wire Line
+	4800 9193 6000 9193
+Wire Wire Line
+	4800 9093 4800 9193
+Wire Wire Line
+	4800 2393 4800 2293
+Wire Wire Line
+	4800 2593 4800 2393
+Wire Wire Line
+	5200 2593 4800 2593
+Wire Wire Line
+	5900 2593 5200 2593
+Wire Wire Line
+	5900 2793 5900 2593
+Wire Wire Line
+	6000 7593 5200 7593
+Wire Wire Line
+	6000 8793 5200 8793
+Wire Wire Line
+	10400 2293 10300 2293
+Wire Wire Line
+	10400 1893 10400 2293
+Wire Wire Line
+	5200 6193 6000 6193
+Wire Wire Line
+	6000 6093 5200 6093
+Wire Wire Line
+	6000 5493 5200 5493
+Wire Wire Line
+	6000 5793 5200 5793
+Wire Wire Line
+	2600 8393 2700 8393
+Wire Wire Line
+	2600 8493 2600 8393
+Wire Wire Line
+	6000 8593 4600 8593
+Wire Wire Line
+	4000 8593 4200 8593
+Wire Wire Line
+	4000 8393 4000 8593
+Wire Wire Line
+	3100 8393 4000 8393
+Wire Wire Line
+	6000 8393 4000 8393
+Wire Wire Line
+	11850 9093 13000 9093
+Wire Wire Line
+	11750 8893 11850 8893
+Wire Wire Line
+	11750 9093 11750 8893
+Wire Wire Line
+	12650 8893 12250 8893
+Wire Wire Line
+	11650 8693 11650 9093
+Wire Wire Line
+	13000 8693 11650 8693
+Wire Wire Line
+	14200 8693 13000 8693
+Wire Wire Line
+	13000 9093 14200 9093
+Wire Wire Line
+	13200 10293 11850 10293
+Wire Wire Line
+	13650 10293 13200 10293
+Wire Wire Line
+	11650 10593 11650 10293
+Wire Wire Line
+	13200 10593 11650 10593
+Wire Wire Line
+	13650 10593 13200 10593
+Wire Wire Line
+	10000 10293 11350 10293
+Wire Wire Line
+	9650 10293 10000 10293
+Wire Wire Line
+	10000 10593 9650 10593
+Wire Wire Line
+	11550 10593 10000 10593
+Wire Wire Line
+	11550 10293 11550 10593
+Wire Wire Line
+	11450 8893 11450 9093
+Wire Wire Line
+	11250 8893 11450 8893
+Wire Wire Line
+	10460 8893 10850 8893
+Wire Wire Line
+	10100 9093 11350 9093
+Wire Wire Line
+	9150 9093 10100 9093
+Wire Wire Line
+	11550 8693 11550 9093
+Wire Wire Line
+	10100 8693 11550 8693
+Wire Wire Line
+	9150 8693 10100 8693
+Wire Wire Line
+	4750 7993 5900 7993
+Wire Wire Line
+	6000 7993 5900 7993
+Wire Wire Line
+	5900 8193 5900 7993
+Wire Wire Line
+	6000 8193 5900 8193
+Wire Wire Line
+	6300 1993 6300 2193
+Wire Wire Line
+	5200 1993 6300 1993
+Wire Wire Line
+	5900 9993 5200 9993
+Wire Wire Line
+	6000 9993 5900 9993
+Wire Wire Line
+	5900 9793 5900 9993
+Wire Wire Line
+	6000 9793 5900 9793
+Wire Wire Line
+	10900 5593 9800 5593
+Wire Wire Line
+	10900 7693 10900 5593
+Wire Wire Line
+	11200 7693 10900 7693
+Wire Wire Line
+	14100 7693 11200 7693
+Wire Wire Line
+	6000 6993 5200 6993
+Wire Wire Line
+	5200 7093 6000 7093
+Wire Wire Line
+	6000 7193 5200 7193
+Wire Wire Line
+	5200 7293 6000 7293
+Wire Wire Line
+	7900 6393 7200 6393
+Wire Wire Line
+	7200 6293 7900 6293
+Wire Wire Line
+	7900 6093 7200 6093
+Wire Wire Line
+	7200 5993 7900 5993
+Wire Wire Line
+	7900 5793 7200 5793
+Wire Wire Line
+	7200 5693 7900 5693
+Wire Wire Line
+	7900 5493 7200 5493
+Wire Wire Line
+	7200 5393 7900 5393
+Wire Wire Line
+	7900 5193 7200 5193
+Wire Wire Line
+	7200 5093 7900 5093
+Wire Wire Line
+	7900 4893 7200 4893
+Wire Wire Line
+	7200 4793 7900 4793
+Wire Wire Line
+	3700 3193 2200 3193
+Wire Wire Line
+	3200 1993 2200 1993
+Wire Wire Line
+	4800 3193 4800 3093
+Wire Wire Line
+	5000 3193 4800 3193
+Wire Wire Line
+	5200 3193 5000 3193
+Wire Wire Line
+	5500 3193 5200 3193
+Wire Wire Line
+	5500 3393 5500 3193
+Wire Wire Line
+	1400 1693 1400 1293
+Wire Wire Line
+	1500 1693 1400 1693
+Wire Wire Line
+	2200 3193 1200 3193
+Wire Wire Line
+	1400 1693 1200 1693
+Wire Wire Line
+	5000 3493 4800 3493
+Wire Wire Line
+	5000 3193 5000 3493
+Wire Wire Line
+	4800 2393 4700 2393
+Wire Wire Line
+	3900 7793 6000 7793
+Wire Wire Line
+	9200 1743 9200 1893
+Wire Wire Line
+	14000 5893 14000 5993
+Wire Wire Line
+	11200 7693 11200 7593
+Wire Wire Line
+	12000 8093 12000 7593
+Wire Wire Line
+	10800 5793 9800 5793
+Wire Wire Line
+	10800 7893 10800 5793
+Wire Wire Line
+	11600 7893 10800 7893
+Wire Wire Line
+	14100 7893 11600 7893
+Wire Wire Line
+	11600 7893 11600 7593
+Wire Wire Line
+	12000 8093 14100 8093
+Wire Wire Line
+	10700 8093 12000 8093
+Wire Wire Line
+	10700 5993 10700 8093
+Wire Wire Line
+	9800 5993 10700 5993
+Wire Wire Line
+	10600 6193 9800 6193
+Wire Wire Line
+	10600 8293 10600 6193
+Wire Wire Line
+	12400 8293 10600 8293
+Wire Wire Line
+	14100 8293 12400 8293
+Wire Wire Line
+	12400 8293 12400 7593
+Wire Wire Line
+	11600 7093 11600 7193
+Wire Wire Line
+	12000 7193 12000 7093
+Wire Wire Line
+	12400 7093 12400 7193
+Wire Wire Line
+	11200 7093 11200 7193
+Wire Wire Line
+	11600 7093 11200 7093
+Wire Wire Line
+	12000 7093 11600 7093
+Wire Wire Line
+	12400 7093 12000 7093
+Wire Wire Line
+	12800 7093 12400 7093
+Wire Wire Line
+	12800 7493 12800 7093
+Wire Wire Line
+	13200 7493 12800 7493
+Wire Wire Line
+	13200 7393 13200 7493
+Wire Wire Line
+	11200 4793 9800 4793
+Wire Wire Line
+	11200 4193 11200 4793
+Wire Wire Line
+	11400 4193 11200 4193
+Wire Wire Line
+	11400 4793 11600 4793
+Wire Wire Line
+	11400 4993 11400 4793
+Wire Wire Line
+	11400 5193 11400 4993
+Wire Wire Line
+	11600 5193 11400 5193
+Wire Wire Line
+	11400 4993 9800 4993
+Wire Wire Line
+	9200 1893 8550 1893
+Wire Wire Line
+	9300 1893 9200 1893
+Wire Bus Line
+	1100 7393 1900 7393
+Wire Bus Line
+	1900 5293 1100 5293
+Connection ~ 1400 1693
+Connection ~ 2200 3193
+Connection ~ 2200 1993
+Connection ~ 3700 3193
+Connection ~ 3700 1993
+Connection ~ 4000 8393
+Connection ~ 4800 2393
+Connection ~ 5000 3193
+Connection ~ 5200 3193
+Connection ~ 5200 2593
+Connection ~ 5500 3893
+Connection ~ 5900 9993
+Connection ~ 5900 7993
+Connection ~ 5900 3893
+Connection ~ 6300 3893
+Connection ~ 9200 1893
+Connection ~ 9800 2293
+Connection ~ 10000 10593
+Connection ~ 10000 10293
+Connection ~ 10100 9093
+Connection ~ 10100 8693
+Connection ~ 10400 1893
+Connection ~ 11200 7693
+Connection ~ 11400 6593
+Connection ~ 11400 5793
+Connection ~ 11400 4993
+Connection ~ 11400 4193
+Connection ~ 11400 3393
+Connection ~ 11600 7893
+Connection ~ 11600 7093
+Connection ~ 12000 8093
+Connection ~ 12000 7093
+Connection ~ 12400 8293
+Connection ~ 12400 7093
+Connection ~ 13000 9093
+Connection ~ 13000 8693
+Connection ~ 13200 10593
+Connection ~ 13200 10293
+Connection ~ 14000 5993
+Connection ~ 14100 6793
+Connection ~ 14200 4793
+Connection ~ 14200 3993
+Connection ~ 14200 3193
+Connection ~ 14400 6793
+Connection ~ 14400 5393
+$Comp
+L R R1401
+U 1 1 64596402
+P 3200 1993
+F 0 "R1401" H 3290 2043 60  0000 L BNN
+F 1 "100R" H 3290 1843 60  0000 L BNN
+F 2 "" H 3290 1843 60  0000 C CNN
+F 3 "" H 3290 1843 60  0000 C CNN
+	1    3200 1993
+	1    0    0    -1
+$EndComp
+$Comp
+L R R1400
+U 1 1 64596401
+P 2700 8393
+F 0 "R1400" H 2790 8343 60  0000 L TNN
+F 1 "1k2" H 2610 8543 60  0000 R TNN
+F 2 "" H 2610 8543 60  0000 C CNN
+F 3 "" H 2610 8543 60  0000 C CNN
+	1    2700 8393
+	1   0    0    1
+$EndComp
+$Comp
+L R R1404
+U 1 1 64596400
+P 9300 1893
+F 0 "R1404" H 9390 1943 60  0000 L BNN
+F 1 "1M" H 9390 1743 60  0000 L BNN
+F 2 "" H 9390 1743 60  0000 C CNN
+F 3 "" H 9390 1743 60  0000 C CNN
+	1    9300 1893
+	1    0    0    -1
+$EndComp
+$Comp
+L R R1406
+U 1 1 645963FF
+P 9800 2793
+F 0 "R1406" V 10010 2743 60  0000 R TNN
+F 1 "0R" V 9910 2743 60  0000 R TNN
+F 2 "" H 9910 2743 60  0000 C CNN
+F 3 "" H 9910 2743 60  0000 C CNN
+	1    9800 2793
+	0    -1   -1   0
+$EndComp
+$Comp
+L R R1407
+U 1 1 645963FE
+P 9900 2293
+F 0 "R1407" H 9990 2343 60  0000 L BNN
+F 1 "0R" H 9990 2143 60  0000 L BNN
+F 2 "" H 9990 2143 60  0000 C CNN
+F 3 "" H 9990 2143 60  0000 C CNN
+	1    9900 2293
+	1    0    0    -1
+$EndComp
+$Comp
+L C C1404
+U 1 1 645963FD
+P 10850 8893
+F 0 "C1404" H 10760 8983 60  0000 R BNN
+F 1 "=Capacitance +'/'+ 'Rated Voltage'" H 10760 8703 60  0000 R BNN
+F 2 "" H 10760 8703 60  0000 C CNN
+F 3 "" H 10760 8703 60  0000 C CNN
+	1    10850 8893
+	1    0    0    -1
+$EndComp
+$Comp
+L C C1405
+U 1 1 645963FC
+P 12250 8893
+F 0 "C1405" H 12560 8983 60  0000 R BNN
+F 1 "=Capacitance +'/'+ 'Rated Voltage'" H 12560 8703 60  0000 R BNN
+F 2 "" H 12560 8703 60  0000 C CNN
+F 3 "" H 12560 8703 60  0000 C CNN
+	1    12250 8893
+	-1    0    0    -1
+$EndComp
+$Comp
+L R R1405
+U 1 1 645963FB
+P 10100 8693
+F 0 "R1405" V 10290 8743 60  0000 L BNN
+F 1 "120R" V 10390 8743 60  0000 L BNN
+F 2 "" H 10390 8743 60  0000 C CNN
+F 3 "" H 10390 8743 60  0000 C CNN
+	1    10100 8693
+	0    1   -1   0
+$EndComp
+$Comp
+L R R1418
+U 1 1 645963FA
+P 13000 9093
+F 0 "R1418" V 12790 9043 60  0000 L TNN
+F 1 "120R" V 12890 9043 60  0000 L TNN
+F 2 "" H 12890 9043 60  0000 C CNN
+F 3 "" H 12890 9043 60  0000 C CNN
+	1    13000 9093
+	0    -1    1    0
+$EndComp
+$Comp
+L Testpoint_Square TP1405
+U 1 1 645963F9
+P 10000 10593
+F 0 "TP1405" H 9970 10473 60  0000 L BNN
+	1    10000 10593
+	-1    0    0    -1
+$EndComp
+$Comp
+L Testpoint_Square TP1406
+U 1 1 645963F8
+P 13200 10293
+F 0 "TP1406" H 13170 10173 60  0000 L BNN
+	1    13200 10293
+	1    0    0    -1
+$EndComp
+$Comp
+L C C1400
+U 1 1 645963F7
+P 3700 2393
+F 0 "C1400" V 3890 2483 60  0000 L BNN
+F 1 "=Capacitance +'/'+ 'Rated Voltage'" V 3990 2483 60  0000 L BNN
+F 2 "" H 3990 2483 60  0000 C CNN
+F 3 "" H 3990 2483 60  0000 C CNN
+	1    3700 2393
+	0    1    1    0
+$EndComp
+$Comp
+L R R1417
+U 1 1 645963F6
+P 12000 6793
+F 0 "R1417" H 11690 6843 60  0000 L BNN
+F 1 "0R" H 11690 6643 60  0000 L BNN
+F 2 "" H 11690 6643 60  0000 C CNN
+F 3 "" H 11690 6643 60  0000 C CNN
+	1    12000 6793
+	-1    0    0    -1
+$EndComp
+$Comp
+L R R1416
+U 1 1 645963F5
+P 12000 6393
+F 0 "R1416" H 11690 6443 60  0000 L BNN
+F 1 "0R" H 11690 6243 60  0000 L BNN
+F 2 "" H 11690 6243 60  0000 C CNN
+F 3 "" H 11690 6243 60  0000 C CNN
+	1    12000 6393
+	-1    0    0    -1
+$EndComp
+$Comp
+L R R1414
+U 1 1 645963F4
+P 12000 5593
+F 0 "R1414" H 11690 5643 60  0000 L BNN
+F 1 "0R" H 11690 5443 60  0000 L BNN
+F 2 "" H 11690 5443 60  0000 C CNN
+F 3 "" H 11690 5443 60  0000 C CNN
+	1    12000 5593
+	-1    0    0    -1
+$EndComp
+$Comp
+L R R1415
+U 1 1 645963F3
+P 12000 5993
+F 0 "R1415" H 11690 6043 60  0000 L BNN
+F 1 "0R" H 11690 5843 60  0000 L BNN
+F 2 "" H 11690 5843 60  0000 C CNN
+F 3 "" H 11690 5843 60  0000 C CNN
+	1    12000 5993
+	-1    0    0    -1
+$EndComp
+$Comp
+L R R1408
+U 1 1 645963F2
+P 12000 3193
+F 0 "R1408" H 11690 3243 60  0000 L BNN
+F 1 "0R" H 11690 3043 60  0000 L BNN
+F 2 "" H 11690 3043 60  0000 C CNN
+F 3 "" H 11690 3043 60  0000 C CNN
+	1    12000 3193
+	-1    0    0    -1
+$EndComp
+$Comp
+L R R1409
+U 1 1 645963F1
+P 12000 3593
+F 0 "R1409" H 11690 3643 60  0000 L BNN
+F 1 "0R" H 11690 3443 60  0000 L BNN
+F 2 "" H 11690 3443 60  0000 C CNN
+F 3 "" H 11690 3443 60  0000 C CNN
+	1    12000 3593
+	-1    0    0    -1
+$EndComp
+$Comp
+L R R1419
+U 1 1 645963F0
+P 14000 5893
+F 0 "R1419" V 14210 5843 60  0000 R TNN
+F 1 "1k2" V 14110 5843 60  0000 R TNN
+F 2 "" H 14110 5843 60  0000 C CNN
+F 3 "" H 14110 5843 60  0000 C CNN
+	1    14000 5893
+	0    -1    1    0
+$EndComp
+$Comp
+L R R1420
+U 1 1 645963EF
+P 14400 5893
+F 0 "R1420" V 14610 5843 60  0000 R TNN
+F 1 "1k2" V 14510 5843 60  0000 R TNN
+F 2 "" H 14510 5843 60  0000 C CNN
+F 3 "" H 14510 5843 60  0000 C CNN
+	1    14400 5893
+	0    -1    1    0
+$EndComp
+$Comp
+L R R1410
+U 1 1 645963EE
+P 12000 3993
+F 0 "R1410" H 11690 4043 60  0000 L BNN
+F 1 "0R" H 11690 3843 60  0000 L BNN
+F 2 "" H 11690 3843 60  0000 C CNN
+F 3 "" H 11690 3843 60  0000 C CNN
+	1    12000 3993
+	-1    0    0    -1
+$EndComp
+$Comp
+L R R1411
+U 1 1 645963ED
+P 12000 4393
+F 0 "R1411" H 11690 4443 60  0000 L BNN
+F 1 "0R" H 11690 4243 60  0000 L BNN
+F 2 "" H 11690 4243 60  0000 C CNN
+F 3 "" H 11690 4243 60  0000 C CNN
+	1    12000 4393
+	-1    0    0    -1
+$EndComp
+$Comp
+L C C1401
+U 1 1 645963EC
+P 5500 3793
+F 0 "C1401" V 5710 3703 60  0000 R TNN
+F 1 "=Capacitance +'/'+ 'Rated Voltage'" V 5610 3703 60  0000 R TNN
+F 2 "" H 5610 3703 60  0000 C CNN
+F 3 "" H 5610 3703 60  0000 C CNN
+	1    5500 3793
+	0    -1   -1   0
+$EndComp
+$Comp
+L D_LED LD1400
+U 1 1 645963EB
+P 7300 3493
+F 0 "LD1400" V 7510 3413 60  0000 R TNN
+F 1 "='Color'" V 7410 3413 60  0000 R TNN
+F 2 "" H 7410 3413 60  0000 C CNN
+F 3 "" H 7410 3413 60  0000 C CNN
+	1    7300 3493
+	0    -1   -1   0
+$EndComp
+$Comp
+L R R1403
+U 1 1 645963EA
+P 7300 3893
+F 0 "R1403" V 7510 3843 60  0000 R TNN
+F 1 "270R" V 7410 3843 60  0000 R TNN
+F 2 "" H 7410 3843 60  0000 C CNN
+F 3 "" H 7410 3843 60  0000 C CNN
+	1    7300 3893
+	0    -1   -1   0
+$EndComp
+$Comp
+L R R1412
+U 1 1 645963E9
+P 12000 4793
+F 0 "R1412" H 11690 4843 60  0000 L BNN
+F 1 "0R" H 11690 4643 60  0000 L BNN
+F 2 "" H 11690 4643 60  0000 C CNN
+F 3 "" H 11690 4643 60  0000 C CNN
+	1    12000 4793
+	-1    0    0    -1
+$EndComp
+$Comp
+L R R1413
+U 1 1 645963E8
+P 12000 5193
+F 0 "R1413" H 11690 5243 60  0000 L BNN
+F 1 "0R" H 11690 5043 60  0000 L BNN
+F 2 "" H 11690 5043 60  0000 C CNN
+F 3 "" H 11690 5043 60  0000 C CNN
+	1    12000 5193
+	-1    0    0    -1
+$EndComp
+$Comp
+L VISH-K1A2-2 D1401
+U 1 1 645963E7
+P 2100 2643
+F 0 "D1401" V 2110 2433 60  0000 R TNN
+F 1 "SMAJ85A-E3/61" V 2010 2433 60  0000 R TNN
+F 2 "" H 2010 2433 60  0000 C CNN
+F 3 "" H 2010 2433 60  0000 C CNN
+	1    2100 2643
+	0    -1   -1   0
+$EndComp
+$Comp
+L Testpoint_Square TP1408
+U 1 1 645963E6
+P 14000 5993
+F 0 "TP1408" H 14030 6323 60  0000 R TNN
+	1    14000 5993
+	-1   0    0    1
+$EndComp
+$Comp
+L Testpoint_Square TP1409
+U 1 1 645963E5
+P 14100 6793
+F 0 "TP1409" H 14070 6673 60  0000 L BNN
+	1    14100 6793
+	1    0    0    -1
+$EndComp
+$Comp
+L Testpoint_Square TP1400
+U 1 1 645963E4
+P 5100 3893
+F 0 "TP1400" V 4970 4023 60  0000 R TNN
+	1    5100 3893
+	0    -1   -1   0
+$EndComp
+$Comp
+L DSKY-AK-2 D1400
+U 1 1 645963E3
+P 1700 1593
+F 0 "D1400" H 1690 1603 60  0000 L BNN
+F 1 "DFLS1100-7" H 1690 1283 60  0000 L BNN
+F 2 "" H 1690 1283 60  0000 C CNN
+F 3 "" H 1690 1283 60  0000 C CNN
+	1    1700 1593
+	1    0    0    -1
+$EndComp
+$Comp
+L LTC6813HLWE-1#3ZZPBF IC1400
+U 1 1 645963E2
+P 6200 4593
+F 0 "IC1400" H 6200 4593 60  0000 L BNN
+F 1 "LTC6813HLWE-1#3ZZPBF" H 6200 -1307 60  0000 L BNN
+F 2 "" H 6200 -1307 60  0000 C CNN
+F 3 "" H 6200 -1307 60  0000 C CNN
+	1    6200 4593
+	1    0    0    -1
+$EndComp
+$Comp
+L C C1403
+U 1 1 645963E1
+P 6300 2593
+F 0 "C1403" V 6510 2503 60  0000 R TNN
+F 1 "=Capacitance +'/'+ 'Rated Voltage'" V 6410 2503 60  0000 R TNN
+F 2 "" H 6410 2503 60  0000 C CNN
+F 3 "" H 6410 2503 60  0000 C CNN
+	1    6300 2593
+	0    -1   -1   0
+$EndComp
+$Comp
+L HM2102NL TR1400
+U 1 1 645963E0
+P 11650 9693
+F 0 "TR1400" H 11350 9893 60  0000 R BNN
+F 1 "HM2102NL" H 11350 9793 60  0000 R BNN
+F 2 "" H 11350 9793 60  0000 C CNN
+F 3 "" H 11350 9793 60  0000 C CNN
+	1    11650 9693
+	-1    0    0    -1
+$EndComp
+$Comp
+L Testpoint_Square TP1404
+U 1 1 645963DF
+P 10000 10293
+F 0 "TP1404" H 9970 10173 60  0000 L BNN
+	1    10000 10293
+	-1    0    0    -1
+$EndComp
+$Comp
+L Testpoint_Square TP1407
+U 1 1 645963DE
+P 13200 10593
+F 0 "TP1407" H 13170 10473 60  0000 L BNN
+	1    13200 10593
+	1    0    0    -1
+$EndComp
+$Comp
+L R R1421
+U 1 1 645963DD
+P 11200 7593
+F 0 "R1421" V 11410 7543 60  0000 R TNN
+F 1 "10k" V 11310 7543 60  0000 R TNN
+F 2 "" H 11310 7543 60  0000 C CNN
+F 3 "" H 11310 7543 60  0000 C CNN
+	1    11200 7593
+	0    -1   -1   0
+$EndComp
+$Comp
+L R R1422
+U 1 1 645963DC
+P 11600 7593
+F 0 "R1422" V 11810 7543 60  0000 R TNN
+F 1 "10k" V 11710 7543 60  0000 R TNN
+F 2 "" H 11710 7543 60  0000 C CNN
+F 3 "" H 11710 7543 60  0000 C CNN
+	1    11600 7593
+	0    -1   -1   0
+$EndComp
+$Comp
+L R R1423
+U 1 1 645963DB
+P 12000 7593
+F 0 "R1423" V 12210 7543 60  0000 R TNN
+F 1 "10k" V 12110 7543 60  0000 R TNN
+F 2 "" H 12110 7543 60  0000 C CNN
+F 3 "" H 12110 7543 60  0000 C CNN
+	1    12000 7593
+	0    -1   -1   0
+$EndComp
+$Comp
+L R R1424
+U 1 1 645963DA
+P 12400 7593
+F 0 "R1424" V 12610 7543 60  0000 R TNN
+F 1 "10k" V 12510 7543 60  0000 R TNN
+F 2 "" H 12510 7543 60  0000 C CNN
+F 3 "" H 12510 7543 60  0000 C CNN
+	1    12400 7593
+	0    -1   -1   0
+$EndComp
+$Comp
+L R R1425
+U 1 1 645963D9
+P 14200 3193
+F 0 "R1425" V 14410 3143 60  0000 R TNN
+F 1 "10k" V 14310 3143 60  0000 R TNN
+F 2 "" H 14310 3143 60  0000 C CNN
+F 3 "" H 14310 3143 60  0000 C CNN
+	1    14200 3193
+	0    -1   -1   0
+$EndComp
+$Comp
+L R R1426
+U 1 1 645963D8
+P 14200 3993
+F 0 "R1426" V 14410 3943 60  0000 R TNN
+F 1 "10k" V 14310 3943 60  0000 R TNN
+F 2 "" H 14310 3943 60  0000 C CNN
+F 3 "" H 14310 3943 60  0000 C CNN
+	1    14200 3993
+	0    -1   -1   0
+$EndComp
+$Comp
+L R R1427
+U 1 1 645963D7
+P 14200 4793
+F 0 "R1427" V 14410 4743 60  0000 R TNN
+F 1 "10k" V 14310 4743 60  0000 R TNN
+F 2 "" H 14310 4743 60  0000 C CNN
+F 3 "" H 14310 4743 60  0000 C CNN
+	1    14200 4793
+	0    -1   -1   0
+$EndComp
+$Comp
+L C C1402
+U 1 1 645963D6
+P 5900 3193
+F 0 "C1402" V 6110 3103 60  0000 R TNN
+F 1 "=Capacitance +'/'+ 'Rated Voltage'" V 6010 3103 60  0000 R TNN
+F 2 "" H 6010 3103 60  0000 C CNN
+F 3 "" H 6010 3103 60  0000 C CNN
+	1    5900 3193
+	0    -1   -1   0
+$EndComp
+$Comp
+L Testpoint_Square TP1403
+U 1 1 645963D5
+P 5200 3193
+F 0 "TP1403" H 5170 3073 60  0000 L BNN
+	1    5200 3193
+	1    0    0    -1
+$EndComp
+$Comp
+L Testpoint_Square TP1402
+U 1 1 645963D4
+P 5200 2593
+F 0 "TP1402" H 5170 2473 60  0000 L BNN
+	1    5200 2593
+	1    0    0    -1
+$EndComp
+$Comp
+L Testpoint_Square TP1401
+U 1 1 645963D3
+P 5200 1993
+F 0 "TP1401" H 5170 1873 60  0000 L BNN
+	1    5200 1993
+	1    0    0    -1
+$EndComp
+$Comp
+L R R1402
+U 1 1 645963D2
+P 4200 8593
+F 0 "R1402" H 4290 8543 60  0000 L TNN
+F 1 "820R" H 4290 8743 60  0000 L TNN
+F 2 "" H 4290 8743 60  0000 C CNN
+F 3 "" H 4290 8743 60  0000 C CNN
+	1    4200 8593
+	1   0    0    1
+$EndComp
+$EndSCHEMATC

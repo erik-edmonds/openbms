@@ -1,0 +1,2780 @@
+Error Report for  - Users\erike\AppData\Local\Temp\QjzD5E0.tmp
+5/8/2023 8:10:24 PM
+
+Warning arcs were not exported.
+
+Net \CAN2.STB_iso_3 with allias 1 too long.
+Net COM_IO.COM_IO_PE.IO0_6_1 with allias 10 too long.
+Net MCU_ADC.AD1IN29 with allias 100 too long.
+Net MCU_ADC.AD1IN30 with allias 101 too long.
+Net MCU_ADC.AD1IN31 with allias 102 too long.
+Net MCU_ADC.AD2EVT_1 with allias 103 too long.
+Net MCU_ADC.AD2IN16 with allias 104 too long.
+Net MCU_ADC.AD2IN17 with allias 105 too long.
+Net MCU_ADC.AD2IN18 with allias 106 too long.
+Net MCU_ADC.AD2IN19 with allias 107 too long.
+Net MCU_ADC.AD2IN20 with allias 108 too long.
+Net MCU_ADC.AD2IN21 with allias 109 too long.
+Net COM_IO.COM_IO_PE.IO0_7_1 with allias 11 too long.
+Net MCU_ADC.AD2IN22 with allias 110 too long.
+Net MCU_ADC.AD2IN23 with allias 111 too long.
+Net MCU_ADC.AD2IN24 with allias 112 too long.
+Net MCU_CLK.2.22MHz_1 with allias 113 too long.
+Net MCU_CLK.20MHz_1 with allias 114 too long.
+Net MCU_CLK.25MHz_1 with allias 115 too long.
+Net MCU_DMM.DATA0_1 with allias 116 too long.
+Net MCU_DMM.DATA1_1 with allias 117 too long.
+Net MCU_EMIF.\CAS_1 with allias 118 too long.
+Net MCU_EMIF.\CS0_1 with allias 119 too long.
+Net COM_IO.COM_IO_PE.IO1_0_1 with allias 12 too long.
+Net MCU_EMIF.\CS2_1 with allias 120 too long.
+Net MCU_EMIF.\CS3_1 with allias 121 too long.
+Net MCU_EMIF.\CS4_1 with allias 122 too long.
+Net MCU_EMIF.\DQM0_1 with allias 123 too long.
+Net MCU_EMIF.\DQM1_1 with allias 124 too long.
+Net MCU_EMIF.\RAS_1 with allias 125 too long.
+Net MCU_EMIF.\WAIT_1 with allias 126 too long.
+Net MCU_EMIF.ADDR10 with allias 127 too long.
+Net MCU_EMIF.ADDR11 with allias 128 too long.
+Net MCU_EMIF.ADDR12 with allias 129 too long.
+Net COM_IO.COM_IO_PE.IO1_1_1 with allias 13 too long.
+Net MCU_EMIF.ADDR13 with allias 130 too long.
+Net MCU_EMIF.ADDR14 with allias 131 too long.
+Net MCU_EMIF.ADDR15 with allias 132 too long.
+Net MCU_EMIF.ADDR16 with allias 133 too long.
+Net MCU_EMIF.ADDR17 with allias 134 too long.
+Net MCU_EMIF.ADDR18 with allias 135 too long.
+Net MCU_EMIF.ADDR19 with allias 136 too long.
+Net MCU_EMIF.ADDR20 with allias 137 too long.
+Net MCU_EMIF.ADDR21 with allias 138 too long.
+Net MCU_EMIF.DATA10 with allias 139 too long.
+Net COM_IO.COM_IO_PE.IO1_2_1 with allias 14 too long.
+Net MCU_EMIF.DATA11 with allias 140 too long.
+Net MCU_EMIF.DATA12 with allias 141 too long.
+Net MCU_EMIF.DATA13 with allias 142 too long.
+Net MCU_EMIF.DATA14 with allias 143 too long.
+Net MCU_EMIF.DATA15 with allias 144 too long.
+Net MCU_ETM.CLKIN_1 with allias 145 too long.
+Net MCU_ETM.CLKOUT_1 with allias 146 too long.
+Net MCU_ETM.DATA0_1 with allias 147 too long.
+Net MCU_ETM.DATA1_1 with allias 148 too long.
+Net MCU_ETM.DATA2_1 with allias 149 too long.
+Net COM_IO.COM_IO_PE.IO1_3_1 with allias 15 too long.
+Net MCU_ETM.DATA3_1 with allias 150 too long.
+Net MCU_ETM.DATA4_1 with allias 151 too long.
+Net MCU_ETM.DATA5_1 with allias 152 too long.
+Net MCU_ETM.DATA6_1 with allias 153 too long.
+Net MCU_ETM.DATA7_1 with allias 154 too long.
+Net MCU_FRAY1.TXEN_1 with allias 155 too long.
+Net MCU_FRAY2.TXEN_1 with allias 156 too long.
+Net MCU_JTAG.\TRST_1 with allias 157 too long.
+Net MCU_JTAG.RTCK_1 with allias 158 too long.
+Net MCU_MII.RXCLK_1 with allias 159 too long.
+Net COM_IO.COM_IO_PE.IO1_4_1 with allias 16 too long.
+Net MCU_MII.RXCTRL_1 with allias 160 too long.
+Net MCU_MII.TXCLK_1 with allias 161 too long.
+Net MCU_RST.\ERROR_1 with allias 162 too long.
+Net MCU_RST.\PORRST_1 with allias 163 too long.
+Net MCU_SPI1.\CS1_1 with allias 164 too long.
+Net MCU_SPI1.\CS2_1 with allias 165 too long.
+Net MCU_SPI1.\CS3_1 with allias 166 too long.
+Net MCU_SPI1.\CS4_1 with allias 167 too long.
+Net MCU_SPI1.\CS5_1 with allias 168 too long.
+Net MCU_SPI1.SIMO0_1 with allias 169 too long.
+Net COM_IO.COM_IO_PE.IO1_5_1 with allias 17 too long.
+Net MCU_SPI1.SIMO1_1 with allias 170 too long.
+Net MCU_SPI1.SOMI0_1 with allias 171 too long.
+Net MCU_SPI1.SOMI1_1 with allias 172 too long.
+Net MCU_SPI2.\CS0_1 with allias 173 too long.
+Net MCU_SPI2.\CS1_1 with allias 174 too long.
+Net MCU_SPI2.\sCS2_1 with allias 175 too long.
+Net MCU_SPI2.SIMO_1 with allias 176 too long.
+Net MCU_SPI2.SOMI_1 with allias 177 too long.
+Net MCU_SPI3.\CS4_1 with allias 178 too long.
+Net MCU_SPI3.\CS5_1 with allias 179 too long.
+Net COM_IO.COM_IO_PE.IO1_6_1 with allias 18 too long.
+Net MCU_SPI3.\sCS6_1 with allias 180 too long.
+Net MCU_SPI4.\CS0_1 with allias 181 too long.
+Net MCU_SPI4.\CS1_1 with allias 182 too long.
+Net MCU_SPI4.\CS2_1 with allias 183 too long.
+Net MCU_SPI4.\CS3_1 with allias 184 too long.
+Net MCU_SPI4.\CS4_1 with allias 185 too long.
+Net MCU_SPI4.\CS5_1 with allias 186 too long.
+Net MCU_SPI4.SIMO_1 with allias 187 too long.
+Net MCU_SPI4.SOMI_1 with allias 188 too long.
+Net MCU_SPI5.\CS0_1 with allias 189 too long.
+Net COM_IO.COM_IO_PE.IO1_7_1 with allias 19 too long.
+Net MCU_SPI5.\CS1_1 with allias 190 too long.
+Net MCU_SPI5.\CS2_1 with allias 191 too long.
+Net MCU_SPI5.\CS3_1 with allias 192 too long.
+Net MCU_SPI5.SIMO0_1 with allias 193 too long.
+Net MCU_SPI5.SIMO1_1 with allias 194 too long.
+Net MCU_SPI5.SIMO2_1 with allias 195 too long.
+Net MCU_SPI5.SIMO3_1 with allias 196 too long.
+Net MCU_SPI5.SOMI0_1 with allias 197 too long.
+Net MCU_SPI5.SOMI1_1 with allias 198 too long.
+Net MCU_SPI5.SOMI2_1 with allias 199 too long.
+Net COM_IO.\ETH_INT_1 with allias 2 too long.
+Net CONT_FB.IO0_0_1 with allias 20 too long.
+Net MCU_SPI5.SOMI3_1 with allias 200 too long.
+Net PER_IO.\RTC_INTA_HV_1 with allias 201 too long.
+Net PER_IO.\SE_RESET_1 with allias 202 too long.
+Net PER_IO.\WW_ENABLE_1 with allias 203 too long.
+Net PER_IO.\WW_RESETIN_1 with allias 204 too long.
+Net PER_IO.PE_IO3.IO0_1_1 with allias 205 too long.
+Net PER_IO.PE_IO3.IO0_2_1 with allias 206 too long.
+Net PER_IO.PE_IO3.IO0_3_1 with allias 207 too long.
+Net PER_IO.PE_IO3.IO0_4_1 with allias 208 too long.
+Net PER_IO.PE_IO3.IO0_5_1 with allias 209 too long.
+Net CONT_FB.IO0_1_1 with allias 21 too long.
+Net PER_IO.PE_IO3.IO0_6_1 with allias 210 too long.
+Net PER_IO.PE_IO3.IO0_7_1 with allias 211 too long.
+Net PER_IO.PE_IO3.IO1_0_1 with allias 212 too long.
+Net PER_IO.PE_IO3.IO1_1_1 with allias 213 too long.
+Net PER_IO.PE_IO3.IO1_2_1 with allias 214 too long.
+Net PER_IO.PE_IO3.IO1_3_1 with allias 215 too long.
+Net PER_IO.PE_IO3.IO1_4_1 with allias 216 too long.
+Net PER_IO.PE_IO3.IO1_5_1 with allias 217 too long.
+Net PER_IO.PE_IO3.IO1_6_1 with allias 218 too long.
+Net PER_IO.PE_IO3.IO1_7_1 with allias 219 too long.
+Net CONT_FB.IO0_2_1 with allias 22 too long.
+Net SBC_MCU_OTP.DBG_1 with allias 220 too long.
+Net SBC_MCU_OTP.DBGHV_1 with allias 221 too long.
+Net SBC_MCU_OTP.SCL_1 with allias 222 too long.
+Net SBC_MCU_OTP.SDA_1 with allias 223 too long.
+Net SBC_PER_OTP.DBG_1 with allias 224 too long.
+Net SBC_PER_OTP.DBGHV_1 with allias 225 too long.
+Net SBC_PER_OTP.SCL_1 with allias 226 too long.
+Net SBC_PER_OTP.SDA_1 with allias 227 too long.
+Net SUPPLY_ext.15_IGNITION_1 with allias 228 too long.
+Net SUPPLY_IO.\SBC_PER_PGOOD_1 with allias 229 too long.
+Net CONT_FB.IO0_3_1 with allias 23 too long.
+Net SUPPLY_IO.\SBC_PER_RESET_1 with allias 230 too long.
+Net SUPPLY_IO.SBC_MCU_FS0B_1 with allias 231 too long.
+Net SUPPLY_IO.SBC_PER_FS0B_1 with allias 232 too long.
+Net CONT_FB.IO0_4_1 with allias 24 too long.
+Net CONT_FB.IO0_5_1 with allias 25 too long.
+Net CONT_FB.IO0_6_1 with allias 26 too long.
+Net CONT_FB.IO0_7_1 with allias 27 too long.
+Net ETHERNET.LED_GN_A_1 with allias 28 too long.
+Net ETHERNET.LED_GN_C_1 with allias 29 too long.
+Net COM_IO.CAN_FAULT_1 with allias 3 too long.
+Net ETHERNET.LED_YE_A_1 with allias 30 too long.
+Net ETHERNET.LED_YE_C_1 with allias 31 too long.
+Net ETHERNET.RX1_1_N with allias 32 too long.
+Net ETHERNET.RX1_1_P with allias 33 too long.
+Net ETHERNET.RX2_1_N with allias 34 too long.
+Net ETHERNET.RX2_1_P with allias 35 too long.
+Net ETHERNET.SHIELD_1 with allias 36 too long.
+Net ETHERNET.TX1_1_N with allias 37 too long.
+Net ETHERNET.TX1_1_P with allias 38 too long.
+Net ETHERNET.TX2_1_N with allias 39 too long.
+Net COM_IO.COM_IO_PE.IO0_0_1 with allias 4 too long.
+Net ETHERNET.TX2_1_P with allias 40 too long.
+Net FLASH_SPI.\CS_1 with allias 41 too long.
+Net FLASH_SPI.CLK_1 with allias 42 too long.
+Net FLASH_SPI.MISO_1 with allias 43 too long.
+Net FLASH_SPI.MOSI_1 with allias 44 too long.
+Net INTERLOCK_IO.IL_ENABLE_EXT_1 with allias 45 too long.
+Net INTERLOCK_IO.IL_HS_ENABLE_1 with allias 46 too long.
+Net INTERLOCK_IO.IL_STATE_1 with allias 47 too long.
+Net IODEV_IO.\SMSW_FAULT_1 with allias 48 too long.
+Net IODEV_IO.\SMSW_RESET_1 with allias 49 too long.
+Net COM_IO.COM_IO_PE.IO0_1_1 with allias 5 too long.
+Net IODEV_IO.CONT_FB_EN_1 with allias 50 too long.
+Net IODEV_IO.CONT_FB_IO.IO0_0_1 with allias 51 too long.
+Net IODEV_IO.CONT_FB_IO.IO0_1_1 with allias 52 too long.
+Net IODEV_IO.CONT_FB_IO.IO0_2_1 with allias 53 too long.
+Net IODEV_IO.CONT_FB_IO.IO0_3_1 with allias 54 too long.
+Net IODEV_IO.CONT_FB_IO.IO0_4_1 with allias 55 too long.
+Net IODEV_IO.CONT_FB_IO.IO0_5_1 with allias 56 too long.
+Net IODEV_IO.CONT_FB_IO.IO0_6_1 with allias 57 too long.
+Net IODEV_IO.CONT_FB_IO.IO0_7_1 with allias 58 too long.
+Net IODEV_IO.CONT_FB_IO.IO1_0_1 with allias 59 too long.
+Net COM_IO.COM_IO_PE.IO0_2_1 with allias 6 too long.
+Net IODEV_IO.CONT_FB_IO.IO1_1_1 with allias 60 too long.
+Net IODEV_IO.CONT_FB_IO.IO1_2_1 with allias 61 too long.
+Net IODEV_IO.CONT_FB_IO.IO1_3_1 with allias 62 too long.
+Net IODEV_IO.CONT_FB_IO.IO1_4_1 with allias 63 too long.
+Net IODEV_IO.CONT_FB_IO.IO1_5_1 with allias 64 too long.
+Net IODEV_IO.CONT_FB_IO.IO1_6_1 with allias 65 too long.
+Net IODEV_IO.CONT_FB_IO.IO1_7_1 with allias 66 too long.
+Net IODEV_IO.IM_OK_1 with allias 67 too long.
+Net IODEV_IO.IM_PWM_1 with allias 68 too long.
+Net IODEV_IO.IM_SUP_EN_1 with allias 69 too long.
+Net COM_IO.COM_IO_PE.IO0_3_1 with allias 7 too long.
+Net IODEV_IO.SMSW_LHM_1 with allias 70 too long.
+Net IODEV_IO.SMSW1_IN1 with allias 71 too long.
+Net IODEV_IO.SMSW1_IN2 with allias 72 too long.
+Net IODEV_IO.SMSW1_IN3 with allias 73 too long.
+Net IODEV_IO.SMSW1_IN4 with allias 74 too long.
+Net IODEV_IO.SMSW2_IN1 with allias 75 too long.
+Net IODEV_IO.SMSW2_IN2 with allias 76 too long.
+Net IODEV_IO.SMSW2_IN3 with allias 77 too long.
+Net IODEV_IO.SMSW2_IN4 with allias 78 too long.
+Net iso_CAN2.VSUP_1 with allias 79 too long.
+Net COM_IO.COM_IO_PE.IO0_4_1 with allias 8 too long.
+Net MCU_ADC.AD1EVT_1 with allias 80 too long.
+Net MCU_ADC.AD1IN10 with allias 81 too long.
+Net MCU_ADC.AD1IN11 with allias 82 too long.
+Net MCU_ADC.AD1IN12 with allias 83 too long.
+Net MCU_ADC.AD1IN13 with allias 84 too long.
+Net MCU_ADC.AD1IN14 with allias 85 too long.
+Net MCU_ADC.AD1IN15 with allias 86 too long.
+Net MCU_ADC.AD1IN16 with allias 87 too long.
+Net MCU_ADC.AD1IN17 with allias 88 too long.
+Net MCU_ADC.AD1IN18 with allias 89 too long.
+Net COM_IO.COM_IO_PE.IO0_5_1 with allias 9 too long.
+Net MCU_ADC.AD1IN19 with allias 90 too long.
+Net MCU_ADC.AD1IN20 with allias 91 too long.
+Net MCU_ADC.AD1IN21 with allias 92 too long.
+Net MCU_ADC.AD1IN22 with allias 93 too long.
+Net MCU_ADC.AD1IN23 with allias 94 too long.
+Net MCU_ADC.AD1IN24 with allias 95 too long.
+Net MCU_ADC.AD1IN25 with allias 96 too long.
+Net MCU_ADC.AD1IN26 with allias 97 too long.
+Net MCU_ADC.AD1IN27 with allias 98 too long.
+Net MCU_ADC.AD1IN28 with allias 99 too long.
+Pad name Orientation too long.
+Component Designator Designator69 too long.
+Pad name Hole_WA-SMSI_M3 too long.
+Component Designator Designator70 too long.
+Pad name Hole_WA-SMSI_M3 too long.
+Component Designator Designator71 too long.
+Pad name Hole_WA-SMSI_M3 too long.
+Component Designator Designator72 too long.
+Pad name Hole_WA-SMSI_M3 too long.
+Component Designator Designator75 too long.
+Pad name Hole_WA-SMSI_M3 too long.
+Component Designator Designator76 too long.
+Pad name Hole_WA-SMSI_M3 too long.
+Component Designator Designator77 too long.
+Pad name Hole_WA-SMSI_M3 too long.
+Component Designator Designator78 too long.
+Pad name Hole_WA-SMSI_M3 too long.
+Warning pad shape change for U6601-6 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for U6601-7 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for U6601-3 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for U6601-2 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for U8000-10 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8000-4 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8001-1 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-11 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for J3008-3 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-1 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-2 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-4 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for U4301-5 from  to rectangular 0.6mm,0.9mm
+Warning pad shape change for U4301-7 from  to rectangular 0.6mm,0.9mm
+Warning pad shape change for U4301-8 from  to rectangular 0.6mm,0.9mm
+Warning pad shape change for U4301-3 from  to rectangular 0.6mm,0.9mm
+Warning pad shape change for U4301-1 from  to rectangular 0.6mm,0.9mm
+Warning pad shape change for T1201-4 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1201-5 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1201-13 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1201-12 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for U6200-11 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6200-12 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6200-13 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6200-6 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6200-5 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6200-4 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-5 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U7200_1 too long.
+Component Designator U7200_1 too long.
+Component Designator U7200_1 too long.
+Component Designator U7200_1 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-2 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-52 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U1200-13 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-14 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-15 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-16 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-17 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-19 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-21 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-23 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-24 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-40 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-48 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U6201-7 from rounded 0.6mm,1.75mm to rectangular 0.6mm,1.15mm
+Warning pad shape change for T1200-12 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1200-13 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1200-5 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1200-4 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Component Designator U7200_2 too long.
+Component Designator U7200_2 too long.
+Component Designator U7200_2 too long.
+Component Designator U7200_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-2 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-52 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-5 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator Designator81 too long.
+Component Designator Designator74 too long.
+Component Designator Designator79 too long.
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-11 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for U1100-12 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-14 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for U1100-12 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator R1104_2 too long.
+Warning pad shape change for J3008-9 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for C3000-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for D6601-1 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for J3008-21 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for U1200-2 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for T1200-3 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for U1200-1 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for T1200-1 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for C5015-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U1200-5 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for T1200-8 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for U1200-4 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for T1200-6 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for C6403-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for T1201-3 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for U1200-8 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for T1201-1 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for U1200-7 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Component Designator D1102_1 too long.
+Component Designator L1100_1 too long.
+Component Designator R1110_1 too long.
+Warning pad shape change for R1110_1-2 from  to rounded 1.05mm,1.05mm
+Component Designator R1111_1 too long.
+Warning pad shape change for R1111_1-2 from  to rounded 1.05mm,1.05mm
+Component Designator D1102_1 too long.
+Component Designator L1100_1 too long.
+Component Designator R1112_1 too long.
+Warning pad shape change for R1112_1-2 from  to rounded 1.05mm,1.05mm
+Component Designator R1113_1 too long.
+Warning pad shape change for R1113_1-2 from  to rounded 1.05mm,1.05mm
+Warning pad shape change for U1100-13 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-6 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for U1100-13 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator R1103_2 too long.
+Warning pad shape change for U1100-11 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-11 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator R1108_2 too long.
+Warning pad shape change for U1100-14 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-14 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator R1107_2 too long.
+Warning pad shape change for U1200-44 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Component Designator Q1101_1 too long.
+Component Designator R1114_1 too long.
+Component Designator R1103_1 too long.
+Component Designator R6302_2 too long.
+Component Designator R6320_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-4 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-6 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator R1104_1 too long.
+Component Designator R6303_2 too long.
+Component Designator R6321_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-5 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-14 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for U1100-4 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-4 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator R6304_2 too long.
+Component Designator R6322_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-6 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U1100-5 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-5 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator R6305_2 too long.
+Component Designator R6323_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-7 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6306_2 too long.
+Component Designator R6324_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-8 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6307_2 too long.
+Component Designator R6325_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-9 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6308_2 too long.
+Component Designator R6326_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-10 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6309_2 too long.
+Component Designator R6327_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-11 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6310_2 too long.
+Component Designator R6328_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-13 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6311_2 too long.
+Component Designator R6329_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-14 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U1200-43 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Component Designator R6312_2 too long.
+Component Designator R6330_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-15 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6313_2 too long.
+Component Designator R6331_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-16 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U1600-26 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Component Designator R6314_2 too long.
+Component Designator R6332_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-17 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6315_2 too long.
+Component Designator R6333_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-18 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6316_2 too long.
+Component Designator R6334_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-19 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6317_2 too long.
+Component Designator R6335_2 too long.
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-20 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator S7200_1 too long.
+Component Designator R7229_1 too long.
+Component Designator C7217_1 too long.
+Warning pad shape change for C7217_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator R4202_1 too long.
+Warning pad shape change for R4202_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_1 too long.
+Component Designator R4202_2 too long.
+Warning pad shape change for R4202_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_2 too long.
+Component Designator R4202_3 too long.
+Warning pad shape change for R4202_3-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_3 too long.
+Component Designator R4202_4 too long.
+Warning pad shape change for R4202_4-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_4 too long.
+Component Designator R4202_5 too long.
+Warning pad shape change for R4202_5-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_5 too long.
+Component Designator R4202_6 too long.
+Warning pad shape change for R4202_6-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_6 too long.
+Component Designator R4202_7 too long.
+Warning pad shape change for R4202_7-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_7 too long.
+Component Designator R4202_8 too long.
+Warning pad shape change for R4202_8-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_8 too long.
+Warning pad shape change for T1201-8 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for U1200-11 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for T1201-6 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for U1200-10 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for J3008-8 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-7 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for T1200-9 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1200-11 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1201-9 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1201-11 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1200-14 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1200-16 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1201-14 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1201-16 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for J3008-37 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-35 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-33 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-31 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-29 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-27 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-25 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-23 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-10 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for U6200-7 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6200-16 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6202-6 from rounded 0.4mm,1.15mm to rectangular 0.4mm,0.75mm
+Warning pad shape change for U6201-6 from rounded 0.6mm,1.75mm to rectangular 0.6mm,1.15mm
+Warning pad shape change for U6200-8 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6202-2 from rounded 0.4mm,1.15mm to rectangular 0.4mm,0.75mm
+Warning pad shape change for U6201-2 from rounded 0.6mm,1.75mm to rectangular 0.6mm,1.15mm
+Warning pad shape change for U6200-15 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6202-5 from rounded 0.4mm,1.15mm to rectangular 0.4mm,0.75mm
+Warning pad shape change for U6201-5 from rounded 0.6mm,1.75mm to rectangular 0.6mm,1.15mm
+Warning pad shape change for U6201-1 from rounded 0.6mm,1.75mm to rectangular 0.6mm,1.15mm
+Warning pad shape change for U6601-4 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for U8000-2 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8000-8 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8001-6 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8001-7 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8001-4 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U1100-2 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-8 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U8002-4 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for J3008-32 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-30 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-5 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for U4301-4 from  to rectangular 0.6mm,0.9mm
+Warning pad shape change for U6500-9 from octagonal 1.7mm,1mm to rounded 1mm,1mm
+Warning pad shape change for U6200-10 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for R8023-2 from  to rounded 0.95mm,0.95mm
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-12 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-21 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator Q7202_1 too long.
+Warning pad shape change for U6202-4 from rounded 0.4mm,1.15mm to rectangular 0.4mm,0.75mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-11 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-20 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-22 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-21 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U6600-5 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Component Designator U7300_1 too long.
+Warning pad shape change for U7300_1-6 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator U7300_1 too long.
+Warning pad shape change for U7300_1-7 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator U7300_1 too long.
+Warning pad shape change for U7300_1-8 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Warning pad shape change for U1600-23 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-18 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-13 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-10 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-5 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U7100-10 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U7100-22 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D1102_1 too long.
+Warning pad shape change for D7005-1 from  to rounded 0.7mm,0.7mm
+Component Designator C7205_1 too long.
+Warning pad shape change for U6201-4 from rounded 0.6mm,1.75mm to rectangular 0.6mm,1.15mm
+Component Designator C7302_1 too long.
+Component Designator C7304_1 too long.
+Warning pad shape change for C7304_1-1 from  to rectangular 1.4mm,1.3mm
+Warning pad shape change for C1100-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7241_1 too long.
+Warning pad shape change for C7241_1-1 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C7000-1 from  to rounded 0.75mm,0.75mm
+Component Designator C7300_2 too long.
+Warning pad shape change for C7300_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator D4503_2 too long.
+Warning pad shape change for U1100-2 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-8 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator C1103_1 too long.
+Warning pad shape change for C1103_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C1104_1 too long.
+Warning pad shape change for C1104_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator C1105_1 too long.
+Component Designator C1106_1 too long.
+Warning pad shape change for C1106_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C1107_1 too long.
+Warning pad shape change for C1107_1-1 from  to rounded 0.9mm,0.9mm
+Component Designator C1108_1 too long.
+Warning pad shape change for C1108_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C1109_1 too long.
+Warning pad shape change for C1109_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C1110_1 too long.
+Warning pad shape change for C1110_1-1 from  to rounded 0.9mm,0.9mm
+Component Designator C1111_1 too long.
+Warning pad shape change for C1111_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C1112_1 too long.
+Warning pad shape change for C1112_1-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1200-1 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C1201-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1202-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1203-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1204-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1205-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1208-1 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C1209-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1210-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1211-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1214-1 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C1215-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1216-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1217-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1220-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1221-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1222-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1223-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1600-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1601-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1602-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1603-1 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C3000-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C4344-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C4345-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C4346-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C4347-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C4400-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C4401-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5000-1 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5001-1 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5002-1 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5003-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5004-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5005-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5006-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5007-1 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5008-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5009-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5010-1 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5011-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5012-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5013-1 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5014-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5015-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5016-1 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5017-1 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5018-1 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5019-1 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5020-1 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5021-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5022-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5023-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5024-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5025-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5026-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5027-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5028-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6101-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6100-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6200-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C6201-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6202-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6203-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C6204-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6205-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C6206-1 from  to rounded 0.52mm,0.52mm
+Component Designator C6300_1 too long.
+Warning pad shape change for C6300_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C6300_2 too long.
+Warning pad shape change for C6300_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C6300_3 too long.
+Warning pad shape change for C6300_3-1 from  to rounded 0.75mm,0.75mm
+Component Designator C6301_1 too long.
+Warning pad shape change for C6301_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C6301_2 too long.
+Warning pad shape change for C6301_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C6301_3 too long.
+Warning pad shape change for C6301_3-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6400-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6401-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6500-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6600-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6601-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6602-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6603-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C7100-1 from  to rectangular 1.4mm,1.3mm
+Warning pad shape change for C7101-1 from  to rectangular 1.4mm,1.3mm
+Warning pad shape change for C7102-1 from  to rectangular 1.4mm,1.3mm
+Warning pad shape change for C7103-1 from  to rectangular 1.4mm,1.3mm
+Warning pad shape change for C7104-1 from  to rectangular 1.4mm,1.3mm
+Warning pad shape change for C7109-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C7113-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C7114-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C7116-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C7117-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C7118-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C7119-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C7120-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C7200-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C7201-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C7202-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C7203-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7205_2 too long.
+Component Designator C7206_2 too long.
+Warning pad shape change for C7206_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C7207_2 too long.
+Component Designator C7208_2 too long.
+Component Designator C7209_2 too long.
+Component Designator C7210_2 too long.
+Warning pad shape change for C7210_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7211_2 too long.
+Warning pad shape change for C7211_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7212_2 too long.
+Warning pad shape change for C7212_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7213_2 too long.
+Warning pad shape change for C7213_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7215_2 too long.
+Warning pad shape change for C7215_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7216_2 too long.
+Warning pad shape change for C7216_2-1 from  to rounded 0.9mm,0.9mm
+Component Designator C7217_2 too long.
+Warning pad shape change for C7217_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C7218_2 too long.
+Warning pad shape change for C7218_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C7219_2 too long.
+Warning pad shape change for C7219_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7220_2 too long.
+Warning pad shape change for C7220_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7221_2 too long.
+Warning pad shape change for C7221_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7222_2 too long.
+Warning pad shape change for C7222_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7223_2 too long.
+Warning pad shape change for C7223_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7224_2 too long.
+Warning pad shape change for C7224_2-1 from  to rounded 0.9mm,0.9mm
+Component Designator C7225_2 too long.
+Warning pad shape change for C7225_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C7226_2 too long.
+Warning pad shape change for C7226_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C7227_2 too long.
+Warning pad shape change for C7227_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7228_2 too long.
+Warning pad shape change for C7228_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7229_2 too long.
+Warning pad shape change for C7229_2-1 from  to rounded 0.9mm,0.9mm
+Component Designator C7230_2 too long.
+Warning pad shape change for C7230_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7231_2 too long.
+Warning pad shape change for C7231_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7232_2 too long.
+Warning pad shape change for C7232_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7233_2 too long.
+Warning pad shape change for C7233_2-1 from  to rounded 0.9mm,0.9mm
+Component Designator C7234_2 too long.
+Warning pad shape change for C7234_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7235_2 too long.
+Warning pad shape change for C7235_2-1 from  to rounded 0.9mm,0.9mm
+Component Designator C7236_2 too long.
+Warning pad shape change for C7236_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7237_2 too long.
+Warning pad shape change for C7237_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7238_2 too long.
+Warning pad shape change for C7238_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7239_2 too long.
+Warning pad shape change for C7239_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7240_2 too long.
+Warning pad shape change for C7240_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7241_2 too long.
+Warning pad shape change for C7241_2-1 from  to rounded 0.9mm,0.9mm
+Component Designator C7242_2 too long.
+Warning pad shape change for C7242_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7243_2 too long.
+Warning pad shape change for C7243_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7244_2 too long.
+Warning pad shape change for C7244_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7245_2 too long.
+Warning pad shape change for C7245_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7246_2 too long.
+Warning pad shape change for C7246_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7247_2 too long.
+Warning pad shape change for C7247_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7248_2 too long.
+Warning pad shape change for C7248_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7249_2 too long.
+Warning pad shape change for C7249_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7250_2 too long.
+Warning pad shape change for C7250_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7251_2 too long.
+Warning pad shape change for C7251_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7301_2 too long.
+Component Designator C7302_2 too long.
+Component Designator C7303_2 too long.
+Warning pad shape change for C7303_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7304_2 too long.
+Warning pad shape change for C7304_2-1 from  to rectangular 1.4mm,1.3mm
+Component Designator C7305_2 too long.
+Warning pad shape change for C7305_2-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for D5000-1 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D7000-1 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D7001-1 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D7002-1 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D7003-1 from  to rounded 0.7mm,0.7mm
+Component Designator D7202_2 too long.
+Component Designator D7307_2 too long.
+Component Designator R1114_1 too long.
+Component Designator R6320_1 too long.
+Component Designator R6320_2 too long.
+Component Designator R6320_3 too long.
+Component Designator R6321_1 too long.
+Component Designator R6321_2 too long.
+Component Designator R6321_3 too long.
+Component Designator R6322_1 too long.
+Component Designator R6322_2 too long.
+Component Designator R6322_3 too long.
+Component Designator R6323_1 too long.
+Component Designator R6323_2 too long.
+Component Designator R6323_3 too long.
+Component Designator R6324_1 too long.
+Component Designator R6324_2 too long.
+Component Designator R6324_3 too long.
+Component Designator R6325_1 too long.
+Component Designator R6325_2 too long.
+Component Designator R6325_3 too long.
+Component Designator R6326_1 too long.
+Component Designator R6326_2 too long.
+Component Designator R6326_3 too long.
+Component Designator R6327_1 too long.
+Component Designator R6327_2 too long.
+Component Designator R6327_3 too long.
+Component Designator R6328_1 too long.
+Component Designator R6328_2 too long.
+Component Designator R6328_3 too long.
+Component Designator R6329_1 too long.
+Component Designator R6329_2 too long.
+Component Designator R6329_3 too long.
+Component Designator R6330_1 too long.
+Component Designator R6330_2 too long.
+Component Designator R6330_3 too long.
+Component Designator R6331_1 too long.
+Component Designator R6331_2 too long.
+Component Designator R6331_3 too long.
+Component Designator R6332_2 too long.
+Component Designator R6332_3 too long.
+Component Designator R6333_1 too long.
+Component Designator R6333_2 too long.
+Component Designator R6333_3 too long.
+Component Designator R6334_1 too long.
+Component Designator R6334_2 too long.
+Component Designator R6334_3 too long.
+Component Designator R6335_1 too long.
+Component Designator R6335_2 too long.
+Component Designator R6335_3 too long.
+Component Designator R7228_2 too long.
+Component Designator R7238_2 too long.
+Component Designator R7239_2 too long.
+Component Designator R7308_2 too long.
+Component Designator R7311_2 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-21 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-12 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-2 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-2 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-12 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-22 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-21 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Component Designator U7300_2 too long.
+Warning pad shape change for U7300_2-6 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator U7300_2 too long.
+Warning pad shape change for U7300_2-7 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator U7300_2 too long.
+Warning pad shape change for U7300_2-8 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator Q7202_2 too long.
+Component Designator R7245_2 too long.
+Component Designator R7246_2 too long.
+Warning pad shape change for C6402-1 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C6403-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8000-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8001-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8002-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8003-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8005-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8006-1 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C8007-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8008-1 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C8009-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8010-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8011-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8012-1 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C8013-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8014-1 from  to rounded 0.52mm,0.52mm
+Component Designator C4500_1 too long.
+Component Designator C4500_2 too long.
+Component Designator C4501_1 too long.
+Warning pad shape change for C4501_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C4501_2 too long.
+Warning pad shape change for C4501_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C4502_1 too long.
+Warning pad shape change for C4502_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C4502_2 too long.
+Warning pad shape change for C4502_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C4503_1 too long.
+Warning pad shape change for C4503_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C4503_2 too long.
+Warning pad shape change for C4503_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C4504_1 too long.
+Warning pad shape change for C4504_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C4504_2 too long.
+Warning pad shape change for C4504_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C4505_1 too long.
+Warning pad shape change for C4505_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C4505_2 too long.
+Warning pad shape change for C4505_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C4506_1 too long.
+Warning pad shape change for C4506_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C4506_2 too long.
+Warning pad shape change for C4506_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C4507_1 too long.
+Warning pad shape change for C4507_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C4507_2 too long.
+Warning pad shape change for C4507_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator R4501_1 too long.
+Component Designator R4501_2 too long.
+Component Designator R4502_1 too long.
+Component Designator R4502_2 too long.
+Component Designator R4503_1 too long.
+Component Designator R4503_2 too long.
+Component Designator R4508_1 too long.
+Component Designator R4508_2 too long.
+Component Designator R4509_1 too long.
+Component Designator R4509_2 too long.
+Component Designator R4510_1 too long.
+Component Designator R4510_2 too long.
+Component Designator R4511_1 too long.
+Component Designator R4511_2 too long.
+Component Designator R4512_1 too long.
+Component Designator R4512_2 too long.
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-11 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-20 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Component Designator C7243_1 too long.
+Warning pad shape change for C7243_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7250_1 too long.
+Warning pad shape change for C7250_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7251_1 too long.
+Warning pad shape change for C7251_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator R7238_1 too long.
+Component Designator R7239_1 too long.
+Component Designator R7245_1 too long.
+Component Designator R7246_1 too long.
+Component Designator C7206_1 too long.
+Warning pad shape change for C7206_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C7207_1 too long.
+Component Designator C7208_1 too long.
+Component Designator C7209_1 too long.
+Component Designator C7210_1 too long.
+Warning pad shape change for C7210_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7211_1 too long.
+Warning pad shape change for C7211_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7212_1 too long.
+Warning pad shape change for C7212_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7213_1 too long.
+Warning pad shape change for C7213_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7215_1 too long.
+Warning pad shape change for C7215_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7216_1 too long.
+Warning pad shape change for C7216_1-1 from  to rounded 0.9mm,0.9mm
+Component Designator C7217_1 too long.
+Warning pad shape change for C7217_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C7218_1 too long.
+Warning pad shape change for C7218_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C7219_1 too long.
+Warning pad shape change for C7219_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7220_1 too long.
+Warning pad shape change for C7220_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7221_1 too long.
+Warning pad shape change for C7221_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7222_1 too long.
+Warning pad shape change for C7222_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7223_1 too long.
+Warning pad shape change for C7223_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7224_1 too long.
+Warning pad shape change for C7224_1-1 from  to rounded 0.9mm,0.9mm
+Component Designator C7225_1 too long.
+Warning pad shape change for C7225_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C7226_1 too long.
+Warning pad shape change for C7226_1-1 from  to rounded 0.75mm,0.75mm
+Component Designator C7227_1 too long.
+Warning pad shape change for C7227_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7228_1 too long.
+Warning pad shape change for C7228_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7229_1 too long.
+Warning pad shape change for C7229_1-1 from  to rounded 0.9mm,0.9mm
+Component Designator C7230_1 too long.
+Warning pad shape change for C7230_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7231_1 too long.
+Warning pad shape change for C7231_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7232_1 too long.
+Warning pad shape change for C7232_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7233_1 too long.
+Warning pad shape change for C7233_1-1 from  to rounded 0.9mm,0.9mm
+Component Designator C7234_1 too long.
+Warning pad shape change for C7234_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7235_1 too long.
+Warning pad shape change for C7235_1-1 from  to rounded 0.9mm,0.9mm
+Component Designator C7236_1 too long.
+Warning pad shape change for C7236_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7237_1 too long.
+Warning pad shape change for C7237_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7238_1 too long.
+Warning pad shape change for C7238_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7239_1 too long.
+Warning pad shape change for C7239_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7240_1 too long.
+Warning pad shape change for C7240_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7242_1 too long.
+Warning pad shape change for C7242_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7244_1 too long.
+Warning pad shape change for C7244_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7245_1 too long.
+Warning pad shape change for C7245_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7246_1 too long.
+Warning pad shape change for C7246_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7247_1 too long.
+Warning pad shape change for C7247_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7248_1 too long.
+Warning pad shape change for C7248_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator C7249_1 too long.
+Warning pad shape change for C7249_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator D7202_1 too long.
+Component Designator R7228_1 too long.
+Warning pad shape change for C6604-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1206-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1207-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1212-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1213-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1218-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1219-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6605-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6606-1 from  to rounded 0.75mm,0.75mm
+Component Designator R7251_1 too long.
+Component Designator R7251_2 too long.
+Component Designator D4500_1 too long.
+Component Designator D4500_2 too long.
+Component Designator D4501_1 too long.
+Component Designator D4501_2 too long.
+Component Designator D4502_1 too long.
+Component Designator D4502_2 too long.
+Component Designator D4503_1 too long.
+Warning pad shape change for C1102-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C7001-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7301_1 too long.
+Component Designator C7303_1 too long.
+Warning pad shape change for C7303_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7305_1 too long.
+Warning pad shape change for C7305_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator D7307_1 too long.
+Component Designator R7308_1 too long.
+Component Designator R7311_1 too long.
+Component Designator R6332_1 too long.
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-2 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator D4200_1 too long.
+Component Designator D4200_2 too long.
+Component Designator D4200_3 too long.
+Component Designator D4200_4 too long.
+Component Designator D4200_5 too long.
+Component Designator D4200_6 too long.
+Component Designator D4200_7 too long.
+Component Designator D4200_8 too long.
+Component Designator C7300_1 too long.
+Warning pad shape change for C7300_1-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U1100-15 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-9 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-2 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for U1100-15 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-9 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator C1103_2 too long.
+Warning pad shape change for C1103_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C1104_2 too long.
+Warning pad shape change for C1104_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator C1105_2 too long.
+Component Designator C1106_2 too long.
+Warning pad shape change for C1106_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C1107_2 too long.
+Warning pad shape change for C1107_2-1 from  to rounded 0.9mm,0.9mm
+Component Designator C1108_2 too long.
+Warning pad shape change for C1108_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C1109_2 too long.
+Warning pad shape change for C1109_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator C1110_2 too long.
+Warning pad shape change for C1110_2-1 from  to rounded 0.9mm,0.9mm
+Component Designator C1111_2 too long.
+Warning pad shape change for C1111_2-1 from  to rounded 0.75mm,0.75mm
+Component Designator C1112_2 too long.
+Warning pad shape change for C1112_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator D1102_2 too long.
+Component Designator R1114_2 too long.
+Warning pad shape change for C1115-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1101-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4204_8 too long.
+Warning pad shape change for R4204_8-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4204_1 too long.
+Warning pad shape change for R4204_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4204_2 too long.
+Warning pad shape change for R4204_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4204_3 too long.
+Warning pad shape change for R4204_3-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4204_4 too long.
+Warning pad shape change for R4204_4-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4204_5 too long.
+Warning pad shape change for R4204_5-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4204_6 too long.
+Warning pad shape change for R4204_6-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4204_7 too long.
+Warning pad shape change for R4204_7-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4205_1 too long.
+Component Designator R4205_2 too long.
+Component Designator R4205_3 too long.
+Component Designator R4205_4 too long.
+Component Designator R4205_5 too long.
+Component Designator R4205_6 too long.
+Component Designator R4205_7 too long.
+Component Designator R4205_8 too long.
+Warning pad shape change for U8002-7 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for U8000-16 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8000-15 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for R8000-1 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for R8016-1 from  to rounded 0.95mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-4 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R4513_1 too long.
+Component Designator R4513_2 too long.
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-4 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-21 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-21 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6302_1 too long.
+Component Designator R6320_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-4 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4200_1 too long.
+Component Designator R4206_1 too long.
+Component Designator R6303_1 too long.
+Component Designator R6321_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-5 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4200_2 too long.
+Component Designator R4206_2 too long.
+Component Designator R6304_1 too long.
+Component Designator R6322_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-6 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4200_3 too long.
+Component Designator R4206_3 too long.
+Component Designator R6305_1 too long.
+Component Designator R6323_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-7 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4200_4 too long.
+Component Designator R4206_4 too long.
+Component Designator R6306_1 too long.
+Component Designator R6324_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-8 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4200_5 too long.
+Component Designator R4206_5 too long.
+Component Designator R6307_1 too long.
+Component Designator R6325_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-9 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4200_6 too long.
+Component Designator R4206_6 too long.
+Component Designator R6308_1 too long.
+Component Designator R6326_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-10 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4200_7 too long.
+Component Designator R4206_7 too long.
+Component Designator R6309_1 too long.
+Component Designator R6327_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-11 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4200_8 too long.
+Component Designator R4206_8 too long.
+Component Designator R6310_1 too long.
+Component Designator R6328_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-13 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6311_1 too long.
+Component Designator R6329_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-14 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6312_1 too long.
+Component Designator R6330_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-15 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6313_1 too long.
+Component Designator R6331_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-16 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6314_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-17 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6332_1 too long.
+Component Designator R6315_1 too long.
+Component Designator R6333_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-18 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6316_1 too long.
+Component Designator R6334_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-19 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6317_1 too long.
+Component Designator R6335_1 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-20 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-18 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-18 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R4514_1 too long.
+Component Designator R4515_1 too long.
+Component Designator R4516_1 too long.
+Component Designator R4517_1 too long.
+Component Designator R4514_2 too long.
+Component Designator R4515_2 too long.
+Component Designator R4516_2 too long.
+Component Designator R4517_2 too long.
+Component Designator L1100_2 too long.
+Component Designator D1102_2 too long.
+Component Designator R1110_2 too long.
+Warning pad shape change for R1110_2-2 from  to rounded 1.05mm,1.05mm
+Component Designator R1111_2 too long.
+Warning pad shape change for R1111_2-2 from  to rounded 1.05mm,1.05mm
+Component Designator R1113_2 too long.
+Warning pad shape change for R1113_2-2 from  to rounded 1.05mm,1.05mm
+Component Designator L1100_2 too long.
+Component Designator D1102_2 too long.
+Component Designator R1112_2 too long.
+Warning pad shape change for R1112_2-2 from  to rounded 1.05mm,1.05mm
+Warning pad shape change for U1200-47 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-45 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for D1200-2 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D1200-1 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D1201-2 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D1201-1 from  to rounded 0.7mm,0.7mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-32 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U1200-39 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-31 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-6 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for C1200-2 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C1201-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1202-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1203-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1204-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1205-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7246_1 too long.
+Warning pad shape change for C7246_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7247_1 too long.
+Warning pad shape change for C7247_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7248_1 too long.
+Warning pad shape change for C7248_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator L7204_1 too long.
+Warning pad shape change for C1206-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1207-2 from  to rounded 0.52mm,0.52mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-39 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for C5000-2 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5001-2 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5002-2 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5003-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5004-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5005-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5006-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5017-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7238_1 too long.
+Warning pad shape change for C7238_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7239_1 too long.
+Warning pad shape change for C7239_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7240_1 too long.
+Warning pad shape change for C7240_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator L7203_1 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-55 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for C5007-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7232_1 too long.
+Warning pad shape change for C7232_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7233_1 too long.
+Warning pad shape change for C7233_1-2 from  to rounded 0.9mm,0.9mm
+Component Designator L7205_1 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-9 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U1200-9 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-3 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for C1208-2 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C1209-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1210-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1211-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7250_1 too long.
+Warning pad shape change for C7250_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7251_1 too long.
+Warning pad shape change for C7251_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7249_1 too long.
+Warning pad shape change for C7249_1-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1212-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1213-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for J3008-14 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-12 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-34 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for U6200-2 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6200-14 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Component Designator R7226_1 too long.
+Warning pad shape change for U6202-8 from rounded 0.4mm,1.15mm to rectangular 0.4mm,0.75mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-56 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-48 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-36 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-35 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-23 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-6 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-4 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-3 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U1200-30 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-18 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U6201-8 from rounded 0.6mm,1.75mm to rectangular 0.6mm,1.15mm
+Component Designator L7202_1 too long.
+Warning pad shape change for C1214-2 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C1215-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1216-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1217-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5013-2 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5014-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5016-2 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5018-2 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5019-2 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5020-2 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for C5021-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5022-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5023-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5024-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5025-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5026-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5027-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5028-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6101-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6100-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6200-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C6201-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6202-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6203-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C6204-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6205-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C6206-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7236_1 too long.
+Component Designator R7237_1 too long.
+Component Designator R7240_1 too long.
+Component Designator R7241_1 too long.
+Component Designator R7242_1 too long.
+Component Designator C7210_1 too long.
+Warning pad shape change for C7210_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7211_1 too long.
+Warning pad shape change for C7211_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7212_1 too long.
+Warning pad shape change for C7212_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7213_1 too long.
+Warning pad shape change for C7213_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7215_1 too long.
+Warning pad shape change for C7215_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7216_1 too long.
+Warning pad shape change for C7216_1-2 from  to rounded 0.9mm,0.9mm
+Component Designator C7222_1 too long.
+Warning pad shape change for C7222_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7223_1 too long.
+Warning pad shape change for C7223_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7224_1 too long.
+Warning pad shape change for C7224_1-2 from  to rounded 0.9mm,0.9mm
+Component Designator C7228_1 too long.
+Warning pad shape change for C7228_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7229_1 too long.
+Warning pad shape change for C7229_1-2 from  to rounded 0.9mm,0.9mm
+Component Designator C7230_1 too long.
+Warning pad shape change for C7230_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7207_1 too long.
+Warning pad shape change for C1218-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C1219-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7250_1 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-54 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for C5010-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7234_1 too long.
+Warning pad shape change for C7234_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7235_1 too long.
+Warning pad shape change for C7235_1-2 from  to rounded 0.9mm,0.9mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-53 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator C7220_1 too long.
+Warning pad shape change for C7220_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7221_1 too long.
+Warning pad shape change for C7221_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator D7201_1 too long.
+Component Designator R7244_1 too long.
+Component Designator C7245_1 too long.
+Warning pad shape change for C7245_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7245_2 too long.
+Warning pad shape change for C7245_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7244_2 too long.
+Warning pad shape change for C8000-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8002-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8001-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8005-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C7001-2 from  to rounded 0.52mm,0.52mm
+Component Designator R1108_1 too long.
+Component Designator R1107_1 too long.
+Warning pad shape change for U1100-6 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-6 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-3 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-3 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-20 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7251_1 too long.
+Warning pad shape change for U1200-20 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for J3008-6 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-36 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-38 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-28 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-26 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-24 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-22 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-20 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-18 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-16 from  to rectangular 0.43mm,0.84mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-33 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-33 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-1 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6318_1 too long.
+Component Designator R6318_2 too long.
+Component Designator R6318_3 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-1 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-1 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U7100-17 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-3 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6319_1 too long.
+Component Designator R6319_2 too long.
+Component Designator R6319_3 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-3 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-3 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U7100-1 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-30 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-30 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-22 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-22 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-22 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-23 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-23 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-23 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for J3008-13 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-11 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for U1200-32 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-38 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-33 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-34 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-35 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-36 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-46 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-29 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-25 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-26 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-27 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-28 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-37 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-31 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7241_1 too long.
+Component Designator C7237_1 too long.
+Warning pad shape change for C7237_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7249_1 too long.
+Warning pad shape change for U1600-2 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-7 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1200-42 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1200-41 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Component Designator R7247_1 too long.
+Component Designator R7247_2 too long.
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-6 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-6 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-8 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-27 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-27 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-8 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-26 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-26 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-7 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-9 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-25 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-25 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U6202-1 from rounded 0.4mm,1.15mm to rectangular 0.4mm,0.75mm
+Component Designator C1106_1 too long.
+Warning pad shape change for C1106_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator R1110_1 too long.
+Warning pad shape change for R1110_1-1 from  to rounded 1.05mm,1.05mm
+Component Designator R1111_1 too long.
+Warning pad shape change for R1111_1-1 from  to rounded 1.05mm,1.05mm
+Component Designator R1112_1 too long.
+Warning pad shape change for R1112_1-1 from  to rounded 1.05mm,1.05mm
+Component Designator R1113_1 too long.
+Warning pad shape change for R1113_1-1 from  to rounded 1.05mm,1.05mm
+Component Designator R1113_2 too long.
+Warning pad shape change for R1113_2-1 from  to rounded 1.05mm,1.05mm
+Component Designator C1106_2 too long.
+Warning pad shape change for C1106_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator R1110_2 too long.
+Warning pad shape change for R1110_2-1 from  to rounded 1.05mm,1.05mm
+Component Designator R1111_2 too long.
+Warning pad shape change for R1111_2-1 from  to rounded 1.05mm,1.05mm
+Component Designator R1112_2 too long.
+Warning pad shape change for R1112_2-1 from  to rounded 1.05mm,1.05mm
+Warning pad shape change for C1220-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for T1200-2 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for C1221-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for T1200-7 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1201-2 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for C1222-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for T1201-7 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for C1223-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U1600-11 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for C1604-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U1600-14 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for C1604-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C4400-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C4401-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6400-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6402-2 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for U6600-3 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for C6601-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U6600-6 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for C6603-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C7000-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for U7100-2 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7109-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for U7100-13 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7110-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for U7100-14 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7110-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for U7100-26 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7111-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for U7100-28 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7111-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for U7100-15 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7112-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U7100-16 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7112-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U7100-8 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7113-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U7100-24 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7114-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U7100-20 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7115-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for U7100-18 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7115-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for U7100-5 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7117-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U7100-7 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7118-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U7100-9 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7119-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C7120-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C7200-1 from  to rounded 0.75mm,0.75mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-41 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for C7201-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C7202-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C7203-1 from  to rounded 0.52mm,0.52mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-41 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator Q7202_1 too long.
+Component Designator C7208_1 too long.
+Component Designator C7209_1 too long.
+Component Designator L7200_1 too long.
+Component Designator C7208_2 too long.
+Component Designator C7209_2 too long.
+Component Designator L7200_2 too long.
+Component Designator Q7202_2 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-46 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator C7214_1 too long.
+Warning pad shape change for C7214_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator L7201_1 too long.
+Component Designator Q7202_1 too long.
+Component Designator Q7202_1 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-44 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator C7214_1 too long.
+Warning pad shape change for C7214_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7227_1 too long.
+Component Designator C7214_2 too long.
+Warning pad shape change for C7214_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-46 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator C7214_2 too long.
+Warning pad shape change for C7214_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator L7201_2 too long.
+Component Designator R7227_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-44 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator Q7202_2 too long.
+Component Designator Q7202_2 too long.
+Component Designator C7217_2 too long.
+Warning pad shape change for C7217_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator R7229_2 too long.
+Component Designator S7200_2 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-38 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7232_1 too long.
+Component Designator C7227_1 too long.
+Warning pad shape change for C7227_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7227_2 too long.
+Warning pad shape change for C7227_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7232_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-38 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7233_1 too long.
+Component Designator R7234_1 too long.
+Component Designator C7231_1 too long.
+Warning pad shape change for C7231_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7231_2 too long.
+Warning pad shape change for C7231_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7233_2 too long.
+Component Designator R7234_2 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-14 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7242_1 too long.
+Component Designator R7243_1 too long.
+Component Designator C7244_1 too long.
+Warning pad shape change for C7244_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator D7200_1 too long.
+Warning pad shape change for D7200_1-1 from  to rounded 0.7mm,0.7mm
+Component Designator C7244_2 too long.
+Warning pad shape change for C7244_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7242_2 too long.
+Component Designator R7243_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-14 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator D7200_2 too long.
+Warning pad shape change for D7200_2-1 from  to rounded 0.7mm,0.7mm
+Component Designator U7300_1 too long.
+Warning pad shape change for U7300_1-9 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator D7306_1 too long.
+Component Designator R7310_1 too long.
+Component Designator R7311_1 too long.
+Component Designator C7300_1 too long.
+Warning pad shape change for C7300_1-1 from  to rounded 0.52mm,0.52mm
+Component Designator C7300_2 too long.
+Warning pad shape change for C7300_2-1 from  to rounded 0.52mm,0.52mm
+Component Designator D7306_2 too long.
+Component Designator R7310_2 too long.
+Component Designator R7311_2 too long.
+Component Designator U7300_2 too long.
+Warning pad shape change for U7300_2-9 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator C7303_1 too long.
+Warning pad shape change for C7303_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7306_1 too long.
+Component Designator C7303_2 too long.
+Warning pad shape change for C7303_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7306_2 too long.
+Component Designator U7300_1 too long.
+Warning pad shape change for U7300_1-2 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator C7304_1 too long.
+Warning pad shape change for C7304_1-2 from  to rectangular 1.4mm,1.3mm
+Component Designator D7307_1 too long.
+Component Designator R7309_1 too long.
+Component Designator R7310_1 too long.
+Component Designator C7304_2 too long.
+Warning pad shape change for C7304_2-2 from  to rectangular 1.4mm,1.3mm
+Component Designator D7307_2 too long.
+Component Designator R7309_2 too long.
+Component Designator R7310_2 too long.
+Component Designator U7300_2 too long.
+Warning pad shape change for U7300_2-2 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator U7300_1 too long.
+Warning pad shape change for U7300_1-10 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator C7305_1 too long.
+Warning pad shape change for C7305_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7305_2 too long.
+Warning pad shape change for C7305_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator U7300_2 too long.
+Warning pad shape change for U7300_2-10 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Warning pad shape change for U8001-3 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C8004-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U8001-2 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C8004-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U8002-3 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for C8010-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U8002-6 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for U8002-2 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for R8023-1 from  to rounded 0.95mm,0.95mm
+Warning pad shape change for C8011-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8013-1 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U8002-5 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for C8014-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for D5000-2 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D6601-2 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D7000-2 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D7001-2 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D7002-2 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D7003-2 from  to rounded 0.7mm,0.7mm
+Warning pad shape change for D7005-2 from  to rounded 0.7mm,0.7mm
+Component Designator D7200_1 too long.
+Warning pad shape change for D7200_1-2 from  to rounded 0.7mm,0.7mm
+Component Designator R7250_1 too long.
+Component Designator D7200_2 too long.
+Warning pad shape change for D7200_2-2 from  to rounded 0.7mm,0.7mm
+Component Designator R7250_2 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-5 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator L7202_1 too long.
+Component Designator D7201_1 too long.
+Component Designator D7201_2 too long.
+Component Designator L7202_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-5 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator S7200_1 too long.
+Component Designator Q7203_1 too long.
+Component Designator R7233_1 too long.
+Component Designator D7202_1 too long.
+Component Designator R7219_1 too long.
+Component Designator D7202_2 too long.
+Component Designator Q7203_2 too long.
+Component Designator R7233_2 too long.
+Component Designator S7200_2 too long.
+Component Designator R7219_2 too long.
+Component Designator Q7302_1 too long.
+Component Designator D7303_1 too long.
+Component Designator Q7300_1 too long.
+Component Designator D7303_1 too long.
+Component Designator R7304_1 too long.
+Component Designator D7303_2 too long.
+Component Designator Q7300_2 too long.
+Component Designator Q7302_2 too long.
+Component Designator D7303_2 too long.
+Component Designator R7304_2 too long.
+Component Designator Q7302_1 too long.
+Component Designator D7305_1 too long.
+Component Designator R7305_1 too long.
+Component Designator D7305_1 too long.
+Component Designator R7308_1 too long.
+Component Designator D7305_2 too long.
+Component Designator Q7302_2 too long.
+Component Designator R7305_2 too long.
+Component Designator D7305_2 too long.
+Component Designator R7308_2 too long.
+Warning pad shape change for R8000-2 from  to rounded 0.7mm,0.7mm
+Component Designator L1100_1 too long.
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-12 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator L1100_1 too long.
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-13 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-12 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator L1100_2 too long.
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-13 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator L1100_2 too long.
+Component Designator R7226_1 too long.
+Component Designator L7201_1 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-42 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator L7201_2 too long.
+Component Designator R7226_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-42 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-37 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator L7203_1 too long.
+Component Designator L7203_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-37 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-34 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator L7204_1 too long.
+Component Designator L7204_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-34 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator L7205_1 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-7 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator L7205_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-7 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator Q1101_1 too long.
+Component Designator R1115_1 too long.
+Component Designator Q1101_2 too long.
+Component Designator R1114_2 too long.
+Component Designator Q1101_2 too long.
+Component Designator R1115_2 too long.
+Warning pad shape change for U7100-19 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U7100-27 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U7100-21 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U7100-25 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator Q7202_1 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-45 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7227_1 too long.
+Component Designator Q7202_1 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-43 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7228_1 too long.
+Component Designator R7227_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-45 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator Q7202_2 too long.
+Component Designator R7228_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-43 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator Q7202_2 too long.
+Component Designator Q7203_1 too long.
+Component Designator R7235_1 too long.
+Component Designator R7238_1 too long.
+Component Designator Q7203_1 too long.
+Component Designator R7234_1 too long.
+Component Designator Q7203_2 too long.
+Component Designator R7235_2 too long.
+Component Designator R7238_2 too long.
+Component Designator Q7203_2 too long.
+Component Designator R7234_2 too long.
+Component Designator Q7301_1 too long.
+Component Designator Q7301_1 too long.
+Component Designator Q7301_1 too long.
+Component Designator Q7301_1 too long.
+Component Designator Q7301_1 too long.
+Component Designator Q7301_1 too long.
+Component Designator Q7301_1 too long.
+Component Designator Q7301_1 too long.
+Component Designator Q7300_1 too long.
+Component Designator Q7300_1 too long.
+Component Designator Q7300_1 too long.
+Component Designator Q7300_1 too long.
+Component Designator Q7300_1 too long.
+Component Designator Q7300_1 too long.
+Component Designator Q7300_1 too long.
+Component Designator Q7300_1 too long.
+Component Designator R7307_1 too long.
+Component Designator Q7300_2 too long.
+Component Designator Q7300_2 too long.
+Component Designator Q7300_2 too long.
+Component Designator Q7300_2 too long.
+Component Designator Q7300_2 too long.
+Component Designator Q7300_2 too long.
+Component Designator Q7300_2 too long.
+Component Designator Q7300_2 too long.
+Component Designator Q7301_2 too long.
+Component Designator Q7301_2 too long.
+Component Designator Q7301_2 too long.
+Component Designator Q7301_2 too long.
+Component Designator Q7301_2 too long.
+Component Designator Q7301_2 too long.
+Component Designator Q7301_2 too long.
+Component Designator Q7301_2 too long.
+Component Designator R7307_2 too long.
+Component Designator Q7301_1 too long.
+Component Designator R7303_1 too long.
+Component Designator Q7301_1 too long.
+Component Designator Q7301_1 too long.
+Component Designator Q7301_1 too long.
+Component Designator R7301_1 too long.
+Component Designator U7300_1 too long.
+Warning pad shape change for U7300_1-4 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator Q7301_2 too long.
+Component Designator R7303_2 too long.
+Component Designator Q7301_2 too long.
+Component Designator Q7301_2 too long.
+Component Designator Q7301_2 too long.
+Component Designator R7301_2 too long.
+Component Designator U7300_2 too long.
+Warning pad shape change for U7300_2-4 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Warning pad shape change for R8016-2 from  to rounded 0.95mm,0.95mm
+Warning pad shape change for U8002-1 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for U1100-7 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-7 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-7 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator R1105_1 too long.
+Component Designator R1107_1 too long.
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-1 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-1 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator R1105_2 too long.
+Component Designator R1107_2 too long.
+Component Designator R1108_1 too long.
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-4 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-4 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator R1108_2 too long.
+Component Designator R1115_1 too long.
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-8 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-8 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator R1115_2 too long.
+Component Designator R1116_1 too long.
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-9 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-9 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator R1116_2 too long.
+Warning pad shape change for T1201-10 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1201-15 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1200-10 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for T1200-15 from rounded 0.65mm,1.65mm to rectangular 0.65mm,1mm
+Warning pad shape change for U1200-12 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1600-27 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-28 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-9 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-4 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Component Designator R4202_1 too long.
+Warning pad shape change for R4202_1-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_1 too long.
+Component Designator R4204_1 too long.
+Warning pad shape change for R4204_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4205_1 too long.
+Component Designator R4206_1 too long.
+Component Designator R4202_2 too long.
+Warning pad shape change for R4202_2-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_2 too long.
+Component Designator R4204_2 too long.
+Warning pad shape change for R4204_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4205_2 too long.
+Component Designator R4206_2 too long.
+Component Designator R4202_3 too long.
+Warning pad shape change for R4202_3-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_3 too long.
+Component Designator R4204_3 too long.
+Warning pad shape change for R4204_3-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4205_3 too long.
+Component Designator R4206_3 too long.
+Component Designator R4202_4 too long.
+Warning pad shape change for R4202_4-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_4 too long.
+Component Designator R4204_4 too long.
+Warning pad shape change for R4204_4-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4205_4 too long.
+Component Designator R4206_4 too long.
+Component Designator R4202_5 too long.
+Warning pad shape change for R4202_5-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_5 too long.
+Component Designator R4204_5 too long.
+Warning pad shape change for R4204_5-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4205_5 too long.
+Component Designator R4206_5 too long.
+Component Designator R4202_6 too long.
+Warning pad shape change for R4202_6-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_6 too long.
+Component Designator R4204_6 too long.
+Warning pad shape change for R4204_6-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4205_6 too long.
+Component Designator R4206_6 too long.
+Component Designator R4202_7 too long.
+Warning pad shape change for R4202_7-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_7 too long.
+Component Designator R4204_7 too long.
+Warning pad shape change for R4204_7-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4205_7 too long.
+Component Designator R4206_7 too long.
+Component Designator R4204_8 too long.
+Warning pad shape change for R4204_8-2 from  to rounded 1.35mm,1.35mm
+Component Designator R4202_8 too long.
+Warning pad shape change for R4202_8-1 from  to rounded 1.35mm,1.35mm
+Component Designator R4203_8 too long.
+Component Designator R4205_8 too long.
+Component Designator R4206_8 too long.
+Component Designator R4504_1 too long.
+Component Designator R4509_1 too long.
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-22 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R4517_1 too long.
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-22 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R4504_2 too long.
+Component Designator R4509_2 too long.
+Component Designator R4517_2 too long.
+Component Designator R4505_1 too long.
+Component Designator R4510_1 too long.
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-23 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R4516_1 too long.
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-23 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R4505_2 too long.
+Component Designator R4510_2 too long.
+Component Designator R4516_2 too long.
+Component Designator R4506_1 too long.
+Component Designator R4511_1 too long.
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-24 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R4515_1 too long.
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-24 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R4506_2 too long.
+Component Designator R4511_2 too long.
+Component Designator R4515_2 too long.
+Component Designator R4507_1 too long.
+Component Designator R4512_1 too long.
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-25 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R4514_1 too long.
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-25 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R4507_2 too long.
+Component Designator R4512_2 too long.
+Component Designator R4514_2 too long.
+Warning pad shape change for U6200-1 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6200-9 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6200-3 from rounded 0.6mm,1.85mm to rectangular 0.6mm,1.25mm
+Warning pad shape change for U6201-3 from rounded 0.6mm,1.75mm to rectangular 0.6mm,1.15mm
+Warning pad shape change for U6202-3 from rounded 0.4mm,1.15mm to rectangular 0.4mm,0.75mm
+Warning pad shape change for U6202-7 from rounded 0.4mm,1.15mm to rectangular 0.4mm,0.75mm
+Warning pad shape change for U6600-8 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for U6600-7 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for U7100-3 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U7100-4 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U7100-6 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U7100-11 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-28 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7207_1 too long.
+Component Designator R7247_1 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-28 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7207_2 too long.
+Component Designator R7247_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-31 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator S7200_1 too long.
+Component Designator R7230_1 too long.
+Component Designator R7219_1 too long.
+Component Designator R7230_2 too long.
+Component Designator S7200_2 too long.
+Component Designator R7219_2 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-40 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7239_1 too long.
+Component Designator R7239_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-40 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-29 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7244_1 too long.
+Component Designator R7244_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-29 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-19 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7248_1 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-19 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7248_2 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-18 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7249_1 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-18 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7249_2 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-24 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-20 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7251_2 too long.
+Component Designator U7300_1 too long.
+Warning pad shape change for U7300_1-3 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator R7303_1 too long.
+Component Designator R7304_1 too long.
+Component Designator R7306_1 too long.
+Component Designator R7303_2 too long.
+Component Designator R7304_2 too long.
+Component Designator R7306_2 too long.
+Component Designator U7300_2 too long.
+Warning pad shape change for U7300_2-3 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator U7300_1 too long.
+Warning pad shape change for U7300_1-1 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator R7307_1 too long.
+Component Designator R7307_2 too long.
+Component Designator U7300_2 too long.
+Warning pad shape change for U7300_2-1 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Warning pad shape change for U8000-1 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8000-3 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8000-6 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8000-5 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8000-9 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8000-7 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8001-8 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-7 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for U1200-22 from rounded 0.25mm,1mm to rectangular 0.25mm,0.75mm
+Warning pad shape change for U1600-3 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-8 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-7 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-9 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-24 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U8000-12 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8000-11 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator C7238_2 too long.
+Warning pad shape change for C7238_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7239_2 too long.
+Warning pad shape change for C7239_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7240_2 too long.
+Warning pad shape change for C7240_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator L7203_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-39 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator C7246_2 too long.
+Warning pad shape change for C7246_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7247_2 too long.
+Warning pad shape change for C7247_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7248_2 too long.
+Warning pad shape change for C7248_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator L7204_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-32 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U1100-1 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-2 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-24 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-10 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U1600-25 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for C1100-2 from  to rounded 1.35mm,1.35mm
+Warning pad shape change for U1100-1 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator C1107_1 too long.
+Warning pad shape change for C1107_1-2 from  to rounded 0.9mm,0.9mm
+Component Designator C1108_1 too long.
+Warning pad shape change for C1108_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator C1109_1 too long.
+Warning pad shape change for C1109_1-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1602-2 from  to rounded 0.52mm,0.52mm
+Component Designator C6300_1 too long.
+Warning pad shape change for C6300_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator C6300_2 too long.
+Warning pad shape change for C6300_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator C6300_3 too long.
+Warning pad shape change for C6300_3-2 from  to rounded 0.75mm,0.75mm
+Component Designator C6301_1 too long.
+Warning pad shape change for C6301_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C6301_2 too long.
+Warning pad shape change for C6301_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C6301_3 too long.
+Warning pad shape change for C6301_3-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6500-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7222_2 too long.
+Warning pad shape change for C7222_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7230_2 too long.
+Warning pad shape change for C7230_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7249_2 too long.
+Warning pad shape change for C7249_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7250_2 too long.
+Warning pad shape change for C7250_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7251_2 too long.
+Warning pad shape change for C7251_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator L7205_2 too long.
+Component Designator Q1101_1 too long.
+Component Designator R1103_1 too long.
+Component Designator R1104_1 too long.
+Component Designator R1105_1 too long.
+Component Designator R6302_1 too long.
+Component Designator R6302_2 too long.
+Component Designator R6302_3 too long.
+Component Designator R6303_1 too long.
+Component Designator R6303_2 too long.
+Component Designator R6303_3 too long.
+Component Designator R6304_1 too long.
+Component Designator R6304_2 too long.
+Component Designator R6304_3 too long.
+Component Designator R6305_1 too long.
+Component Designator R6305_2 too long.
+Component Designator R6305_3 too long.
+Component Designator R6306_1 too long.
+Component Designator R6306_2 too long.
+Component Designator R6306_3 too long.
+Component Designator R6307_1 too long.
+Component Designator R6307_2 too long.
+Component Designator R6307_3 too long.
+Component Designator R6308_1 too long.
+Component Designator R6308_2 too long.
+Component Designator R6308_3 too long.
+Component Designator R6309_1 too long.
+Component Designator R6309_2 too long.
+Component Designator R6309_3 too long.
+Component Designator R6310_1 too long.
+Component Designator R6310_2 too long.
+Component Designator R6310_3 too long.
+Component Designator R6311_1 too long.
+Component Designator R6311_2 too long.
+Component Designator R6311_3 too long.
+Component Designator R6312_1 too long.
+Component Designator R6312_2 too long.
+Component Designator R6312_3 too long.
+Component Designator R6313_1 too long.
+Component Designator R6313_2 too long.
+Component Designator R6313_3 too long.
+Component Designator R6314_1 too long.
+Component Designator R6314_2 too long.
+Component Designator R6314_3 too long.
+Component Designator R6315_1 too long.
+Component Designator R6315_2 too long.
+Component Designator R6315_3 too long.
+Component Designator R6316_1 too long.
+Component Designator R6316_2 too long.
+Component Designator R6316_3 too long.
+Component Designator R6317_1 too long.
+Component Designator R6317_2 too long.
+Component Designator R6317_3 too long.
+Component Designator R6318_1 too long.
+Component Designator R6318_2 too long.
+Component Designator R6318_3 too long.
+Component Designator R6319_1 too long.
+Component Designator R6319_2 too long.
+Component Designator R6319_3 too long.
+Component Designator R7236_2 too long.
+Component Designator R7237_2 too long.
+Component Designator R7240_2 too long.
+Component Designator R7241_2 too long.
+Component Designator R7242_2 too long.
+Component Designator U6300_1 too long.
+Warning pad shape change for U6300_1-24 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-24 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U6300_2 too long.
+Warning pad shape change for U6300_2-21 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-23 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-9 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-4 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7207_2 too long.
+Component Designator C4503_1 too long.
+Warning pad shape change for C4503_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C4503_2 too long.
+Warning pad shape change for C4503_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator R4504_1 too long.
+Component Designator R4504_2 too long.
+Component Designator R4505_1 too long.
+Component Designator R4505_2 too long.
+Component Designator R4506_1 too long.
+Component Designator R4506_2 too long.
+Component Designator R4507_1 too long.
+Component Designator R4507_2 too long.
+Component Designator R4513_1 too long.
+Component Designator R4513_2 too long.
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-10 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R7250_2 too long.
+Warning pad shape change for C1102-2 from  to rounded 0.52mm,0.52mm
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-5 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator C7232_2 too long.
+Warning pad shape change for C7232_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7233_2 too long.
+Warning pad shape change for C7233_2-2 from  to rounded 0.9mm,0.9mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-55 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U8001-5 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8002-8 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-19 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator C1110_1 too long.
+Warning pad shape change for C1110_1-2 from  to rounded 0.9mm,0.9mm
+Component Designator C1111_1 too long.
+Warning pad shape change for C1111_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator C1112_1 too long.
+Warning pad shape change for C1112_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7210_2 too long.
+Warning pad shape change for C7210_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7211_2 too long.
+Warning pad shape change for C7211_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7212_2 too long.
+Warning pad shape change for C7212_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7213_2 too long.
+Warning pad shape change for C7213_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7215_2 too long.
+Warning pad shape change for C7215_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7216_2 too long.
+Warning pad shape change for C7216_2-2 from  to rounded 0.9mm,0.9mm
+Component Designator C7223_2 too long.
+Warning pad shape change for C7223_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7224_2 too long.
+Warning pad shape change for C7224_2-2 from  to rounded 0.9mm,0.9mm
+Component Designator C7228_2 too long.
+Warning pad shape change for C7228_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7229_2 too long.
+Warning pad shape change for C7229_2-2 from  to rounded 0.9mm,0.9mm
+Component Designator L7202_2 too long.
+Warning pad shape change for R1600-1 from  to rounded 0.95mm,0.95mm
+Component Designator R7226_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-56 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-48 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-36 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-35 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-6 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-3 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for C8006-2 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C8007-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8008-2 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for C8009-2 from  to rounded 0.52mm,0.52mm
+Component Designator C4505_1 too long.
+Warning pad shape change for C4505_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C4505_2 too long.
+Warning pad shape change for C4505_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-19 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-3 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator C7234_2 too long.
+Warning pad shape change for C7234_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7235_2 too long.
+Warning pad shape change for C7235_2-2 from  to rounded 0.9mm,0.9mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-54 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U4301-2 from  to rectangular 0.6mm,0.9mm
+Warning pad shape change for C4344-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C4345-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7220_2 too long.
+Warning pad shape change for C7220_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator C7221_2 too long.
+Warning pad shape change for C7221_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator D7201_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-53 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7231_1 too long.
+Component Designator C7225_1 too long.
+Warning pad shape change for C7225_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-4 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6302_3 too long.
+Component Designator R6320_3 too long.
+Warning pad shape change for U6600-2 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Component Designator R7240_1 too long.
+Component Designator C7236_1 too long.
+Warning pad shape change for C7236_1-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6604-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7248_1 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-5 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6303_3 too long.
+Component Designator R6321_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-6 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6304_3 too long.
+Component Designator R6322_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-7 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6305_3 too long.
+Component Designator R6323_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-8 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6306_3 too long.
+Component Designator R6324_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-9 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6307_3 too long.
+Component Designator R6325_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-10 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6308_3 too long.
+Component Designator R6326_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-11 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6309_3 too long.
+Component Designator R6327_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-13 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6310_3 too long.
+Component Designator R6328_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-14 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6311_3 too long.
+Component Designator R6329_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-15 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6312_3 too long.
+Component Designator R6330_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-16 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6313_3 too long.
+Component Designator R6331_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-17 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6314_3 too long.
+Component Designator R6332_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-18 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6315_3 too long.
+Component Designator R6333_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-19 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6316_3 too long.
+Component Designator R6334_3 too long.
+Component Designator U6300_3 too long.
+Warning pad shape change for U6300_3-20 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator R6317_3 too long.
+Component Designator R6335_3 too long.
+Warning pad shape change for U1600-22 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-21 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-19 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-17 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Component Designator D7203_1 too long.
+Component Designator D7203_1 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-8 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7235_1 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-10 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7237_1 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-11 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7236_1 too long.
+Component Designator D7203_2 too long.
+Component Designator D7203_2 too long.
+Component Designator R7235_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-8 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7237_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-10 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7236_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-11 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U1100-10 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Warning pad shape change for U1100-10 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator C4502_1 too long.
+Warning pad shape change for C4502_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator R4501_1 too long.
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-3 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4500_1 too long.
+Component Designator C4504_1 too long.
+Warning pad shape change for C4504_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator R4502_1 too long.
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-26 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4501_1 too long.
+Component Designator C4506_1 too long.
+Warning pad shape change for C4506_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator R4503_1 too long.
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-12 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4502_1 too long.
+Component Designator C4507_1 too long.
+Warning pad shape change for C4507_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator R4508_1 too long.
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-17 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4503_1 too long.
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-3 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator C4502_2 too long.
+Warning pad shape change for C4502_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator R4501_2 too long.
+Component Designator D4500_2 too long.
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-26 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator C4504_2 too long.
+Warning pad shape change for C4504_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator R4502_2 too long.
+Component Designator D4501_2 too long.
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-12 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator C4506_2 too long.
+Warning pad shape change for C4506_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator R4503_2 too long.
+Component Designator D4502_2 too long.
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-17 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator D4503_2 too long.
+Component Designator C4507_2 too long.
+Warning pad shape change for C4507_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator R4508_2 too long.
+Component Designator C7237_2 too long.
+Warning pad shape change for C7237_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7241_2 too long.
+Component Designator R7249_2 too long.
+Component Designator C7236_2 too long.
+Warning pad shape change for C7236_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7240_2 too long.
+Component Designator R7248_2 too long.
+Component Designator C7243_1 too long.
+Warning pad shape change for C7243_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7243_1 too long.
+Component Designator C7243_2 too long.
+Warning pad shape change for C7243_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7243_2 too long.
+Warning pad shape change for U6600-4 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for C6602-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for J3008-15 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-19 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for J3008-17 from  to rectangular 0.43mm,0.84mm
+Warning pad shape change for C6401-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for U8000-14 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U8000-13 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for R7115-2 from  to rectangular 1.95mm,1.35mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-1 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-2 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-13 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-14 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-28 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-27 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-16 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_2 too long.
+Warning pad shape change for U4500_2-15 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for U7100-12 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7100-2 from  to rectangular 1.4mm,1.3mm
+Warning pad shape change for C7101-2 from  to rectangular 1.4mm,1.3mm
+Warning pad shape change for C7102-2 from  to rectangular 1.4mm,1.3mm
+Warning pad shape change for C7103-2 from  to rectangular 1.4mm,1.3mm
+Warning pad shape change for C7104-2 from  to rectangular 1.4mm,1.3mm
+Warning pad shape change for C8003-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C8012-2 from  to rounded 0.9mm,0.9mm
+Component Designator C4500_1 too long.
+Component Designator C4500_2 too long.
+Component Designator C4501_1 too long.
+Warning pad shape change for C4501_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator C4501_2 too long.
+Warning pad shape change for C4501_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-1 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-2 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-13 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-14 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-28 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-27 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-16 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator U4500_1 too long.
+Warning pad shape change for U4500_1-15 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Component Designator TP_VBB_12V too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-47 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator C7241_1 too long.
+Warning pad shape change for C7241_1-2 from  to rounded 0.9mm,0.9mm
+Component Designator R7232_1 too long.
+Component Designator C7242_1 too long.
+Warning pad shape change for C7242_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7241_2 too long.
+Warning pad shape change for C7241_2-2 from  to rounded 0.9mm,0.9mm
+Component Designator C7242_2 too long.
+Warning pad shape change for C7242_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator R7232_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-47 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U1600-24 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-20 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-16 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-6 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for C1603-2 from  to rounded 0.9mm,0.9mm
+Warning pad shape change for R1600-2 from  to rounded 0.95mm,0.95mm
+Warning pad shape change for U7100-23 from rounded 0.45mm,1.4mm to rectangular 0.45mm,0.95mm
+Warning pad shape change for C7116-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for U6601-1 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for U6600-1 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for C6600-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C6606-2 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for C5011-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5012-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5008-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C5009-2 from  to rounded 0.52mm,0.52mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-17 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-17 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U1600-15 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for C1600-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for U1600-12 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for U1600-1 from rounded 0.25mm,0.85mm to rectangular 0.25mm,0.6mm
+Warning pad shape change for C1601-1 from  to rounded 0.75mm,0.75mm
+Warning pad shape change for U1100-16 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-3 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-5 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Component Designator U1101_2 too long.
+Warning pad shape change for U1101_2-10 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for U1100-16 from rounded 0.6mm,1.9mm to rectangular 0.6mm,1.3mm
+Component Designator C1103_2 too long.
+Warning pad shape change for C1103_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator C1104_2 too long.
+Warning pad shape change for C1104_2-2 from  to rounded 1.35mm,1.35mm
+Component Designator C1105_2 too long.
+Component Designator C1107_2 too long.
+Warning pad shape change for C1107_2-2 from  to rounded 0.9mm,0.9mm
+Component Designator C1108_2 too long.
+Warning pad shape change for C1108_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator C1109_2 too long.
+Warning pad shape change for C1109_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C1110_2 too long.
+Warning pad shape change for C1110_2-2 from  to rounded 0.9mm,0.9mm
+Component Designator C1111_2 too long.
+Warning pad shape change for C1111_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator C1112_2 too long.
+Warning pad shape change for C1112_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator Q1101_2 too long.
+Component Designator R1103_2 too long.
+Component Designator R1104_2 too long.
+Component Designator R1105_2 too long.
+Component Designator R1116_2 too long.
+Warning pad shape change for C1115-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C1101-2 from  to rounded 1.35mm,1.35mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-16 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-16 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-15 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-15 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-13 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-13 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-12 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-12 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Warning pad shape change for U4301-6 from  to rectangular 0.6mm,0.9mm
+Warning pad shape change for C4346-2 from  to rounded 0.52mm,0.52mm
+Warning pad shape change for C4347-2 from  to rounded 0.75mm,0.75mm
+Component Designator S7200_1 too long.
+Warning pad shape change for U6601-8 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Warning pad shape change for U6601-5 from rounded 0.5mm,1.35mm to rectangular 0.5mm,0.85mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-51 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-50 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator C7205_1 too long.
+Component Designator C1103_1 too long.
+Warning pad shape change for C1103_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator C1104_1 too long.
+Warning pad shape change for C1104_1-2 from  to rounded 1.35mm,1.35mm
+Component Designator C1105_1 too long.
+Component Designator C7205_2 too long.
+Component Designator C7206_2 too long.
+Warning pad shape change for C7206_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator C7207_2 too long.
+Component Designator C7219_2 too long.
+Warning pad shape change for C7219_2-2 from  to rounded 0.52mm,0.52mm
+Component Designator C7301_2 too long.
+Component Designator C7302_2 too long.
+Component Designator L7200_2 too long.
+Component Designator R1116_1 too long.
+Component Designator R7230_2 too long.
+Component Designator R7301_2 too long.
+Component Designator S7200_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-51 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-50 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator U7300_2 too long.
+Warning pad shape change for U7300_2-5 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator R7230_1 too long.
+Component Designator C7206_1 too long.
+Warning pad shape change for C7206_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator C7207_1 too long.
+Component Designator C7219_1 too long.
+Warning pad shape change for C7219_1-2 from  to rounded 0.52mm,0.52mm
+Component Designator L7200_1 too long.
+Warning pad shape change for C6605-2 from  to rounded 0.52mm,0.52mm
+Component Designator TP_VSUP_30 too long.
+Component Designator U1101_1 too long.
+Warning pad shape change for U1101_1-10 from rounded 0.6mm,1.45mm to rectangular 0.6mm,0.85mm
+Warning pad shape change for R7115-1 from  to rectangular 1.95mm,1.35mm
+Component Designator R7301_1 too long.
+Component Designator U7300_1 too long.
+Warning pad shape change for U7300_1-5 from rounded 0.3mm,1.35mm to rectangular 0.3mm,1.05mm
+Component Designator C7302_1 too long.
+Component Designator C7301_1 too long.
+Component Designator TP_VSUP_30C too long.
+Component Designator Q7302_1 too long.
+Component Designator D7306_1 too long.
+Component Designator Q7300_1 too long.
+Component Designator Q7300_1 too long.
+Component Designator Q7300_1 too long.
+Component Designator R7305_1 too long.
+Component Designator R7309_1 too long.
+Component Designator D7306_2 too long.
+Component Designator Q7300_2 too long.
+Component Designator Q7300_2 too long.
+Component Designator Q7300_2 too long.
+Component Designator Q7302_2 too long.
+Component Designator R7305_2 too long.
+Component Designator R7309_2 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-49 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7229_1 too long.
+Component Designator R7245_1 too long.
+Component Designator C7218_1 too long.
+Warning pad shape change for C7218_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator C7218_2 too long.
+Warning pad shape change for C7218_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator R7229_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-49 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7245_2 too long.
+Component Designator C7225_2 too long.
+Warning pad shape change for C7225_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator R7231_2 too long.
+Component Designator U7200_1 too long.
+Warning pad shape change for U7200_1-1 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7231_1 too long.
+Component Designator R7246_1 too long.
+Component Designator C7226_1 too long.
+Warning pad shape change for C7226_1-2 from  to rounded 0.75mm,0.75mm
+Component Designator C7226_2 too long.
+Warning pad shape change for C7226_2-2 from  to rounded 0.75mm,0.75mm
+Component Designator R7231_2 too long.
+Component Designator U7200_2 too long.
+Warning pad shape change for U7200_2-1 from rounded 0.25mm,0.925mm to rectangular 0.25mm,0.675mm
+Component Designator R7246_2 too long.
+Board outline is circular or curved.

@@ -1,0 +1,752 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "cell_fuses-SchDoc"
+Date "08 05 2023"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 8620 11143 0    60   ~ 0
+Fraunhofer IISB
+Text Notes 8620 11233 0    60   ~ 0
+Schottkystr. 10
+Text Notes 9510 11483 0    60   ~ 0
+www.iisb.fraunhofer.de
+Text Notes 10750 11293 0    48   ~ 0
+Author
+Text Notes 11850 11293 0    48   ~ 0
+License
+Text Notes 14400 11293 0    48   ~ 0
+Release Date
+Wire Notes Line
+	15300 10893 7350 10893
+Wire Notes Line
+	10700 11493 10700 10893
+Wire Notes Line
+	15300 11193 10700 11193
+Text Notes 14950 11293 0    48   ~ 0
+Sheet
+Wire Notes Line
+	11800 11493 11800 11193
+Wire Notes Line
+	14350 11493 14350 11193
+Wire Notes Line
+	14900 11493 14900 11193
+Text Notes 11850 11443 0    60   ~ 0
+=GlobalLicense
+Text Notes 10750 11443 0    60   ~ 0
+foxBMS Team
+Text Notes 14400 11443 0    60   ~ 0
+=GlobalDate
+Text Notes 15050 11443 0    60   ~ 0
+3
+Text Notes 13750 11143 0    60   ~ 0
+*
+Text Notes 10750 11143 0    60   ~ 0
+=GlobalProject
+Text Notes 10750 10993 0    48   ~ 0
+Project
+Text Notes 13750 10993 0    48   ~ 0
+File
+Wire Notes Line
+	13700 11193 13700 10893
+Wire Notes Line
+	7350 11493 7350 10893
+Text Notes 15100 11443 0    60   ~ 0
+/
+Text Notes 15150 11443 0    60   ~ 0
+15
+Wire Notes Line
+	11800 11193 11800 10893
+Text Notes 8620 11013 0    60   ~ 0
+developed by:
+Text Notes 11850 10993 0    48   ~ 0
+Description
+Text Notes 11850 11143 0    60   ~ 0
+Cell Voltage Sense Fuses
+Wire Notes Line
+	13700 11493 13700 11193
+Text Notes 13750 11293 0    48   ~ 0
+Version
+Text Notes 13750 11443 0    60   ~ 0
+=GlobalVersion
+Text Notes 8620 11333 0    60   ~ 0
+91058 Erlangen
+Text Notes 8620 11423 0    60   ~ 0
+Germany
+Text Notes 7610 11473 0    60   ~ 0
+www.foxbms.org
+Text Notes 6400 9693 0    60   ~ 12
+For Cell Balancing/ Measuring Inputs: Max. 0.250A Balancing Current \nReaction Time: \n200% Load (0.500A) = ca. 20ms \n300% Load (0.750A) = <10ms
+Text Notes 6400 10193 0    60   ~ 12
+For Power Supply Inputs: Max. 0.500A Current \nReaction Time: \n200% Load (1.000A) = ca. 200ms \n300% Load (1.500A) = ca. 70ms
+Text Notes 7700 1393 0    60   ~ 12
+Fast-Acting Surface Mount Fuse
+$Comp
+L power:FUSED_VBAT- #PWR?64596541
+U 1 1 64596541
+P 9300 8993
+F 0 "FUSED_VBAT-_17" H 9300 8993 20  0000 C CNN
+F 1 "FUSED_VBAT-" H 9300 8923 30  0000 C CNN
+F 2 "" H 9300 8993 70  0000 C CNN
+F 3 "" H 9300 8993 70  0000 C CNN
+	1    9300 8993
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:FUSED_VBAT+ #PWR?64596540
+U 1 1 64596540
+P 9300 1793
+F 0 "FUSED_VBAT+" H 9300 1793 20  0000 C CNN
+F 1 "FUSED_VBAT+" H 9300 1723 30  0000 C CNN
+F 2 "" H 9300 1793 70  0000 C CNN
+F 3 "" H 9300 1793 70  0000 C CNN
+	1    9300 1793
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBAT- #PWR?6459653F
+U 1 1 6459653F
+P 5600 8993
+F 0 "VBAT-_2" H 5600 8993 20  0000 C CNN
+F 1 "VBAT-" H 5600 8923 30  0000 C CNN
+F 2 "" H 5600 8993 70  0000 C CNN
+F 3 "" H 5600 8993 70  0000 C CNN
+	1    5600 8993
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBAT+ #PWR?6459653E
+U 1 1 6459653E
+P 5600 1793
+F 0 "VBAT+_2" H 5600 1793 20  0000 C CNN
+F 1 "VBAT+" H 5600 1723 30  0000 C CNN
+F 2 "" H 5600 1793 70  0000 C CNN
+F 3 "" H 5600 1793 70  0000 C CNN
+	1    5600 1793
+	1    0    0    -1  
+$EndComp
+Text Label 5400 4493 0 60 ~
+CELL_11+
+Text Label 5400 4793 0 60 ~
+CELL_10+
+Text Label 5440 5093 0 60 ~
+CELL_9+
+Text Label 5440 5393 0 60 ~
+CELL_8+
+Text Label 5440 5693 0 60 ~
+CELL_7+
+Text Label 5440 5993 0 60 ~
+CELL_6+
+Text Label 5440 6293 0 60 ~
+CELL_5+
+Text Label 5440 6593 0 60 ~
+CELL_4+
+Text Label 5440 6893 0 60 ~
+CELL_3+
+Text Label 5440 7193 0 60 ~
+CELL_2+
+Text Label 5440 7493 0 60 ~
+CELL_1+
+Text Label 5440 7793 0 60 ~
+CELL_0+
+Text Label 5440 8093 0 60 ~
+CELL_0-
+Text Label 8900 4493 0 60 ~
+FUSED_CELL_11+
+Text Label 8900 4793 0 60 ~
+FUSED_CELL_10+
+Text Label 8900 5093 0 60 ~
+FUSED_CELL_9+
+Text Label 8900 5393 0 60 ~
+FUSED_CELL_8+
+Text Label 8900 5693 0 60 ~
+FUSED_CELL_7+
+Text Label 8900 5993 0 60 ~
+FUSED_CELL_6+
+Text Label 8900 6293 0 60 ~
+FUSED_CELL_5+
+Text Label 8900 6593 0 60 ~
+FUSED_CELL_4+
+Text Label 8900 6893 0 60 ~
+FUSED_CELL_3+
+Text Label 8900 7193 0 60 ~
+FUSED_CELL_2+
+Text Label 8900 7493 0 60 ~
+FUSED_CELL_1+
+Text Label 8900 7793 0 60 ~
+FUSED_CELL_0+
+Text Label 8900 8093 0 60 ~
+FUSED_CELL_0-
+Text Label 5400 4193 0 60 ~
+CELL_12+
+Text Label 8900 4193 0 60 ~
+FUSED_CELL_12+
+Text Label 5400 3893 0 60 ~
+CELL_13+
+Text Label 8900 3893 0 60 ~
+FUSED_CELL_13+
+Text Label 5400 3593 0 60 ~
+CELL_14+
+Text Label 8900 3593 0 60 ~
+FUSED_CELL_14+
+Text Label 5400 3293 0 60 ~
+CELL_15+
+Text Label 8900 3293 0 60 ~
+FUSED_CELL_15+
+Text Label 5400 2993 0 60 ~
+CELL_16+
+Text Label 8900 2993 0 60 ~
+FUSED_CELL_16+
+Text Label 5400 2693 0 60 ~
+CELL_17+
+Text Label 8900 2693 0 60 ~
+FUSED_CELL_17+
+Text HLabel 1600 5993 2 60 BiDi ~
+CELL_HARN
+Wire Wire Line
+	7200 1893 6100 1893
+Wire Wire Line
+	6100 1893 6100 2093
+Wire Wire Line
+	6100 8693 6100 8893
+Wire Wire Line
+	7200 8093 6100 8093
+Wire Wire Line
+	6100 8093 6100 8293
+Wire Wire Line
+	5600 1893 5600 1793
+Wire Wire Line
+	6100 1893 5600 1893
+Wire Wire Line
+	9300 8893 7600 8893
+Wire Wire Line
+	9300 8993 9300 8893
+Wire Wire Line
+	9300 1893 7600 1893
+Wire Wire Line
+	9300 1793 9300 1893
+Wire Wire Line
+	4200 4793 7200 4793
+Wire Wire Line
+	4200 5793 4200 4793
+Wire Wire Line
+	3200 5793 4200 5793
+Wire Wire Line
+	4300 5893 3200 5893
+Wire Wire Line
+	4300 5093 4300 5893
+Wire Wire Line
+	7200 5093 4300 5093
+Wire Wire Line
+	4400 5993 3200 5993
+Wire Wire Line
+	4400 5393 4400 5993
+Wire Wire Line
+	7200 5393 4400 5393
+Wire Wire Line
+	4500 6093 3200 6093
+Wire Wire Line
+	4500 5693 4500 6093
+Wire Wire Line
+	7200 5693 4500 5693
+Wire Wire Line
+	4600 6193 3200 6193
+Wire Wire Line
+	4600 5993 4600 6193
+Wire Wire Line
+	7200 5993 4600 5993
+Wire Wire Line
+	4100 6893 3200 6893
+Wire Wire Line
+	4100 8093 4100 6893
+Wire Wire Line
+	6100 8093 4100 8093
+Wire Wire Line
+	4200 6793 3200 6793
+Wire Wire Line
+	4200 7793 4200 6793
+Wire Wire Line
+	7200 7793 4200 7793
+Wire Wire Line
+	4300 6693 3200 6693
+Wire Wire Line
+	4300 7493 4300 6693
+Wire Wire Line
+	7200 7493 4300 7493
+Wire Wire Line
+	4400 6593 3200 6593
+Wire Wire Line
+	4400 7193 4400 6593
+Wire Wire Line
+	7200 7193 4400 7193
+Wire Wire Line
+	4500 6493 3200 6493
+Wire Wire Line
+	4500 6893 4500 6493
+Wire Wire Line
+	7200 6893 4500 6893
+Wire Wire Line
+	4600 6393 3200 6393
+Wire Wire Line
+	4600 6593 4600 6393
+Wire Wire Line
+	7200 6593 4600 6593
+Wire Wire Line
+	7200 6293 3200 6293
+Wire Wire Line
+	10900 6893 11800 6893
+Wire Wire Line
+	10900 8093 10900 6893
+Wire Wire Line
+	7600 8093 10900 8093
+Wire Wire Line
+	10800 6793 11800 6793
+Wire Wire Line
+	10800 7793 10800 6793
+Wire Wire Line
+	7600 7793 10800 7793
+Wire Wire Line
+	10700 6693 11800 6693
+Wire Wire Line
+	10700 7493 10700 6693
+Wire Wire Line
+	7600 7493 10700 7493
+Wire Wire Line
+	10600 7193 7600 7193
+Wire Wire Line
+	10600 6593 10600 7193
+Wire Wire Line
+	11800 6593 10600 6593
+Wire Wire Line
+	10500 6493 11800 6493
+Wire Wire Line
+	10500 6893 10500 6493
+Wire Wire Line
+	7600 6893 10500 6893
+Wire Wire Line
+	10400 6393 11800 6393
+Wire Wire Line
+	10400 6593 10400 6393
+Wire Wire Line
+	7600 6593 10400 6593
+Wire Wire Line
+	7600 6293 11800 6293
+Wire Wire Line
+	10900 4493 7600 4493
+Wire Wire Line
+	10900 5693 10900 4493
+Wire Wire Line
+	11800 5693 10900 5693
+Wire Wire Line
+	10800 5793 11800 5793
+Wire Wire Line
+	10800 4793 10800 5793
+Wire Wire Line
+	7600 4793 10800 4793
+Wire Wire Line
+	10700 5893 11800 5893
+Wire Wire Line
+	10700 5093 10700 5893
+Wire Wire Line
+	7600 5093 10700 5093
+Wire Wire Line
+	10600 5993 11800 5993
+Wire Wire Line
+	10600 5393 10600 5993
+Wire Wire Line
+	7600 5393 10600 5393
+Wire Wire Line
+	10500 6093 11800 6093
+Wire Wire Line
+	10500 5693 10500 6093
+Wire Wire Line
+	7600 5693 10500 5693
+Wire Wire Line
+	10400 6193 11800 6193
+Wire Wire Line
+	10400 5993 10400 6193
+Wire Wire Line
+	7600 5993 10400 5993
+Wire Wire Line
+	4100 4493 7200 4493
+Wire Wire Line
+	4100 5693 4100 4493
+Wire Wire Line
+	3200 5693 4100 5693
+Wire Wire Line
+	5600 8893 5600 8993
+Wire Wire Line
+	6100 8893 5600 8893
+Wire Wire Line
+	7200 8893 6100 8893
+Wire Wire Line
+	4000 5593 3200 5593
+Wire Wire Line
+	4000 4193 4000 5593
+Wire Wire Line
+	7200 4193 4000 4193
+Wire Wire Line
+	3900 3893 7200 3893
+Wire Wire Line
+	3900 5493 3900 3893
+Wire Wire Line
+	3200 5493 3900 5493
+Wire Wire Line
+	3800 5393 3200 5393
+Wire Wire Line
+	3800 3593 3800 5393
+Wire Wire Line
+	7200 3593 3800 3593
+Wire Wire Line
+	3700 3293 7200 3293
+Wire Wire Line
+	3700 5293 3700 3293
+Wire Wire Line
+	3200 5293 3700 5293
+Wire Wire Line
+	6100 2693 7200 2693
+Wire Wire Line
+	3500 2693 6100 2693
+Wire Wire Line
+	3500 5093 3500 2693
+Wire Wire Line
+	3200 5093 3500 5093
+Wire Wire Line
+	3600 5193 3200 5193
+Wire Wire Line
+	3600 2993 3600 5193
+Wire Wire Line
+	7200 2993 3600 2993
+Wire Wire Line
+	6100 2693 6100 2493
+Wire Wire Line
+	11000 4193 7600 4193
+Wire Wire Line
+	11000 5593 11000 4193
+Wire Wire Line
+	11800 5593 11000 5593
+Wire Wire Line
+	11100 5493 11800 5493
+Wire Wire Line
+	11100 3893 11100 5493
+Wire Wire Line
+	7600 3893 11100 3893
+Wire Wire Line
+	11200 3593 7600 3593
+Wire Wire Line
+	11200 5393 11200 3593
+Wire Wire Line
+	11800 5393 11200 5393
+Wire Wire Line
+	11300 3293 7600 3293
+Wire Wire Line
+	11300 5293 11300 3293
+Wire Wire Line
+	11800 5293 11300 5293
+Wire Wire Line
+	11400 5193 11800 5193
+Wire Wire Line
+	11400 2993 11400 5193
+Wire Wire Line
+	7600 2993 11400 2993
+Wire Wire Line
+	11500 2693 7600 2693
+Wire Wire Line
+	11500 5093 11500 2693
+Wire Wire Line
+	11800 5093 11500 5093
+Text HLabel 12900 5993 2 60 BiDi ~
+FUSED_CELL_HARN
+Text GLabel 4600 1893 2 60 BiDi ~
+VBAT+
+Wire Wire Line
+	5600 1893 5400 1893
+Text GLabel 4600 8893 2 60 BiDi ~
+VBAT-
+Wire Wire Line
+	5600 8893 5400 8893
+Text GLabel 9500 1893 2 60 BiDi ~
+FUSED_VBAT+
+Wire Wire Line
+	9300 1893 9500 1893
+Text GLabel 9500 8893 2 60 BiDi ~
+FUSED_VBAT-
+Wire Wire Line
+	9300 8893 9500 8893
+Connection ~ 5600 8893
+Connection ~ 5600 1893
+Connection ~ 6100 8893
+Connection ~ 6100 8093
+Connection ~ 6100 2693
+Connection ~ 6100 1893
+Connection ~ 9300 8893
+Connection ~ 9300 1893
+$Comp
+L X8x2 IC44
+U 1 1 6459653D
+P 
+	1    
+	
+$EndComp
+$Comp
+L R_Fuse F319
+U 1 1 6459653C
+P 7200 8093
+F 0 "F319" H 7110 8043 60  0000 R TNN
+F 1 "='Part Number'" H 7110 8243 60  0000 R TNN
+F 2 "" H 7110 8243 60  0000 C CNN
+F 3 "" H 7110 8243 60  0000 C CNN
+	1    7200 8093
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F310
+U 1 1 6459653B
+P 7200 5393
+F 0 "F310" H 7110 5343 60  0000 R TNN
+F 1 "='Part Number'" H 7110 5543 60  0000 R TNN
+F 2 "" H 7110 5543 60  0000 C CNN
+F 3 "" H 7110 5543 60  0000 C CNN
+	1    7200 5393
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F309
+U 1 1 6459653A
+P 7200 5093
+F 0 "F309" H 7110 5043 60  0000 R TNN
+F 1 "='Part Number'" H 7110 5243 60  0000 R TNN
+F 2 "" H 7110 5243 60  0000 C CNN
+F 3 "" H 7110 5243 60  0000 C CNN
+	1    7200 5093
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F308
+U 1 1 64596539
+P 7200 4793
+F 0 "F308" H 7110 4743 60  0000 R TNN
+F 1 "='Part Number'" H 7110 4943 60  0000 R TNN
+F 2 "" H 7110 4943 60  0000 C CNN
+F 3 "" H 7110 4943 60  0000 C CNN
+	1    7200 4793
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F307
+U 1 1 64596538
+P 7200 4493
+F 0 "F307" H 7110 4443 60  0000 R TNN
+F 1 "='Part Number'" H 7110 4643 60  0000 R TNN
+F 2 "" H 7110 4643 60  0000 C CNN
+F 3 "" H 7110 4643 60  0000 C CNN
+	1    7200 4493
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F320
+U 1 1 64596537
+P 7200 8893
+F 0 "F320" H 7110 8843 60  0000 R TNN
+F 1 "='Part Number'" H 7110 9043 60  0000 R TNN
+F 2 "" H 7110 9043 60  0000 C CNN
+F 3 "" H 7110 9043 60  0000 C CNN
+	1    7200 8893
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F300
+U 1 1 64596536
+P 7200 1893
+F 0 "F300" H 7110 1843 60  0000 R TNN
+F 1 "='Part Number'" H 7110 2043 60  0000 R TNN
+F 2 "" H 7110 2043 60  0000 C CNN
+F 3 "" H 7110 2043 60  0000 C CNN
+	1    7200 1893
+	1   0    0    1
+$EndComp
+$Comp
+L R SJ301
+U 1 1 64596535
+P 6100 8293
+F 0 "SJ301" V 6290 8343 60  0000 L BNN
+F 1 "0R" V 6390 8343 60  0000 L BNN
+F 2 "" H 6390 8343 60  0000 C CNN
+F 3 "" H 6390 8343 60  0000 C CNN
+	1    6100 8293
+	0    1   -1   0
+$EndComp
+$Comp
+L R SJ300
+U 1 1 64596534
+P 6100 2093
+F 0 "SJ300" V 6290 2143 60  0000 L BNN
+F 1 "0R" V 6390 2143 60  0000 L BNN
+F 2 "" H 6390 2143 60  0000 C CNN
+F 3 "" H 6390 2143 60  0000 C CNN
+	1    6100 2093
+	0    1   -1   0
+$EndComp
+$Comp
+L R_Fuse F306
+U 1 1 64596533
+P 7200 4193
+F 0 "F306" H 7110 4143 60  0000 R TNN
+F 1 "='Part Number'" H 7110 4343 60  0000 R TNN
+F 2 "" H 7110 4343 60  0000 C CNN
+F 3 "" H 7110 4343 60  0000 C CNN
+	1    7200 4193
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F305
+U 1 1 64596532
+P 7200 3893
+F 0 "F305" H 7110 3843 60  0000 R TNN
+F 1 "='Part Number'" H 7110 4043 60  0000 R TNN
+F 2 "" H 7110 4043 60  0000 C CNN
+F 3 "" H 7110 4043 60  0000 C CNN
+	1    7200 3893
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F318
+U 1 1 64596531
+P 7200 7793
+F 0 "F318" H 7110 7743 60  0000 R TNN
+F 1 "='Part Number'" H 7110 7943 60  0000 R TNN
+F 2 "" H 7110 7943 60  0000 C CNN
+F 3 "" H 7110 7943 60  0000 C CNN
+	1    7200 7793
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F304
+U 1 1 64596530
+P 7200 3593
+F 0 "F304" H 7110 3543 60  0000 R TNN
+F 1 "='Part Number'" H 7110 3743 60  0000 R TNN
+F 2 "" H 7110 3743 60  0000 C CNN
+F 3 "" H 7110 3743 60  0000 C CNN
+	1    7200 3593
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F303
+U 1 1 6459652F
+P 7200 3293
+F 0 "F303" H 7110 3243 60  0000 R TNN
+F 1 "='Part Number'" H 7110 3443 60  0000 R TNN
+F 2 "" H 7110 3443 60  0000 C CNN
+F 3 "" H 7110 3443 60  0000 C CNN
+	1    7200 3293
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F302
+U 1 1 6459652E
+P 7200 2993
+F 0 "F302" H 7110 2943 60  0000 R TNN
+F 1 "='Part Number'" H 7110 3143 60  0000 R TNN
+F 2 "" H 7110 3143 60  0000 C CNN
+F 3 "" H 7110 3143 60  0000 C CNN
+	1    7200 2993
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F301
+U 1 1 6459652D
+P 7200 2693
+F 0 "F301" H 7110 2643 60  0000 R TNN
+F 1 "='Part Number'" H 7110 2843 60  0000 R TNN
+F 2 "" H 7110 2843 60  0000 C CNN
+F 3 "" H 7110 2843 60  0000 C CNN
+	1    7200 2693
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F317
+U 1 1 6459652C
+P 7200 7493
+F 0 "F317" H 7110 7443 60  0000 R TNN
+F 1 "='Part Number'" H 7110 7643 60  0000 R TNN
+F 2 "" H 7110 7643 60  0000 C CNN
+F 3 "" H 7110 7643 60  0000 C CNN
+	1    7200 7493
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F316
+U 1 1 6459652B
+P 7200 7193
+F 0 "F316" H 7110 7143 60  0000 R TNN
+F 1 "='Part Number'" H 7110 7343 60  0000 R TNN
+F 2 "" H 7110 7343 60  0000 C CNN
+F 3 "" H 7110 7343 60  0000 C CNN
+	1    7200 7193
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F315
+U 1 1 6459652A
+P 7200 6893
+F 0 "F315" H 7110 6843 60  0000 R TNN
+F 1 "='Part Number'" H 7110 7043 60  0000 R TNN
+F 2 "" H 7110 7043 60  0000 C CNN
+F 3 "" H 7110 7043 60  0000 C CNN
+	1    7200 6893
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F314
+U 1 1 64596529
+P 7200 6593
+F 0 "F314" H 7110 6543 60  0000 R TNN
+F 1 "='Part Number'" H 7110 6743 60  0000 R TNN
+F 2 "" H 7110 6743 60  0000 C CNN
+F 3 "" H 7110 6743 60  0000 C CNN
+	1    7200 6593
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F313
+U 1 1 64596528
+P 7200 6293
+F 0 "F313" H 7110 6243 60  0000 R TNN
+F 1 "='Part Number'" H 7110 6443 60  0000 R TNN
+F 2 "" H 7110 6443 60  0000 C CNN
+F 3 "" H 7110 6443 60  0000 C CNN
+	1    7200 6293
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F312
+U 1 1 64596527
+P 7200 5993
+F 0 "F312" H 7110 5943 60  0000 R TNN
+F 1 "='Part Number'" H 7110 6143 60  0000 R TNN
+F 2 "" H 7110 6143 60  0000 C CNN
+F 3 "" H 7110 6143 60  0000 C CNN
+	1    7200 5993
+	1   0    0    1
+$EndComp
+$Comp
+L R_Fuse F311
+U 1 1 64596526
+P 7200 5693
+F 0 "F311" H 7110 5643 60  0000 R TNN
+F 1 "='Part Number'" H 7110 5843 60  0000 R TNN
+F 2 "" H 7110 5843 60  0000 C CNN
+F 3 "" H 7110 5843 60  0000 C CNN
+	1    7200 5693
+	1   0    0    1
+$EndComp
+$EndSCHEMATC

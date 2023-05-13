@@ -1,0 +1,24 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: foxbms2-master.GBR   5/5/2023  8:08:13 PM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.gbr                Top Overlay                             
+.gbr                Top Paste                               
+.gbr                Top Solder                              
+.gbr                Top                                     
+.gbr                Int1 (Sig)                              
+.gbr                Int2 (Gnd)                              
+.gbr                Int3 (Sig)                              
+.gbr                Int4 (Sig)                              
+.gbr                Int5 (Pwr)                              
+.gbr                Int6 (Sig)                              
+.gbr                Bottom                                  
+.gbr                Bottom Solder                           
+.gbr                Bottom Paste                            
+.gbr                Bottom Overlay                          
+.gbr                Profile                                 
+------------------------------------------------------------------------------------------

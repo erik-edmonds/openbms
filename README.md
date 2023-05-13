@@ -1,0 +1,1 @@
+#Creating an open sourced battery management system, for learning purposes.
